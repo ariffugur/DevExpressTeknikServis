@@ -16,5 +16,12 @@ namespace DevExpressTeknikServis
         {
             InitializeComponent();
         }
+
+        private void btnUrunListesiFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmUrunListesi fr=new Formlar.FrmUrunListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
