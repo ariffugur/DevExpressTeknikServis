@@ -55,5 +55,14 @@ namespace DevExpressTeknikServis.Formlar
             txtSatisFiyat.Text=gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
             txtStok.Text=gridView1.GetFocusedRowCellValue("STOK").ToString();
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            int id=int.Parse(txtID.Text);
+            var deger = db.TBLURUN.Find(id);
+            db.TBLURUN.Remove(deger);
+            db.SaveChanges();
+            MessageBox.Show("Başarıyla Silindi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+        }
     }
 }

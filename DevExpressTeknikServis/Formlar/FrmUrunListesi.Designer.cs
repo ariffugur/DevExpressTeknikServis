@@ -227,6 +227,7 @@
             this.btnSil.Size = new System.Drawing.Size(168, 33);
             this.btnSil.TabIndex = 25;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnListele
             // 
