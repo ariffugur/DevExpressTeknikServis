@@ -20,10 +20,30 @@ namespace DevExpressTeknikServis.Formlar
         DbTeknikServisEntities db=new DbTeknikServisEntities();
         private void FrmUrunListesi_Load(object sender, EventArgs e)
         {
-            var degerler=db.TBLURUN.ToList();
-            gridControl1.DataSource=degerler;
-            
 
+            var degerler = db.TBLURUN.ToList();
+            gridControl1.DataSource = degerler;
+
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            TBLURUN t=new TBLURUN();
+            t.AD=txtUrunAdi.Text;
+            t.MARKA=txtMarka.Text;
+            t.ALISFIYAT=decimal.Parse(txtAlisFiyat.Text);
+            t.SATISFIYAT=decimal.Parse(txtSatisFiyat.Text);
+            t.STOK = short.Parse (txtStok.Text);
+            t.DURUM = false;
+            db.TBLURUN.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Ürün Başarıyla Kaydedildi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            var degerler = db.TBLURUN.ToList();
+            gridControl1.DataSource = degerler;
         }
     }
 }
