@@ -45,5 +45,15 @@ namespace DevExpressTeknikServis.Formlar
             var degerler = db.TBLURUN.ToList();
             gridControl1.DataSource = degerler;
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtID.Text=gridView1.GetFocusedRowCellValue("ID").ToString();
+            txtUrunAdi.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
+            txtMarka.Text=gridView1.GetFocusedRowCellValue("MARKA").ToString();
+            txtAlisFiyat.Text=gridView1.GetFocusedRowCellValue("ALISFIYAT").ToString();
+            txtSatisFiyat.Text=gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
+            txtStok.Text=gridView1.GetFocusedRowCellValue("STOK").ToString();
+        }
     }
 }
