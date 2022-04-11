@@ -16,5 +16,14 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        private void FrmUrunListesi_Load(object sender, EventArgs e)
+        {
+            var degerler=db.TBLURUN.ToList();
+            gridControl1.DataSource=degerler;
+            
+
+        }
     }
 }
