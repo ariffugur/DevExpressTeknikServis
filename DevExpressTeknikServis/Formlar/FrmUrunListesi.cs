@@ -23,7 +23,7 @@ namespace DevExpressTeknikServis.Formlar
 
             var degerler = db.TBLURUN.ToList();
             gridControl1.DataSource = degerler;
-
+            lookUpEdit1.Properties.DataSource = db.TBLKATEGORI.ToList();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -35,6 +35,7 @@ namespace DevExpressTeknikServis.Formlar
             t.SATISFIYAT=decimal.Parse(txtSatisFiyat.Text);
             t.STOK = short.Parse (txtStok.Text);
             t.DURUM = false;
+            t.KATEGORI=byte.Parse(lookUpEdit1.EditValue.ToString());
             db.TBLURUN.Add(t);
             db.SaveChanges();
             MessageBox.Show("Ürün Başarıyla Kaydedildi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -74,6 +75,7 @@ namespace DevExpressTeknikServis.Formlar
             deger.ALISFIYAT = decimal.Parse(txtAlisFiyat.Text);
             deger.SATISFIYAT = decimal.Parse(txtSatisFiyat.Text);
             deger.STOK = short.Parse(txtStok.Text);
+            deger.KATEGORI=byte.Parse(lookUpEdit1.EditValue.ToString());
             db.SaveChanges();
             MessageBox.Show("Ürün Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
