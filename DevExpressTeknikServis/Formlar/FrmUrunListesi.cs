@@ -62,7 +62,20 @@ namespace DevExpressTeknikServis.Formlar
             var deger = db.TBLURUN.Find(id);
             db.TBLURUN.Remove(deger);
             db.SaveChanges();
-            MessageBox.Show("Başarıyla Silindi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+            MessageBox.Show("Ürün Başarıyla Silindi.","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLURUN.Find(id);
+            deger.AD = txtUrunAdi.Text;
+            deger.MARKA = txtMarka.Text;
+            deger.ALISFIYAT = decimal.Parse(txtAlisFiyat.Text);
+            deger.SATISFIYAT = decimal.Parse(txtSatisFiyat.Text);
+            deger.STOK = short.Parse(txtStok.Text);
+            db.SaveChanges();
+            MessageBox.Show("Ürün Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
