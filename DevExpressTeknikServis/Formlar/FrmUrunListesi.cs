@@ -18,11 +18,27 @@ namespace DevExpressTeknikServis.Formlar
         }
 
         DbTeknikServisEntities db=new DbTeknikServisEntities();
+        void metod1()
+        {
+            var degerler = from u in db.TBLURUN
+                           select new
+                           {
+                               u.ID,
+                               u.AD,
+                               u.MARKA,
+                               Kategori=u.TBLKATEGORI.AD,
+                               u.STOK,
+                               u.ALISFIYAT,
+                               u.SATISFIYAT
+                           };
+
+            gridControl1.DataSource = degerler.ToList();
+        }
         private void FrmUrunListesi_Load(object sender, EventArgs e)
         {
 
-            var degerler = db.TBLURUN.ToList();
-            gridControl1.DataSource = degerler;
+            //var degerler = db.TBLURUN.ToList();
+            metod1();
             lookUpEdit1.Properties.DataSource = db.TBLKATEGORI.ToList();
         }
 
@@ -44,19 +60,7 @@ namespace DevExpressTeknikServis.Formlar
         private void btnListele_Click(object sender, EventArgs e)
         {
             //var degerler = db.TBLURUN.ToList();
-            var degerler = from u in db.TBLURUN
-                           select new
-                           {
-                               u.ID,
-                               u.AD,
-                               u.MARKA,
-                               u.STOK,
-                               u.ALISFIYAT,
-                               u.SATISFIYAT
-                           };
-              
-            gridControl1.DataSource = degerler;
-            lookUpEdit1.Properties.DataSource = db.TBLKATEGORI.ToList();
+            metod1();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
