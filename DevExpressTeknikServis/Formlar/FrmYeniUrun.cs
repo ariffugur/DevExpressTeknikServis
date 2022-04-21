@@ -21,5 +21,27 @@ namespace DevExpressTeknikServis.Formlar
         {
 
         }
+
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            FrmYeniUrun fr=new FrmYeniUrun();
+            //fr.Close();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            DbTeknikServisEntities db=new DbTeknikServisEntities();
+            TBLURUN t=new TBLURUN();
+            t.AD=txtUrunAdi.Text;
+            t.MARKA=txtMarka.Text;
+            t.KATEGORI=byte.Parse(txtKategori.Text);
+            t.ALISFIYAT=decimal.Parse(txtAlisFiyati.Text);
+            t.SATISFIYAT=decimal.Parse(txtSatisFiyati.Text);
+            t.STOK=short.Parse(txtStok.Text);
+            db.TBLURUN.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Ürün Başarıyla Kaydedildi!");
+
+        }
     }
 }
