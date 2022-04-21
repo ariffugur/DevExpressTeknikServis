@@ -43,8 +43,20 @@ namespace DevExpressTeknikServis.Formlar
 
         private void btnListele_Click(object sender, EventArgs e)
         {
-            var degerler = db.TBLURUN.ToList();
+            //var degerler = db.TBLURUN.ToList();
+            var degerler = from u in db.TBLURUN
+                           select new
+                           {
+                               u.ID,
+                               u.AD,
+                               u.MARKA,
+                               u.STOK,
+                               u.ALISFIYAT,
+                               u.SATISFIYAT
+                           };
+              
             gridControl1.DataSource = degerler;
+            lookUpEdit1.Properties.DataSource = db.TBLKATEGORI.ToList();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
