@@ -16,5 +16,10 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+
+        private void FrmYeniUrun_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
