@@ -46,5 +46,11 @@ namespace DevExpressTeknikServis.Formlar
         {
                 metod1();
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtID.Text=gridView1.GetFocusedRowCellValue("ID").ToString();
+            txtAd.Text=gridView1.GetFocusedRowCellValue("AD").ToString();
+        }
     }
 }
