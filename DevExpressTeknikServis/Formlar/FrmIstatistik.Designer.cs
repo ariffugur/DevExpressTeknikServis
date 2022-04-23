@@ -49,6 +49,21 @@
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.panel2.SuspendLayout();
@@ -59,17 +74,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(229)))), ((int)(((byte)(141)))));
             this.panel1.Controls.Add(this.pictureEdit1);
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.labelControl1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(2, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 132);
+            this.panel1.Size = new System.Drawing.Size(376, 177);
             this.panel1.TabIndex = 0;
             // 
             // labelControl1
@@ -110,13 +130,13 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(190)))), ((int)(((byte)(118)))));
             this.panel2.Controls.Add(this.pictureEdit2);
             this.panel2.Controls.Add(this.labelControl3);
             this.panel2.Controls.Add(this.labelControl4);
-            this.panel2.Location = new System.Drawing.Point(231, 12);
+            this.panel2.Location = new System.Drawing.Point(384, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(213, 132);
+            this.panel2.Size = new System.Drawing.Size(376, 177);
             this.panel2.TabIndex = 3;
             // 
             // pictureEdit2
@@ -151,19 +171,19 @@
             this.labelControl4.Appearance.Options.UseForeColor = true;
             this.labelControl4.Location = new System.Drawing.Point(12, 12);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(112, 17);
+            this.labelControl4.Size = new System.Drawing.Size(134, 17);
             this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "Toplam Ürün Sayısı";
+            this.labelControl4.Text = "Toplam Kategori Sayısı";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(220)))), ((int)(((byte)(88)))));
             this.panel3.Controls.Add(this.pictureEdit3);
             this.panel3.Controls.Add(this.labelControl5);
             this.panel3.Controls.Add(this.labelControl6);
-            this.panel3.Location = new System.Drawing.Point(669, 12);
+            this.panel3.Location = new System.Drawing.Point(1148, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(213, 132);
+            this.panel3.Size = new System.Drawing.Size(376, 177);
             this.panel3.TabIndex = 5;
             // 
             // pictureEdit3
@@ -198,19 +218,19 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(12, 12);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(112, 17);
+            this.labelControl6.Size = new System.Drawing.Size(69, 17);
             this.labelControl6.TabIndex = 0;
-            this.labelControl6.Text = "Toplam Ürün Sayısı";
+            this.labelControl6.Text = "Kritik Seviye";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
             this.panel4.Controls.Add(this.pictureEdit4);
             this.panel4.Controls.Add(this.labelControl7);
             this.panel4.Controls.Add(this.labelControl8);
-            this.panel4.Location = new System.Drawing.Point(450, 12);
+            this.panel4.Location = new System.Drawing.Point(766, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(213, 132);
+            this.panel4.Size = new System.Drawing.Size(376, 177);
             this.panel4.TabIndex = 4;
             // 
             // pictureEdit4
@@ -245,19 +265,19 @@
             this.labelControl8.Appearance.Options.UseForeColor = true;
             this.labelControl8.Location = new System.Drawing.Point(12, 12);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(112, 17);
+            this.labelControl8.Size = new System.Drawing.Size(109, 17);
             this.labelControl8.TabIndex = 0;
-            this.labelControl8.Text = "Toplam Ürün Sayısı";
+            this.labelControl8.Text = "Toplam Stok Sayısı";
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
             this.panel5.Controls.Add(this.pictureEdit5);
             this.panel5.Controls.Add(this.labelControl9);
             this.panel5.Controls.Add(this.labelControl10);
-            this.panel5.Location = new System.Drawing.Point(888, 12);
+            this.panel5.Location = new System.Drawing.Point(1530, 12);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(213, 132);
+            this.panel5.Size = new System.Drawing.Size(376, 177);
             this.panel5.TabIndex = 6;
             // 
             // pictureEdit5
@@ -292,19 +312,194 @@
             this.labelControl10.Appearance.Options.UseForeColor = true;
             this.labelControl10.Location = new System.Drawing.Point(12, 12);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(112, 17);
+            this.labelControl10.Size = new System.Drawing.Size(146, 17);
             this.labelControl10.TabIndex = 0;
-            this.labelControl10.Text = "Toplam Ürün Sayısı";
+            this.labelControl10.Text = "Bugün Satılan Ürün Sayısı";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(236)))), ((int)(((byte)(238)))));
+            this.panel6.Controls.Add(this.labelControl11);
+            this.panel6.Controls.Add(this.labelControl12);
+            this.panel6.Location = new System.Drawing.Point(1530, 210);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(376, 177);
+            this.panel6.TabIndex = 11;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Appearance.Options.UseForeColor = true;
+            this.labelControl11.Location = new System.Drawing.Point(12, 43);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(60, 47);
+            this.labelControl11.TabIndex = 1;
+            this.labelControl11.Text = "584";
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Appearance.Options.UseForeColor = true;
+            this.labelControl12.Location = new System.Drawing.Point(12, 12);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(121, 17);
+            this.labelControl12.TabIndex = 0;
+            this.labelControl12.Text = "En Düşük Fiyatlı Ürün";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(220)))), ((int)(((byte)(88)))));
+            this.panel7.Controls.Add(this.labelControl13);
+            this.panel7.Controls.Add(this.labelControl14);
+            this.panel7.Location = new System.Drawing.Point(1148, 210);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(376, 177);
+            this.panel7.TabIndex = 10;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Appearance.Options.UseForeColor = true;
+            this.labelControl13.Location = new System.Drawing.Point(12, 43);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(60, 47);
+            this.labelControl13.TabIndex = 1;
+            this.labelControl13.Text = "584";
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Appearance.Options.UseForeColor = true;
+            this.labelControl14.Location = new System.Drawing.Point(12, 12);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(125, 17);
+            this.labelControl14.TabIndex = 0;
+            this.labelControl14.Text = "En Yüksek Fiyatlı Ürün";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(190)))), ((int)(((byte)(118)))));
+            this.panel8.Controls.Add(this.labelControl15);
+            this.panel8.Controls.Add(this.labelControl16);
+            this.panel8.Location = new System.Drawing.Point(384, 210);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(376, 177);
+            this.panel8.TabIndex = 8;
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl15.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl15.Appearance.Options.UseFont = true;
+            this.labelControl15.Appearance.Options.UseForeColor = true;
+            this.labelControl15.Location = new System.Drawing.Point(12, 43);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(60, 47);
+            this.labelControl15.TabIndex = 1;
+            this.labelControl15.Text = "584";
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl16.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl16.Appearance.Options.UseFont = true;
+            this.labelControl16.Appearance.Options.UseForeColor = true;
+            this.labelControl16.Location = new System.Drawing.Point(12, 12);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(103, 17);
+            this.labelControl16.TabIndex = 0;
+            this.labelControl16.Text = "En Az Stoklu Ürün";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
+            this.panel9.Controls.Add(this.labelControl17);
+            this.panel9.Controls.Add(this.labelControl18);
+            this.panel9.Location = new System.Drawing.Point(766, 210);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(376, 177);
+            this.panel9.TabIndex = 9;
+            // 
+            // labelControl17
+            // 
+            this.labelControl17.Appearance.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl17.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl17.Appearance.Options.UseFont = true;
+            this.labelControl17.Appearance.Options.UseForeColor = true;
+            this.labelControl17.Location = new System.Drawing.Point(12, 43);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(60, 47);
+            this.labelControl17.TabIndex = 1;
+            this.labelControl17.Text = "584";
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl18.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl18.Appearance.Options.UseFont = true;
+            this.labelControl18.Appearance.Options.UseForeColor = true;
+            this.labelControl18.Location = new System.Drawing.Point(12, 12);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(142, 17);
+            this.labelControl18.TabIndex = 0;
+            this.labelControl18.Text = "En Fazla Ürün Kategorisi";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(229)))), ((int)(((byte)(141)))));
+            this.panel10.Controls.Add(this.labelControl19);
+            this.panel10.Controls.Add(this.labelControl20);
+            this.panel10.Location = new System.Drawing.Point(2, 210);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(376, 177);
+            this.panel10.TabIndex = 7;
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl19.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl19.Appearance.Options.UseFont = true;
+            this.labelControl19.Appearance.Options.UseForeColor = true;
+            this.labelControl19.Location = new System.Drawing.Point(12, 43);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(60, 47);
+            this.labelControl19.TabIndex = 1;
+            this.labelControl19.Text = "584";
+            // 
+            // labelControl20
+            // 
+            this.labelControl20.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl20.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl20.Appearance.Options.UseFont = true;
+            this.labelControl20.Appearance.Options.UseForeColor = true;
+            this.labelControl20.Location = new System.Drawing.Point(12, 12);
+            this.labelControl20.Name = "labelControl20";
+            this.labelControl20.Size = new System.Drawing.Size(118, 17);
+            this.labelControl20.TabIndex = 0;
+            this.labelControl20.Text = "En Fazla Stoklu Ürün";
             // 
             // FrmIstatistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel1);
             this.Name = "FrmIstatistik";
             this.Text = "FrmIstatistik";
@@ -323,6 +518,16 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -349,5 +554,20 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl10;
+        private System.Windows.Forms.Panel panel6;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private System.Windows.Forms.Panel panel7;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private System.Windows.Forms.Panel panel8;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private System.Windows.Forms.Panel panel9;
+        private DevExpress.XtraEditors.LabelControl labelControl17;
+        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private System.Windows.Forms.Panel panel10;
+        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
     }
 }
