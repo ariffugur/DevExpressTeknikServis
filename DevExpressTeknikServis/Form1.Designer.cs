@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnKategoriListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.btnUrunListesiFormu = new DevExpress.XtraBars.BarButtonItem();
             this.btnYeniUrun = new DevExpress.XtraBars.BarButtonItem();
@@ -107,7 +107,7 @@
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
-            this.barButtonItem1,
+            this.btnKategoriListesi,
             this.barButtonItem2,
             this.btnUrunListesiFormu,
             this.btnYeniUrun,
@@ -161,13 +161,14 @@
             this.ribbonPage10});
             this.ribbonControl1.Size = new System.Drawing.Size(1370, 150);
             // 
-            // barButtonItem1
+            // btnKategoriListesi
             // 
-            this.barButtonItem1.Caption = "Kategori Listesi";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btnKategoriListesi.Caption = "Kategori Listesi";
+            this.btnKategoriListesi.Id = 1;
+            this.btnKategoriListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.btnKategoriListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnKategoriListesi.Name = "btnKategoriListesi";
+            this.btnKategoriListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKategoriListesi_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -190,8 +191,8 @@
             // 
             this.btnYeniUrun.Caption = "Yeni Ürün";
             this.btnYeniUrun.Id = 4;
-            this.btnYeniUrun.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.btnYeniUrun.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.btnYeniUrun.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniUrun.ImageOptions.Image")));
+            this.btnYeniUrun.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYeniUrun.ImageOptions.LargeImage")));
             this.btnYeniUrun.Name = "btnYeniUrun";
             this.btnYeniUrun.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYeniUrun_ItemClick);
             // 
@@ -500,7 +501,7 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnKategoriListesi);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "ribbonPageGroup2";
@@ -710,7 +711,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnKategoriListesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem btnUrunListesiFormu;
         private DevExpress.XtraBars.BarButtonItem btnYeniUrun;

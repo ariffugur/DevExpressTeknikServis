@@ -30,5 +30,12 @@ namespace DevExpressTeknikServis
             //fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnKategoriListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmKategori fr = new Formlar.FrmKategori();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
