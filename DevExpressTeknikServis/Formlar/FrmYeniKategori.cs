@@ -16,5 +16,14 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            TBLKATEGORI t = new TBLKATEGORI();
+            t.AD = txtUrunAdi.Text;
+            db.TBLKATEGORI.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Kategori Başarıyla Kaydedildi.");
+        }
     }
 }

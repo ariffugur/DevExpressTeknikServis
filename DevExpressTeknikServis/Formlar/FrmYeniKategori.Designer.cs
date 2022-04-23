@@ -45,6 +45,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(108, 38);
             this.btnKaydet.TabIndex = 23;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // panel1
             // 
