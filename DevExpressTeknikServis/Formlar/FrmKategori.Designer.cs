@@ -73,6 +73,7 @@
             this.btnListele.Size = new System.Drawing.Size(168, 33);
             this.btnListele.TabIndex = 26;
             this.btnListele.Text = "Listele";
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnSil
             // 
@@ -100,6 +101,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(168, 33);
             this.btnKaydet.TabIndex = 23;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // txtAd
             // 
@@ -110,11 +112,11 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(31, 85);
+            this.labelControl1.Location = new System.Drawing.Point(14, 85);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(45, 13);
+            this.labelControl1.Size = new System.Drawing.Size(62, 13);
             this.labelControl1.TabIndex = 11;
-            this.labelControl1.Text = "Ürün Adı:";
+            this.labelControl1.Text = "Kategori Adı:";
             // 
             // groupControl1
             // 

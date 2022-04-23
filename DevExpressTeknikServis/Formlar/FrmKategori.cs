@@ -19,11 +19,32 @@ namespace DevExpressTeknikServis.Formlar
         DbTeknikServisEntities db=new DbTeknikServisEntities();
         private void FrmKategori_Load(object sender, EventArgs e)
         {
-            var degerler = from k in db.TBLKATEGORI select new {
-                k.ID,
-                k.AD
-        };
-            gridControl1.DataSource=degerler.ToList();
+            metod1();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            TBLKATEGORI t=new TBLKATEGORI();
+            t.AD=txtAd.Text;
+            db.TBLKATEGORI.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Kategori Başarıyla Kaydedildi.");
+        }
+        void metod1()
+        {
+            
+                var degerler = from k in db.TBLKATEGORI
+                               select new
+                               {
+                                   k.ID,
+                                   k.AD
+                               };
+                gridControl1.DataSource = degerler.ToList();
+            }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+                metod1();
         }
     }
 }
