@@ -126,18 +126,18 @@
             this.groupControl1.Controls.Add(this.btnKaydet);
             this.groupControl1.Controls.Add(this.txtAd);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(1026, 4);
+            this.groupControl1.Location = new System.Drawing.Point(1498, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(344, 725);
+            this.groupControl1.Size = new System.Drawing.Size(407, 1039);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Kategori İşlemleri";
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 4);
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1020, 740);
+            this.gridControl1.Size = new System.Drawing.Size(1500, 1039);
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -154,7 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmKategori";

@@ -16,11 +16,14 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities db=new DbTeknikServisEntities(); 
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
         private void FrmKategori_Load(object sender, EventArgs e)
         {
-            var degerler=db.TBLKATEGORI.ToList();
-            gridControl1.DataSource=degerler;
+            var degerler = from k in db.TBLKATEGORI select new {
+                k.ID,
+                k.AD
+        };
+            gridControl1.DataSource=degerler.ToList();
         }
     }
 }
