@@ -52,5 +52,23 @@ namespace DevExpressTeknikServis.Formlar
             txtID.Text=gridView1.GetFocusedRowCellValue("ID").ToString();
             txtAd.Text=gridView1.GetFocusedRowCellValue("AD").ToString();
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLKATEGORI.Find(id);
+            db.TBLKATEGORI.Remove(deger);
+            db.SaveChanges();
+            MessageBox.Show("Kategori Başarıyla Silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLKATEGORI.Find(id);
+            deger.AD = txtAd.Text;
+            db.SaveChanges();
+            MessageBox.Show("Kategori Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
+        }
     }
 }
