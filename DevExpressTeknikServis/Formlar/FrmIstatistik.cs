@@ -30,6 +30,7 @@ namespace DevExpressTeknikServis.Formlar
             labelControl33.Text = db.TBLURUN.Count(x => x.KATEGORI == 4).ToString();
             labelControl25.Text = db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
             labelControl21.Text = db.TBLURUN.Count(x => x.KATEGORI == 3).ToString();
+            labelControl39.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
         }
     }
 }
