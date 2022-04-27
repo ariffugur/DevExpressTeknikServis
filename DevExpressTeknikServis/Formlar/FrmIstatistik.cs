@@ -16,5 +16,12 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        private void FrmIstatistik_Load(object sender, EventArgs e)
+        {
+            labelControl2.Text =db.TBLURUN.Count().ToString();
+            labelControl3.Text =db.TBLKATEGORI.Count().ToString();
+            labelControl5.Text =db.TBLURUN.Sum(x=>x.STOK).ToString();
+        }
     }
 }
