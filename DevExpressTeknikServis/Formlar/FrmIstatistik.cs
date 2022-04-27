@@ -21,9 +21,15 @@ namespace DevExpressTeknikServis.Formlar
         {
             labelControl2.Text =db.TBLURUN.Count().ToString();
             labelControl3.Text =db.TBLKATEGORI.Count().ToString();
+            labelControl5.Text = "10";
             labelControl7.Text =db.TBLURUN.Sum(x=>x.STOK).ToString();
+            labelControl11.Text = (from x in db.TBLURUN orderby x.SATISFIYAT ascending select x.AD).FirstOrDefault();
+            labelControl13.Text=(from x in db.TBLURUN orderby x.SATISFIYAT descending select x.AD).FirstOrDefault();
             labelControl19.Text =(from x  in db.TBLURUN orderby x.STOK descending select x.AD).FirstOrDefault();
             labelControl15.Text =(from x  in db.TBLURUN orderby x.STOK ascending select x.AD).FirstOrDefault();
+            labelControl33.Text = db.TBLURUN.Count(x => x.KATEGORI == 4).ToString();
+            labelControl25.Text = db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
+            labelControl21.Text = db.TBLURUN.Count(x => x.KATEGORI == 3).ToString();
         }
     }
 }
