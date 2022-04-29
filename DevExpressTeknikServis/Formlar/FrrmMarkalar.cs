@@ -30,6 +30,17 @@ namespace DevExpressTeknikServis.Formlar
             labelControl3.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
             labelControl7.Text = (from x in db.TBLURUN orderby x.SATISFIYAT descending select x.MARKA).FirstOrDefault();
             chartControl1.Series["Series 1"].Points.AddPoint("Siemens", 4);
+            chartControl1.Series["Series 1"].Points.AddPoint("Arçelik", 6);
+            chartControl1.Series["Series 1"].Points.AddPoint("Beko", 2);
+            chartControl1.Series["Series 1"].Points.AddPoint("toshiba", 1);
+            chartControl1.Series["Series 1"].Points.AddPoint("Lenovo", 2);
+            chartControl1.Series[0].LegendTextPattern = "{A}: {V:F1}";
+
+            chartControl2.Series["Kategoriler"].Points.AddPoint("Beyaz Eşya", 4);
+            chartControl2.Series["Kategoriler"].Points.AddPoint("Bilgisayar", 3);
+            chartControl2.Series["Kategoriler"].Points.AddPoint("Küçük Ev Aletleri", 6);
+            chartControl2.Series["Kategoriler"].Points.AddPoint("Tv", 7);
+            chartControl2.Series["Kategoriler"].Points.AddPoint("Telefon", 1);
         }
     }
 }
