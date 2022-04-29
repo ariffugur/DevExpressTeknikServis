@@ -26,6 +26,9 @@ namespace DevExpressTeknikServis.Formlar
                 
             });
             gridControl1.DataSource = degerler.ToList();
+            labelControl2.Text = db.TBLURUN.Count().ToString();
+            labelControl3.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
+            labelControl7.Text = (from x in db.TBLURUN orderby x.SATISFIYAT descending select x.MARKA).FirstOrDefault();
         }
     }
 }

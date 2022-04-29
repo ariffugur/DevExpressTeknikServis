@@ -108,7 +108,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
             this.panel2.Controls.Add(this.labelControl3);
             this.panel2.Controls.Add(this.labelControl4);
-            this.panel2.Location = new System.Drawing.Point(1094, -2);
+            this.panel2.Location = new System.Drawing.Point(1365, -2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(265, 177);
             this.panel2.TabIndex = 5;
@@ -142,7 +142,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.panel3.Controls.Add(this.labelControl5);
             this.panel3.Controls.Add(this.labelControl6);
-            this.panel3.Location = new System.Drawing.Point(1365, -2);
+            this.panel3.Location = new System.Drawing.Point(1094, -2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(265, 177);
             this.panel3.TabIndex = 5;
@@ -155,9 +155,9 @@
             this.labelControl5.Appearance.Options.UseForeColor = true;
             this.labelControl5.Location = new System.Drawing.Point(10, 79);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(60, 47);
+            this.labelControl5.Size = new System.Drawing.Size(82, 47);
             this.labelControl5.TabIndex = 1;
-            this.labelControl5.Text = "584";
+            this.labelControl5.Text = "Beko";
             // 
             // labelControl6
             // 
@@ -189,9 +189,9 @@
             this.labelControl7.Appearance.Options.UseForeColor = true;
             this.labelControl7.Location = new System.Drawing.Point(10, 79);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(60, 47);
+            this.labelControl7.Size = new System.Drawing.Size(138, 47);
             this.labelControl7.TabIndex = 1;
-            this.labelControl7.Text = "584";
+            this.labelControl7.Text = "Monster";
             // 
             // labelControl8
             // 
