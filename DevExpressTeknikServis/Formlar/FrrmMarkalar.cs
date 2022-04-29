@@ -29,6 +29,7 @@ namespace DevExpressTeknikServis.Formlar
             labelControl2.Text = db.TBLURUN.Count().ToString();
             labelControl3.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
             labelControl7.Text = (from x in db.TBLURUN orderby x.SATISFIYAT descending select x.MARKA).FirstOrDefault();
+            chartControl1.Series["Series 1"].Points.AddPoint("Siemens", 4);
         }
     }
 }
