@@ -51,5 +51,12 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnMarkaIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrrmMarkalar fr = new Formlar.FrrmMarkalar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
