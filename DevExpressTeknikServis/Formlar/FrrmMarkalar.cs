@@ -19,7 +19,14 @@ namespace DevExpressTeknikServis.Formlar
         DbTeknikServisEntities db=new DbTeknikServisEntities();
         private void FrrmMarkalar_Load(object sender, EventArgs e)
         {
-
+            var degerler = db.TBLURUN.OrderBy(x => x.MARKA).GroupBy(y => y.MARKA).Select(z =>new
+            {
+                Marka=z.Key,
+                Toplam=z.Count()
+                
+            });
+            gridControl1.DataSource = degerler.ToList();
         }
     }
 }
+ 
