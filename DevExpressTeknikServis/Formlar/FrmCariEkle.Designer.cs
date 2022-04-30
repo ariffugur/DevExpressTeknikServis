@@ -82,6 +82,8 @@
             this.pictureEdit16 = new DevExpress.XtraEditors.PictureEdit();
             this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit17 = new DevExpress.XtraEditors.PictureEdit();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.ımageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
             ((System.ComponentModel.ISupportInitialize)(this.txtSatisFiyati.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtStok.Properties)).BeginInit();
@@ -120,12 +122,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit16.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit17.Properties)).BeginInit();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ımageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVazgec
             // 
             this.btnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVazgec.ImageOptions.Image")));
-            this.btnVazgec.Location = new System.Drawing.Point(643, 388);
+            this.btnVazgec.Location = new System.Drawing.Point(752, 337);
             this.btnVazgec.Name = "btnVazgec";
             this.btnVazgec.Size = new System.Drawing.Size(108, 38);
             this.btnVazgec.TabIndex = 40;
@@ -134,7 +138,7 @@
             // btnKaydet
             // 
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
-            this.btnKaydet.Location = new System.Drawing.Point(493, 388);
+            this.btnKaydet.Location = new System.Drawing.Point(602, 337);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(108, 38);
             this.btnKaydet.TabIndex = 39;
@@ -144,7 +148,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(132, 267);
+            this.panel6.Location = new System.Drawing.Point(504, 214);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(220, 3);
             this.panel6.TabIndex = 36;
@@ -152,7 +156,7 @@
             // txtSatisFiyati
             // 
             this.txtSatisFiyati.EditValue = "İl";
-            this.txtSatisFiyati.Location = new System.Drawing.Point(132, 244);
+            this.txtSatisFiyati.Location = new System.Drawing.Point(504, 191);
             this.txtSatisFiyati.Name = "txtSatisFiyati";
             this.txtSatisFiyati.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtSatisFiyati.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -168,7 +172,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(132, 305);
+            this.panel5.Location = new System.Drawing.Point(504, 252);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(220, 3);
             this.panel5.TabIndex = 35;
@@ -176,7 +180,7 @@
             // pictureEdit6
             // 
             this.pictureEdit6.EditValue = ((object)(resources.GetObject("pictureEdit6.EditValue")));
-            this.pictureEdit6.Location = new System.Drawing.Point(94, 238);
+            this.pictureEdit6.Location = new System.Drawing.Point(466, 185);
             this.pictureEdit6.Name = "pictureEdit6";
             this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit6.Properties.Appearance.Options.UseBackColor = true;
@@ -188,7 +192,7 @@
             // txtStok
             // 
             this.txtStok.EditValue = "İlçe";
-            this.txtStok.Location = new System.Drawing.Point(132, 282);
+            this.txtStok.Location = new System.Drawing.Point(504, 229);
             this.txtStok.Name = "txtStok";
             this.txtStok.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtStok.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -203,7 +207,7 @@
             // pictureEdit5
             // 
             this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
-            this.pictureEdit5.Location = new System.Drawing.Point(94, 276);
+            this.pictureEdit5.Location = new System.Drawing.Point(466, 223);
             this.pictureEdit5.Name = "pictureEdit5";
             this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
@@ -216,7 +220,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(132, 229);
+            this.panel4.Location = new System.Drawing.Point(504, 176);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 3);
             this.panel4.TabIndex = 30;
@@ -224,7 +228,7 @@
             // txtAlisFiyati
             // 
             this.txtAlisFiyati.EditValue = "Mail";
-            this.txtAlisFiyati.Location = new System.Drawing.Point(132, 206);
+            this.txtAlisFiyati.Location = new System.Drawing.Point(504, 153);
             this.txtAlisFiyati.Name = "txtAlisFiyati";
             this.txtAlisFiyati.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtAlisFiyati.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -239,7 +243,7 @@
             // pictureEdit4
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
-            this.pictureEdit4.Location = new System.Drawing.Point(94, 200);
+            this.pictureEdit4.Location = new System.Drawing.Point(466, 147);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
@@ -252,7 +256,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(132, 153);
+            this.panel3.Location = new System.Drawing.Point(504, 100);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(220, 3);
             this.panel3.TabIndex = 27;
@@ -260,7 +264,7 @@
             // txtMarka
             // 
             this.txtMarka.EditValue = "Soyad";
-            this.txtMarka.Location = new System.Drawing.Point(132, 130);
+            this.txtMarka.Location = new System.Drawing.Point(504, 77);
             this.txtMarka.Name = "txtMarka";
             this.txtMarka.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtMarka.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -275,7 +279,7 @@
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(94, 124);
+            this.pictureEdit3.Location = new System.Drawing.Point(466, 71);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -288,7 +292,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(132, 191);
+            this.panel2.Location = new System.Drawing.Point(504, 138);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 3);
             this.panel2.TabIndex = 24;
@@ -296,7 +300,7 @@
             // txtKategori
             // 
             this.txtKategori.EditValue = "Telefon";
-            this.txtKategori.Location = new System.Drawing.Point(132, 168);
+            this.txtKategori.Location = new System.Drawing.Point(504, 115);
             this.txtKategori.Name = "txtKategori";
             this.txtKategori.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtKategori.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -311,7 +315,7 @@
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(94, 162);
+            this.pictureEdit2.Location = new System.Drawing.Point(466, 109);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -324,7 +328,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(132, 115);
+            this.panel1.Location = new System.Drawing.Point(504, 62);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 3);
             this.panel1.TabIndex = 21;
@@ -332,7 +336,7 @@
             // txtUrunAdi
             // 
             this.txtUrunAdi.EditValue = "Ad";
-            this.txtUrunAdi.Location = new System.Drawing.Point(132, 92);
+            this.txtUrunAdi.Location = new System.Drawing.Point(504, 39);
             this.txtUrunAdi.Name = "txtUrunAdi";
             this.txtUrunAdi.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtUrunAdi.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -347,7 +351,7 @@
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(94, 86);
+            this.pictureEdit1.Location = new System.Drawing.Point(466, 33);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -359,7 +363,7 @@
             // textEdit3
             // 
             this.textEdit3.EditValue = "Banka";
-            this.textEdit3.Location = new System.Drawing.Point(529, 92);
+            this.textEdit3.Location = new System.Drawing.Point(771, 39);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -374,7 +378,7 @@
             // pictureEdit9
             // 
             this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
-            this.pictureEdit9.Location = new System.Drawing.Point(491, 86);
+            this.pictureEdit9.Location = new System.Drawing.Point(733, 33);
             this.pictureEdit9.Name = "pictureEdit9";
             this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
@@ -386,7 +390,7 @@
             // textEdit1
             // 
             this.textEdit1.EditValue = "Vergi No";
-            this.textEdit1.Location = new System.Drawing.Point(529, 130);
+            this.textEdit1.Location = new System.Drawing.Point(771, 77);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -401,7 +405,7 @@
             // pictureEdit7
             // 
             this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(491, 124);
+            this.pictureEdit7.Location = new System.Drawing.Point(733, 71);
             this.pictureEdit7.Name = "pictureEdit7";
             this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
@@ -413,7 +417,7 @@
             // textEdit2
             // 
             this.textEdit2.EditValue = "Statü";
-            this.textEdit2.Location = new System.Drawing.Point(529, 168);
+            this.textEdit2.Location = new System.Drawing.Point(771, 115);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -428,7 +432,7 @@
             // pictureEdit8
             // 
             this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
-            this.pictureEdit8.Location = new System.Drawing.Point(491, 162);
+            this.pictureEdit8.Location = new System.Drawing.Point(733, 109);
             this.pictureEdit8.Name = "pictureEdit8";
             this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
@@ -440,7 +444,7 @@
             // textEdit4
             // 
             this.textEdit4.EditValue = "Adres";
-            this.textEdit4.Location = new System.Drawing.Point(529, 206);
+            this.textEdit4.Location = new System.Drawing.Point(771, 153);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -455,7 +459,7 @@
             // pictureEdit10
             // 
             this.pictureEdit10.EditValue = ((object)(resources.GetObject("pictureEdit10.EditValue")));
-            this.pictureEdit10.Location = new System.Drawing.Point(491, 201);
+            this.pictureEdit10.Location = new System.Drawing.Point(733, 148);
             this.pictureEdit10.Name = "pictureEdit10";
             this.pictureEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit10.Properties.Appearance.Options.UseBackColor = true;
@@ -469,7 +473,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Location = new System.Drawing.Point(530, 115);
+            this.panel7.Location = new System.Drawing.Point(772, 62);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(220, 3);
             this.panel7.TabIndex = 36;
@@ -478,7 +482,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Location = new System.Drawing.Point(530, 153);
+            this.panel8.Location = new System.Drawing.Point(772, 100);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(220, 3);
             this.panel8.TabIndex = 36;
@@ -487,7 +491,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(530, 191);
+            this.panel9.Location = new System.Drawing.Point(772, 138);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(220, 3);
             this.panel9.TabIndex = 36;
@@ -502,7 +506,7 @@
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Controls.Add(this.textEdit5);
             this.panel10.Controls.Add(this.pictureEdit11);
-            this.panel10.Location = new System.Drawing.Point(530, 230);
+            this.panel10.Location = new System.Drawing.Point(772, 177);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(220, 3);
             this.panel10.TabIndex = 36;
@@ -628,7 +632,7 @@
             this.panel14.Controls.Add(this.panel17);
             this.panel14.Controls.Add(this.textEdit10);
             this.panel14.Controls.Add(this.pictureEdit16);
-            this.panel14.Location = new System.Drawing.Point(529, 268);
+            this.panel14.Location = new System.Drawing.Point(771, 215);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(220, 3);
             this.panel14.TabIndex = 53;
@@ -748,7 +752,7 @@
             // textEdit11
             // 
             this.textEdit11.EditValue = "Açıklama";
-            this.textEdit11.Location = new System.Drawing.Point(529, 245);
+            this.textEdit11.Location = new System.Drawing.Point(771, 192);
             this.textEdit11.Name = "textEdit11";
             this.textEdit11.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -764,7 +768,7 @@
             // pictureEdit17
             // 
             this.pictureEdit17.EditValue = ((object)(resources.GetObject("pictureEdit17.EditValue")));
-            this.pictureEdit17.Location = new System.Drawing.Point(492, 239);
+            this.pictureEdit17.Location = new System.Drawing.Point(734, 186);
             this.pictureEdit17.Name = "pictureEdit17";
             this.pictureEdit17.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit17.Properties.Appearance.Options.UseBackColor = true;
@@ -773,12 +777,36 @@
             this.pictureEdit17.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit17.TabIndex = 54;
             // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.ımageSlider1);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(460, 450);
+            this.panel18.TabIndex = 56;
+            // 
+            // ımageSlider1
+            // 
+            this.ımageSlider1.CurrentImageIndex = 0;
+            this.ımageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("ımageSlider1.Images"))));
+            this.ımageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("ımageSlider1.Images1"))));
+            this.ımageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("ımageSlider1.Images2"))));
+            this.ımageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("ımageSlider1.Images3"))));
+            this.ımageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("ımageSlider1.Images4"))));
+            this.ımageSlider1.Location = new System.Drawing.Point(58, 109);
+            this.ımageSlider1.Name = "ımageSlider1";
+            this.ımageSlider1.Size = new System.Drawing.Size(331, 226);
+            this.ımageSlider1.TabIndex = 0;
+            this.ımageSlider1.Text = "ımageSlider1";
+            // 
             // FrmCariEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(993, 450);
+            this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.textEdit11);
             this.Controls.Add(this.pictureEdit17);
@@ -816,6 +844,7 @@
             this.Controls.Add(this.pictureEdit1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCariEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCariEkle";
             ((System.ComponentModel.ISupportInitialize)(this.txtSatisFiyati.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
@@ -855,6 +884,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit16.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit17.Properties)).EndInit();
+            this.panel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ımageSlider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -914,5 +945,7 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit16;
         private DevExpress.XtraEditors.TextEdit textEdit11;
         private DevExpress.XtraEditors.PictureEdit pictureEdit17;
+        private System.Windows.Forms.Panel panel18;
+        private DevExpress.XtraEditors.Controls.ImageSlider ımageSlider1;
     }
 }

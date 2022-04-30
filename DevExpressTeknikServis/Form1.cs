@@ -72,5 +72,11 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmCariEkle fr = new Formlar.FrmCariEkle();
+            fr.Show();
+        }
     }
 }
