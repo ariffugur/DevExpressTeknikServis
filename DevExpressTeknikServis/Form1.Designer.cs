@@ -218,8 +218,8 @@
             // 
             this.btnMarkaIstatistik.Caption = "Marka İstatistikleri";
             this.btnMarkaIstatistik.Id = 7;
-            this.btnMarkaIstatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.btnMarkaIstatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.btnMarkaIstatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMarkaIstatistik.ImageOptions.Image")));
+            this.btnMarkaIstatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMarkaIstatistik.ImageOptions.LargeImage")));
             this.btnMarkaIstatistik.Name = "btnMarkaIstatistik";
             this.btnMarkaIstatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMarkaIstatistik_ItemClick);
             // 
@@ -278,6 +278,7 @@
             this.barButtonItem13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
             this.barButtonItem13.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
             this.barButtonItem13.Name = "barButtonItem13";
+            this.barButtonItem13.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem13_ItemClick);
             // 
             // barButtonItem14
             // 
