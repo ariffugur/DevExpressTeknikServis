@@ -75,6 +75,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmCariIller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmCariIller.Designer.cs">
+      <DependentUpon>FrmCariIller.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmCariListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmCariIller.resx">
+      <DependentUpon>FrmCariIller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmCariListesi.resx">
       <DependentUpon>FrmCariListesi.cs</DependentUpon>

@@ -351,6 +351,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmCariListesi";
             this.Text = "FrmCariListesi";
+            this.Load += new System.EventHandler(this.FrmCariListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlisFiyat.Properties)).EndInit();
