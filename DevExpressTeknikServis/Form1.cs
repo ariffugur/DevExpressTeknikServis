@@ -19,7 +19,7 @@ namespace DevExpressTeknikServis
 
         private void btnUrunListesiFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmUrunListesi fr=new Formlar.FrmUrunListesi();
+            Formlar.FrmUrunListesi fr = new Formlar.FrmUrunListesi();
             fr.MdiParent = this;
             fr.Show();
         }
@@ -40,7 +40,7 @@ namespace DevExpressTeknikServis
 
         private void btnYeniKategori_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmYeniKategori fr=new Formlar.FrmYeniKategori();
+            Formlar.FrmYeniKategori fr = new Formlar.FrmYeniKategori();
             fr.Show();
 
         }
@@ -76,6 +76,13 @@ namespace DevExpressTeknikServis
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.FrmCariEkle fr = new Formlar.FrmCariEkle();
+            fr.Show();
+        }
+
+        private void btnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmDepartman fr = new Formlar.FrmDepartman();
+            fr.MdiParent = this;
             fr.Show();
         }
     }

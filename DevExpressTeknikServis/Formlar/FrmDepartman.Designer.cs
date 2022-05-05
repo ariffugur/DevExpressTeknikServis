@@ -50,10 +50,10 @@
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtUrunAdi = new DevExpress.XtraEditors.TextEdit();
+            this.txtAd = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTxtBoxAciklama = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,7 +61,7 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.SuspendLayout();
@@ -273,6 +273,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(168, 33);
             this.btnKaydet.TabIndex = 23;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // labelControl5
             // 
@@ -282,16 +283,16 @@
             this.labelControl5.TabIndex = 19;
             this.labelControl5.Text = "Açıklama:";
             // 
-            // txtUrunAdi
+            // txtAd
             // 
-            this.txtUrunAdi.Location = new System.Drawing.Point(130, 107);
-            this.txtUrunAdi.Name = "txtUrunAdi";
-            this.txtUrunAdi.Size = new System.Drawing.Size(168, 20);
-            this.txtUrunAdi.TabIndex = 12;
+            this.txtAd.Location = new System.Drawing.Point(130, 107);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(168, 20);
+            this.txtAd.TabIndex = 12;
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.richTextBox1);
+            this.groupControl1.Controls.Add(this.richTxtBoxAciklama);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.btnListele);
@@ -299,7 +300,7 @@
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnKaydet);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.txtUrunAdi);
+            this.groupControl1.Controls.Add(this.txtAd);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(1496, -1);
             this.groupControl1.Name = "groupControl1";
@@ -315,13 +316,13 @@
             this.labelControl1.TabIndex = 11;
             this.labelControl1.Text = "Ad:";
             // 
-            // richTextBox1
+            // richTxtBoxAciklama
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(131, 136);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(167, 127);
-            this.richTextBox1.TabIndex = 29;
-            this.richTextBox1.Text = "";
+            this.richTxtBoxAciklama.Location = new System.Drawing.Point(131, 136);
+            this.richTxtBoxAciklama.Name = "richTxtBoxAciklama";
+            this.richTxtBoxAciklama.Size = new System.Drawing.Size(167, 127);
+            this.richTxtBoxAciklama.TabIndex = 29;
+            this.richTxtBoxAciklama.Text = "";
             // 
             // FrmDepartman
             // 
@@ -348,7 +349,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -378,9 +379,9 @@
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit txtUrunAdi;
+        private DevExpress.XtraEditors.TextEdit txtAd;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTxtBoxAciklama;
     }
 }
