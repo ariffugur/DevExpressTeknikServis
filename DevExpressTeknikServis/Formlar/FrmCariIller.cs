@@ -17,17 +17,14 @@ namespace DevExpressTeknikServis.Formlar
             InitializeComponent();
         }
         DbTeknikServisEntities db = new DbTeknikServisEntities();
-        SqlConnection baglanti=new SqlConnection(@"Data Source=DESKTOP-SO1A66F;Initial Catalog=DbTeknikServis;Integrated Security=True");
+        SqlConnection baglanti=new SqlConnection(@"Data Source=DESKTOP-4QQ4ANU;Initial Catalog=DbTeknikServis;Integrated Security=True");
         private void FrmCariIller_Load(object sender, EventArgs e)
         {
             chartControl1.Series[0].LegendTextPattern = "{A}: {V:F1}";
-            chartControl1.Series["Series 1"].Points.AddPoint("Manisa", 23);
-            chartControl1.Series["Series 1"].Points.AddPoint("İzmir", 56);
-            chartControl1.Series["Series 1"].Points.AddPoint("Aydın", 18);
-            chartControl1.Series["Series 1"].Points.AddPoint("Antalya", 34);
+         
             gridControl1.DataSource = db.TBLCARI.OrderBy(x => x.IL).GroupBy(y => y.IL).Select(z => new
             {
-                İL=z.Key, Toplam=z.Count() }).ToList();
+                IL=z.Key, Toplam=z.Count() }).ToList();
             baglanti.Open();
             SqlCommand komut = new SqlCommand("select IL,COUNT(*) FROM TBLCARI group by IL", baglanti);
             SqlDataReader dr=komut.ExecuteReader();

@@ -17,25 +17,25 @@ namespace DevExpressTeknikServis.Formlar
             InitializeComponent();
         }
 
-     
-
-        private void pictureEdit10_EditValueChanged(object sender, EventArgs e)
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        private void FrmCariEkle_Load(object sender, EventArgs e)
         {
 
         }
 
-    
-
-        private void textEdit11_EditValueChanged(object sender, EventArgs e)
+        private void btnKaydet_Click(object sender, EventArgs e)
         {
+            TBLCARI t=new TBLCARI();
+            t.AD = txtAd.Text;
+            t.SOYAD = txtSoyad.Text;
+            t.IL = txtIl.Text;
+            t.ILCE= txtIlce.Text;
+            db.TBLCARI.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Yeni Cari Başarılı Bir Şekilde Eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
-        private void panel14_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-     
     }
 }

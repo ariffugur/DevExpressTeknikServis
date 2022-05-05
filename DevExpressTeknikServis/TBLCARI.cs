@@ -27,12 +27,13 @@ namespace DevExpressTeknikServis
         public string SOYAD { get; set; }
         public string TELEFON { get; set; }
         public string MAIL { get; set; }
-        public Nullable<byte> IL { get; set; }
+        public string IL { get; set; }
         public string BANKA { get; set; }
         public string VERGIDAIRESI { get; set; }
         public string VERGINO { get; set; }
         public string STATU { get; set; }
         public byte[] ADRES { get; set; }
+        public string ILCE { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLFATURABILGI> TBLFATURABILGI { get; set; }
