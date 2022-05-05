@@ -96,6 +96,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // panel1
             // 
@@ -246,6 +247,7 @@
             this.btnListele.Size = new System.Drawing.Size(168, 33);
             this.btnListele.TabIndex = 26;
             this.btnListele.Text = "Listele";
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnSil
             // 
@@ -255,6 +257,7 @@
             this.btnSil.Size = new System.Drawing.Size(168, 33);
             this.btnSil.TabIndex = 25;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -264,6 +267,7 @@
             this.btnGuncelle.Size = new System.Drawing.Size(168, 33);
             this.btnGuncelle.TabIndex = 24;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnKaydet
             // 

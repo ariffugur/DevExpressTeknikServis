@@ -23,8 +23,7 @@ namespace DevExpressTeknikServis.Formlar
                            select new
                            {
                                u.ID,
-                               u.AD,
-                               u.ACIKLAMA
+                               u.AD
                            };
 
             gridControl1.DataSource = degerler.ToList();
@@ -46,6 +45,46 @@ namespace DevExpressTeknikServis.Formlar
             {
                 MessageBox.Show("Departman Kaydedildilemedi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLDEPARTMAN.Find(id);
+            db.TBLDEPARTMAN.Remove(deger);
+            db.SaveChanges();
+            MessageBox.Show("Departman Başarıyla Silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLDEPARTMAN.Find(id);
+            deger.AD = txtAd.Text;
+            db.SaveChanges();
+            MessageBox.Show("Departman Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+
+            var degerler = from u in db.TBLDEPARTMAN
+                           select new
+                           {
+                               u.ID,
+                               u.AD
+                           };
+
+            gridControl1.DataSource = degerler.ToList();
+
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            txtAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
+          //  richTxtBoxAciklama.Text = gridView1.GetFocusedRowCellValue("ACIKLAMA").ToString();
         }
     }
 }
