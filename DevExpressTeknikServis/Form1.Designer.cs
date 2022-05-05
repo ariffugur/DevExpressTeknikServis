@@ -56,7 +56,7 @@
             this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
             this.btnDepartmanListesi = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnYeniDepartman = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
@@ -132,7 +132,7 @@
             this.barButtonItem22,
             this.barButtonItem23,
             this.btnDepartmanListesi,
-            this.barButtonItem25,
+            this.btnYeniDepartman,
             this.barButtonItem26,
             this.barButtonItem27,
             this.barButtonItem28,
@@ -366,18 +366,19 @@
             // 
             this.btnDepartmanListesi.Caption = "Departman Listesi";
             this.btnDepartmanListesi.Id = 25;
-            this.btnDepartmanListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem24.ImageOptions.Image")));
-            this.btnDepartmanListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem24.ImageOptions.LargeImage")));
+            this.btnDepartmanListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDepartmanListesi.ImageOptions.Image")));
+            this.btnDepartmanListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDepartmanListesi.ImageOptions.LargeImage")));
             this.btnDepartmanListesi.Name = "btnDepartmanListesi";
             this.btnDepartmanListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDepartmanListesi_ItemClick);
             // 
-            // barButtonItem25
+            // btnYeniDepartman
             // 
-            this.barButtonItem25.Caption = "Yeni Departman";
-            this.barButtonItem25.Id = 26;
-            this.barButtonItem25.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.ImageOptions.Image")));
-            this.barButtonItem25.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.ImageOptions.LargeImage")));
-            this.barButtonItem25.Name = "barButtonItem25";
+            this.btnYeniDepartman.Caption = "Yeni Departman";
+            this.btnYeniDepartman.Id = 26;
+            this.btnYeniDepartman.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniDepartman.ImageOptions.Image")));
+            this.btnYeniDepartman.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYeniDepartman.ImageOptions.LargeImage")));
+            this.btnYeniDepartman.Name = "btnYeniDepartman";
+            this.btnYeniDepartman.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYeniDepartman_ItemClick);
             // 
             // barButtonItem26
             // 
@@ -601,7 +602,7 @@
             // ribbonPageGroup15
             // 
             this.ribbonPageGroup15.ItemLinks.Add(this.btnDepartmanListesi);
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem25);
+            this.ribbonPageGroup15.ItemLinks.Add(this.btnYeniDepartman);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.Text = "ribbonPageGroup15";
             // 
@@ -748,7 +749,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem22;
         private DevExpress.XtraBars.BarButtonItem barButtonItem23;
         private DevExpress.XtraBars.BarButtonItem btnDepartmanListesi;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem25;
+        private DevExpress.XtraBars.BarButtonItem btnYeniDepartman;
         private DevExpress.XtraBars.BarButtonItem barButtonItem26;
         private DevExpress.XtraBars.BarButtonItem barButtonItem27;
         private DevExpress.XtraBars.BarButtonItem barButtonItem28;

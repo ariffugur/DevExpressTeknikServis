@@ -85,5 +85,12 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnYeniDepartman_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmYeniDepartman fr = new Formlar.FrmYeniDepartman();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
