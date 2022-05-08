@@ -713,6 +713,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmPersonel";
             this.Text = "FrmPersonel";
+            this.Load += new System.EventHandler(this.FrmPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
