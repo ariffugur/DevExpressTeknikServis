@@ -92,5 +92,12 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmPersonel fr = new Formlar.FrmPersonel();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
