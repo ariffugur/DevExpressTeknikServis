@@ -116,6 +116,12 @@
     <Compile Include="Formlar\FrmKategori.Designer.cs">
       <DependentUpon>FrmKategori.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmUrunListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmKategori.resx">
       <DependentUpon>FrmKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmUrunListesi.resx">
       <DependentUpon>FrmUrunListesi.cs</DependentUpon>
