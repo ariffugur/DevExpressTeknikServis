@@ -70,6 +70,7 @@
             this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNotListesi = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -145,9 +146,10 @@
             this.barButtonItem35,
             this.barButtonItem36,
             this.barButtonItem37,
-            this.barButtonItem38});
+            this.barButtonItem38,
+            this.btnNotListesi});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 40;
+            this.ribbonControl1.MaxItemId = 41;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -402,8 +404,8 @@
             // 
             this.btnKurlar.Caption = "Döviz Kurları";
             this.btnKurlar.Id = 29;
-            this.btnKurlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.Image")));
-            this.btnKurlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.LargeImage")));
+            this.btnKurlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKurlar.ImageOptions.Image")));
+            this.btnKurlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKurlar.ImageOptions.LargeImage")));
             this.btnKurlar.Name = "btnKurlar";
             this.btnKurlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKurlar_ItemClick);
             // 
@@ -411,8 +413,8 @@
             // 
             this.btnYoutube.Caption = "Youtube";
             this.btnYoutube.Id = 30;
-            this.btnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.Image")));
-            this.btnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.LargeImage")));
+            this.btnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYoutube.ImageOptions.Image")));
+            this.btnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYoutube.ImageOptions.LargeImage")));
             this.btnYoutube.Name = "btnYoutube";
             this.btnYoutube.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYoutube_ItemClick);
             // 
@@ -428,8 +430,8 @@
             // 
             this.btnWord.Caption = "Word";
             this.btnWord.Id = 32;
-            this.btnWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.ImageOptions.Image")));
-            this.btnWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.ImageOptions.LargeImage")));
+            this.btnWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnWord.ImageOptions.Image")));
+            this.btnWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnWord.ImageOptions.LargeImage")));
             this.btnWord.Name = "btnWord";
             this.btnWord.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnWord_ItemClick);
             // 
@@ -437,8 +439,8 @@
             // 
             this.btnExcel.Caption = "Excel";
             this.btnExcel.Id = 33;
-            this.btnExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem32.ImageOptions.Image")));
-            this.btnExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem32.ImageOptions.LargeImage")));
+            this.btnExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.ImageOptions.Image")));
+            this.btnExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnExcel.ImageOptions.LargeImage")));
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnExcel_ItemClick);
             // 
@@ -489,6 +491,15 @@
             this.barButtonItem38.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.Image")));
             this.barButtonItem38.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.LargeImage")));
             this.barButtonItem38.Name = "barButtonItem38";
+            // 
+            // btnNotListesi
+            // 
+            this.btnNotListesi.Caption = "Ajanda";
+            this.btnNotListesi.Id = 40;
+            this.btnNotListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNotListesi.ImageOptions.Image")));
+            this.btnNotListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnNotListesi.ImageOptions.LargeImage")));
+            this.btnNotListesi.Name = "btnNotListesi";
+            this.btnNotListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNotListesi_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -622,6 +633,7 @@
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.btnHesapMakinesi);
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnNotListesi);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem27);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnKurlar);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnYoutube);
@@ -775,6 +787,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem38;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage10;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
+        private DevExpress.XtraBars.BarButtonItem btnNotListesi;
     }
 }
 

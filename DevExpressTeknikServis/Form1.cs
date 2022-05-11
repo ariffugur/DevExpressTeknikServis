@@ -128,5 +128,12 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnNotListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmNotlar fr = new Formlar.FrmNotlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
