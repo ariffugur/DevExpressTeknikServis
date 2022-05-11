@@ -60,7 +60,7 @@
             this.btnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
             this.btnKurlar = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnYoutube = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
             this.btnWord = new DevExpress.XtraBars.BarButtonItem();
             this.btnExcel = new DevExpress.XtraBars.BarButtonItem();
@@ -136,7 +136,7 @@
             this.btnHesapMakinesi,
             this.barButtonItem27,
             this.btnKurlar,
-            this.barButtonItem29,
+            this.btnYoutube,
             this.barButtonItem30,
             this.btnWord,
             this.btnExcel,
@@ -407,13 +407,14 @@
             this.btnKurlar.Name = "btnKurlar";
             this.btnKurlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKurlar_ItemClick);
             // 
-            // barButtonItem29
+            // btnYoutube
             // 
-            this.barButtonItem29.Caption = "Haberler";
-            this.barButtonItem29.Id = 30;
-            this.barButtonItem29.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.Image")));
-            this.barButtonItem29.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.LargeImage")));
-            this.barButtonItem29.Name = "barButtonItem29";
+            this.btnYoutube.Caption = "Youtube";
+            this.btnYoutube.Id = 30;
+            this.btnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.Image")));
+            this.btnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.LargeImage")));
+            this.btnYoutube.Name = "btnYoutube";
+            this.btnYoutube.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYoutube_ItemClick);
             // 
             // barButtonItem30
             // 
@@ -623,7 +624,7 @@
             this.ribbonPageGroup7.ItemLinks.Add(this.btnHesapMakinesi);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem27);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnKurlar);
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem29);
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnYoutube);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem30);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnWord);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnExcel);
@@ -758,7 +759,7 @@
         private DevExpress.XtraBars.BarButtonItem btnHesapMakinesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem27;
         private DevExpress.XtraBars.BarButtonItem btnKurlar;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem29;
+        private DevExpress.XtraBars.BarButtonItem btnYoutube;
         private DevExpress.XtraBars.BarButtonItem barButtonItem30;
         private DevExpress.XtraBars.BarButtonItem btnWord;
         private DevExpress.XtraBars.BarButtonItem btnExcel;

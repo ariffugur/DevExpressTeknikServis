@@ -121,5 +121,12 @@ namespace DevExpressTeknikServis
         {
             System.Diagnostics.Process.Start("excel");
         }
+
+        private void btnYoutube_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmYoutube fr = new Formlar.FrmYoutube();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
