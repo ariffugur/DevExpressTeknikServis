@@ -59,7 +59,7 @@
             this.btnYeniDepartman = new DevExpress.XtraBars.BarButtonItem();
             this.btnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnKurlar = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
@@ -135,7 +135,7 @@
             this.btnYeniDepartman,
             this.btnHesapMakinesi,
             this.barButtonItem27,
-            this.barButtonItem28,
+            this.btnKurlar,
             this.barButtonItem29,
             this.barButtonItem30,
             this.barButtonItem31,
@@ -385,8 +385,8 @@
             // 
             this.btnHesapMakinesi.Caption = "Hesap Makinesi";
             this.btnHesapMakinesi.Id = 27;
-            this.btnHesapMakinesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.Image")));
-            this.btnHesapMakinesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem26.ImageOptions.LargeImage")));
+            this.btnHesapMakinesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHesapMakinesi.ImageOptions.Image")));
+            this.btnHesapMakinesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHesapMakinesi.ImageOptions.LargeImage")));
             this.btnHesapMakinesi.Name = "btnHesapMakinesi";
             this.btnHesapMakinesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem26_ItemClick);
             // 
@@ -398,13 +398,14 @@
             this.barButtonItem27.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem27.ImageOptions.LargeImage")));
             this.barButtonItem27.Name = "barButtonItem27";
             // 
-            // barButtonItem28
+            // btnKurlar
             // 
-            this.barButtonItem28.Caption = "Döviz Kurları";
-            this.barButtonItem28.Id = 29;
-            this.barButtonItem28.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.Image")));
-            this.barButtonItem28.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.LargeImage")));
-            this.barButtonItem28.Name = "barButtonItem28";
+            this.btnKurlar.Caption = "Döviz Kurları";
+            this.btnKurlar.Id = 29;
+            this.btnKurlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.Image")));
+            this.btnKurlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.LargeImage")));
+            this.btnKurlar.Name = "btnKurlar";
+            this.btnKurlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKurlar_ItemClick);
             // 
             // barButtonItem29
             // 
@@ -619,7 +620,7 @@
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.btnHesapMakinesi);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem27);
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem28);
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnKurlar);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem29);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem30);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem31);
@@ -754,7 +755,7 @@
         private DevExpress.XtraBars.BarButtonItem btnYeniDepartman;
         private DevExpress.XtraBars.BarButtonItem btnHesapMakinesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem27;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem28;
+        private DevExpress.XtraBars.BarButtonItem btnKurlar;
         private DevExpress.XtraBars.BarButtonItem barButtonItem29;
         private DevExpress.XtraBars.BarButtonItem barButtonItem30;
         private DevExpress.XtraBars.BarButtonItem barButtonItem31;

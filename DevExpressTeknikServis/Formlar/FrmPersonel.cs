@@ -30,6 +30,12 @@ namespace DevExpressTeknikServis.Formlar
                            };
 
             gridControl1.DataSource = degerler.ToList();
+            lookUpEdit1.Properties.DataSource = (from x in db.TBLDEPARTMAN
+                                                select new
+                                                {
+                                                    x.ID,
+                                                    x.AD
+                                                }).ToList();
             
             string ad1, soyad1, ad2, soyad2, ad3, soyad3, ad4, soyad4;
             //1.Personel

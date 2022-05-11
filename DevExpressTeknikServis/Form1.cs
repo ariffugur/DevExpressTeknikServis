@@ -104,5 +104,12 @@ namespace DevExpressTeknikServis
         {
             System.Diagnostics.Process.Start("Calc.exe");
         }
+
+        private void btnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmKurlar fr = new Formlar.FrmKurlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
