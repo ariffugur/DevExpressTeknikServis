@@ -33,7 +33,6 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtBaslik = new DevExpress.XtraEditors.TextEdit();
-            this.txtIcerik = new DevExpress.XtraEditors.TextEdit();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnListele = new DevExpress.XtraEditors.SimpleButton();
@@ -48,16 +47,17 @@
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.txtIcerik = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBaslik.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIcerik.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIcerik.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -93,14 +93,6 @@
             this.txtBaslik.Name = "txtBaslik";
             this.txtBaslik.Size = new System.Drawing.Size(168, 20);
             this.txtBaslik.TabIndex = 12;
-            // 
-            // txtIcerik
-            // 
-            this.txtIcerik.Enabled = false;
-            this.txtIcerik.Location = new System.Drawing.Point(93, 133);
-            this.txtIcerik.Name = "txtIcerik";
-            this.txtIcerik.Size = new System.Drawing.Size(168, 20);
-            this.txtIcerik.TabIndex = 29;
             // 
             // txtId
             // 
@@ -154,6 +146,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(168, 33);
             this.btnKaydet.TabIndex = 23;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // labelControl5
             // 
@@ -165,9 +158,9 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.txtIcerik);
             this.groupControl1.Controls.Add(this.checkEdit1);
             this.groupControl1.Controls.Add(this.labelControl28);
-            this.groupControl1.Controls.Add(this.txtIcerik);
             this.groupControl1.Controls.Add(this.txtId);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.btnListele);
@@ -238,6 +231,13 @@
             this.checkEdit1.Size = new System.Drawing.Size(168, 20);
             this.checkEdit1.TabIndex = 32;
             // 
+            // txtIcerik
+            // 
+            this.txtIcerik.Location = new System.Drawing.Point(93, 129);
+            this.txtIcerik.Name = "txtIcerik";
+            this.txtIcerik.Size = new System.Drawing.Size(168, 20);
+            this.txtIcerik.TabIndex = 33;
+            // 
             // FrmNotlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,10 +250,10 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmNotlar";
             this.Text = "FrmNotlar";
+            this.Load += new System.EventHandler(this.FrmNotlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBaslik.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIcerik.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
@@ -261,6 +261,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIcerik.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,7 +272,6 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.TextEdit txtBaslik;
-        private DevExpress.XtraEditors.TextEdit txtIcerik;
         private DevExpress.XtraEditors.TextEdit txtId;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.SimpleButton btnListele;
@@ -286,5 +286,6 @@
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraEditors.TextEdit txtIcerik;
     }
 }
