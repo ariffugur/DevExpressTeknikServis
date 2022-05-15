@@ -31,7 +31,6 @@
         <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLPERSONEL" />
         <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNKABUL_TBLPERSONEL" />
         <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLURUN" />
-        <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNKABUL_TBLURUN" />
         <AssociationConnector Association="DbTeknikServisModel.FK_TBLURUNTAKIP_TBLURUN" />
       </Diagram>
     </edmx:Diagrams>

@@ -24,14 +24,12 @@ namespace DevExpressTeknikServis.Formlar
                            select new
                            {
                                x.ISLEMID,
-                               x.TBLURUN.AD,
-                               adi = x.TBLCARI.AD,
-                               x.TBLCARI.SOYAD,
-                               personelAd = x.TBLPERSONEL.AD,
-                               personelSoyad = x.TBLPERSONEL.SOYAD,
+                               Cari = x.TBLCARI.AD + x.TBLCARI.SOYAD,
+                               Personel = x.TBLPERSONEL.AD + x.TBLPERSONEL.SOYAD,
                                x.GELISTARIH,
                                x.CIKISTARIH
                            };
+            gridControl1.DataSource = degerler.ToList();
         }
     }
 }

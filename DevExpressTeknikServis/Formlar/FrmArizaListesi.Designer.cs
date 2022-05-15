@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArizaListesi));
-            DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D4 = new DevExpress.XtraCharts.SimpleDiagram3D();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView7 = new DevExpress.XtraCharts.Pie3DSeriesView();
-            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView8 = new DevExpress.XtraCharts.Pie3DSeriesView();
+            DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D5 = new DevExpress.XtraCharts.SimpleDiagram3D();
+            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView9 = new DevExpress.XtraCharts.Pie3DSeriesView();
+            DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView10 = new DevExpress.XtraCharts.Pie3DSeriesView();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.filteringUIContext1 = new DevExpress.Utils.Filtering.FilteringUIContext(this.components);
@@ -61,10 +61,10 @@
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.filteringUIContext1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -99,23 +99,23 @@
             // 
             // chartControl1
             // 
-            simpleDiagram3D4.RotationMatrixSerializable = "0.999906049796322;0;0.0137073549861255;0;0.011963748151904;0.488082107261485;-0.8" +
+            simpleDiagram3D5.RotationMatrixSerializable = "0.999906049796322;0;0.0137073549861255;0;0.011963748151904;0.488082107261485;-0.8" +
     "72715718491048;0;-0.00669031470660935;0.872797718014425;0.488036251848096;0;0;0;" +
     "0;1";
-            this.chartControl1.Diagram = simpleDiagram3D4;
+            this.chartControl1.Diagram = simpleDiagram3D5;
             this.chartControl1.Location = new System.Drawing.Point(0, 131);
             this.chartControl1.Name = "chartControl1";
-            series4.Name = "Series 1";
-            series4.View = pie3DSeriesView7;
+            series5.Name = "Series 1";
+            series5.View = pie3DSeriesView9;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series4};
-            this.chartControl1.SeriesTemplate.View = pie3DSeriesView8;
+        series5};
+            this.chartControl1.SeriesTemplate.View = pie3DSeriesView10;
             this.chartControl1.Size = new System.Drawing.Size(807, 329);
             this.chartControl1.TabIndex = 0;
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(-704, 12);
+            this.gridControl1.Location = new System.Drawing.Point(0, -1);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(1097, 836);
@@ -137,7 +137,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(215)))), ((int)(((byte)(148)))));
             this.panel2.Controls.Add(this.labelControl3);
             this.panel2.Controls.Add(this.labelControl4);
-            this.panel2.Location = new System.Drawing.Point(666, 12);
+            this.panel2.Location = new System.Drawing.Point(1370, -1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(265, 177);
             this.panel2.TabIndex = 12;
@@ -195,7 +195,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(139)))), ((int)(((byte)(235)))));
             this.panel4.Controls.Add(this.labelControl7);
             this.panel4.Controls.Add(this.labelControl8);
-            this.panel4.Location = new System.Drawing.Point(937, 12);
+            this.panel4.Location = new System.Drawing.Point(1641, -1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(265, 177);
             this.panel4.TabIndex = 14;
@@ -229,7 +229,7 @@
             this.panelControl1.Controls.Add(this.labelControl10);
             this.panelControl1.Controls.Add(this.labelControl9);
             this.panelControl1.Controls.Add(this.chartControl1);
-            this.panelControl1.Location = new System.Drawing.Point(395, 378);
+            this.panelControl1.Location = new System.Drawing.Point(1099, 365);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(807, 460);
             this.panelControl1.TabIndex = 15;
@@ -239,7 +239,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(166)))), ((int)(((byte)(131)))));
             this.panel3.Controls.Add(this.labelControl5);
             this.panel3.Controls.Add(this.labelControl6);
-            this.panel3.Location = new System.Drawing.Point(395, 12);
+            this.panel3.Location = new System.Drawing.Point(1099, -1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(265, 177);
             this.panel3.TabIndex = 13;
@@ -249,7 +249,7 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(69)))), ((int)(((byte)(105)))));
             this.panel6.Controls.Add(this.labelControl13);
             this.panel6.Controls.Add(this.labelControl14);
-            this.panel6.Location = new System.Drawing.Point(666, 195);
+            this.panel6.Location = new System.Drawing.Point(1370, 182);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(265, 177);
             this.panel6.TabIndex = 17;
@@ -283,7 +283,7 @@
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(162)))), ((int)(((byte)(232)))));
             this.panel7.Controls.Add(this.labelControl15);
             this.panel7.Controls.Add(this.labelControl16);
-            this.panel7.Location = new System.Drawing.Point(937, 195);
+            this.panel7.Location = new System.Drawing.Point(1641, 182);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(265, 177);
             this.panel7.TabIndex = 19;
@@ -317,7 +317,7 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(197)))), ((int)(((byte)(129)))));
             this.panel8.Controls.Add(this.labelControl17);
             this.panel8.Controls.Add(this.labelControl18);
-            this.panel8.Location = new System.Drawing.Point(395, 195);
+            this.panel8.Location = new System.Drawing.Point(1099, 182);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(265, 177);
             this.panel8.TabIndex = 18;
@@ -363,10 +363,10 @@
             this.Text = "FrmArizaListesi";
             this.Load += new System.EventHandler(this.FrmArizaListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.filteringUIContext1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(simpleDiagram3D5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pie3DSeriesView10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
