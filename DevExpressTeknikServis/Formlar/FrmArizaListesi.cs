@@ -16,5 +16,22 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
+        private void FrmArizaListesi_Load(object sender, EventArgs e)
+        {
+            var degerler = from x in db.TBLURUNKABUL
+                           select new
+                           {
+                               x.ISLEMID,
+                               x.TBLURUN.AD,
+                               adi = x.TBLCARI.AD,
+                               x.TBLCARI.SOYAD,
+                               personelAd = x.TBLPERSONEL.AD,
+                               personelSoyad = x.TBLPERSONEL.SOYAD,
+                               x.GELISTARIH,
+                               x.CIKISTARIH
+                           };
+        }
     }
 }
