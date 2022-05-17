@@ -148,5 +148,12 @@ namespace DevExpressTeknikServis
             Formlar.FrmUrunSatis fr = new Formlar.FrmUrunSatis();
             fr.Show();
         }
+
+        private void btnSatisListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmSatislar fr = new Formlar.FrmSatislar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

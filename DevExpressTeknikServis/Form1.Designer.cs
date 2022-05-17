@@ -72,7 +72,7 @@
             this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
             this.btnNotListesi = new DevExpress.XtraBars.BarButtonItem();
             this.btnUrunSatis = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSatisListesi = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -152,7 +152,7 @@
             this.barButtonItem38,
             this.btnNotListesi,
             this.btnUrunSatis,
-            this.barButtonItem2});
+            this.btnSatisListesi});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 43;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -511,18 +511,19 @@
             // 
             this.btnUrunSatis.Caption = "Yeni Ürün Satışı";
             this.btnUrunSatis.Id = 41;
-            this.btnUrunSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnUrunSatis.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnUrunSatis.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunSatis.ImageOptions.Image")));
+            this.btnUrunSatis.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnUrunSatis.ImageOptions.LargeImage")));
             this.btnUrunSatis.Name = "btnUrunSatis";
             this.btnUrunSatis.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUrunSatis_ItemClick);
             // 
-            // barButtonItem2
+            // btnSatisListesi
             // 
-            this.barButtonItem2.Caption = "Satış Listesi";
-            this.barButtonItem2.Id = 42;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.btnSatisListesi.Caption = "Satış Listesi";
+            this.btnSatisListesi.Id = 42;
+            this.btnSatisListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSatisListesi.ImageOptions.Image")));
+            this.btnSatisListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSatisListesi.ImageOptions.LargeImage")));
+            this.btnSatisListesi.Name = "btnSatisListesi";
+            this.btnSatisListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSatisListesi_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -603,7 +604,7 @@
             // ribbonPageGroup17
             // 
             this.ribbonPageGroup17.ItemLinks.Add(this.btnUrunSatis);
-            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup17.ItemLinks.Add(this.btnSatisListesi);
             this.ribbonPageGroup17.Name = "ribbonPageGroup17";
             this.ribbonPageGroup17.Text = "ribbonPageGroup17";
             // 
@@ -820,7 +821,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
         private DevExpress.XtraBars.BarButtonItem btnNotListesi;
         private DevExpress.XtraBars.BarButtonItem btnUrunSatis;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem btnSatisListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
     }
 }
