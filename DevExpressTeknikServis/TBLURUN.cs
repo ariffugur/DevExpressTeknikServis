@@ -18,7 +18,6 @@ namespace DevExpressTeknikServis
         public TBLURUN()
         {
             this.TBLURUNHAREKET = new HashSet<TBLURUNHAREKET>();
-            this.TBLURUNTAKIP = new HashSet<TBLURUNTAKIP>();
         }
     
         public int ID { get; set; }
@@ -33,7 +32,5 @@ namespace DevExpressTeknikServis
         public virtual TBLKATEGORI TBLKATEGORI { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLURUNHAREKET> TBLURUNHAREKET { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
     }
 }

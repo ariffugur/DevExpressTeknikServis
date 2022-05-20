@@ -170,10 +170,9 @@
             <PropertyRef Name="TAKIPID" />
           </Key>
           <Property Name="TAKIPID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="URUN" Type="int" />
-          <Property Name="DURUM" Type="varchar" MaxLength="250" />
-          <Property Name="TARIH" Type="int" />
-          <Property Name="TAKIPKODU" Type="char" MaxLength="5" />
+          <Property Name="ACIKLAMA" Type="varchar" MaxLength="250" />
+          <Property Name="TARIH" Type="smalldatetime" />
+          <Property Name="SERINO" Type="char" MaxLength="5" />
         </EntityType>
         <Association Name="FK_TBLFATURABILGI_TBLCARI">
           <End Role="TBLCARI" Type="Self.TBLCARI" Multiplicity="0..1" />
@@ -295,18 +294,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_TBLURUNTAKIP_TBLURUN">
-          <End Role="TBLURUN" Type="Self.TBLURUN" Multiplicity="0..1" />
-          <End Role="TBLURUNTAKIP" Type="Self.TBLURUNTAKIP" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TBLURUN">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="TBLURUNTAKIP">
-              <PropertyRef Name="URUN" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
         <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
@@ -395,10 +382,6 @@
             <End Role="TBLPERSONEL" EntitySet="TBLPERSONEL" />
             <End Role="TBLURUNKABUL" EntitySet="TBLURUNKABUL" />
           </AssociationSet>
-          <AssociationSet Name="FK_TBLURUNTAKIP_TBLURUN" Association="Self.FK_TBLURUNTAKIP_TBLURUN">
-            <End Role="TBLURUN" EntitySet="TBLURUN" />
-            <End Role="TBLURUNTAKIP" EntitySet="TBLURUNTAKIP" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -460,10 +443,6 @@
           <AssociationSet Name="FK_TBLURUNHAREKET_TBLURUN" Association="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLURUN">
             <End Role="TBLURUN" EntitySet="TBLURUN" />
             <End Role="TBLURUNHAREKET" EntitySet="TBLURUNHAREKET" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TBLURUNTAKIP_TBLURUN" Association="DbTeknikServisModel.FK_TBLURUNTAKIP_TBLURUN">
-            <End Role="TBLURUN" EntitySet="TBLURUN" />
-            <End Role="TBLURUNTAKIP" EntitySet="TBLURUNTAKIP" />
           </AssociationSet>
           <FunctionImport Name="sp_alterdiagram">
             <Parameter Name="diagramname" Mode="In" Type="String" />
@@ -646,7 +625,6 @@
           <Property Name="DURUM" Type="Boolean" />
           <NavigationProperty Name="TBLKATEGORI" Relationship="DbTeknikServisModel.FK_TBLURUN_TBLKATEGORI" FromRole="TBLURUN" ToRole="TBLKATEGORI" />
           <NavigationProperty Name="TBLURUNHAREKET" Relationship="DbTeknikServisModel.FK_TBLURUNHAREKET_TBLURUN" FromRole="TBLURUN" ToRole="TBLURUNHAREKET" />
-          <NavigationProperty Name="TBLURUNTAKIP" Relationship="DbTeknikServisModel.FK_TBLURUNTAKIP_TBLURUN" FromRole="TBLURUN" ToRole="TBLURUNTAKIP" />
         </EntityType>
         <EntityType Name="TBLURUNHAREKET">
           <Key>
@@ -682,11 +660,9 @@
             <PropertyRef Name="TAKIPID" />
           </Key>
           <Property Name="TAKIPID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="URUN" Type="Int32" />
-          <Property Name="DURUM" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
-          <Property Name="TARIH" Type="Int32" />
-          <Property Name="TAKIPKODU" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
-          <NavigationProperty Name="TBLURUN" Relationship="DbTeknikServisModel.FK_TBLURUNTAKIP_TBLURUN" FromRole="TBLURUNTAKIP" ToRole="TBLURUN" />
+          <Property Name="TARIH" Type="DateTime" Precision="0" />
+          <Property Name="ACIKLAMA" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="SERINO" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
         </EntityType>
         <Association Name="FK_TBLFATURABILGI_TBLCARI">
           <End Type="DbTeknikServisModel.TBLCARI" Role="TBLCARI" Multiplicity="0..1" />
@@ -804,18 +780,6 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="TBLURUNHAREKET">
-              <PropertyRef Name="URUN" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_TBLURUNTAKIP_TBLURUN">
-          <End Type="DbTeknikServisModel.TBLURUN" Role="TBLURUN" Multiplicity="0..1" />
-          <End Type="DbTeknikServisModel.TBLURUNTAKIP" Role="TBLURUNTAKIP" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="TBLURUN">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="TBLURUNTAKIP">
               <PropertyRef Name="URUN" />
             </Dependent>
           </ReferentialConstraint>
@@ -1015,10 +979,9 @@
           <EntitySetMapping Name="TBLURUNTAKIP">
             <EntityTypeMapping TypeName="DbTeknikServisModel.TBLURUNTAKIP">
               <MappingFragment StoreEntitySet="TBLURUNTAKIP">
-                <ScalarProperty Name="TAKIPKODU" ColumnName="TAKIPKODU" />
+                <ScalarProperty Name="SERINO" ColumnName="SERINO" />
+                <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
                 <ScalarProperty Name="TARIH" ColumnName="TARIH" />
-                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
-                <ScalarProperty Name="URUN" ColumnName="URUN" />
                 <ScalarProperty Name="TAKIPID" ColumnName="TAKIPID" />
               </MappingFragment>
             </EntityTypeMapping>

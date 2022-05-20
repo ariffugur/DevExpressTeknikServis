@@ -47,8 +47,9 @@
             this.btnGuncelle.Location = new System.Drawing.Point(12, 319);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(108, 38);
-            this.btnGuncelle.TabIndex = 6;
+            this.btnGuncelle.TabIndex = 4;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // labelControl1
             // 
@@ -67,7 +68,7 @@
             this.richTxtBoxArizaDetay.Location = new System.Drawing.Point(12, 202);
             this.richTxtBoxArizaDetay.Name = "richTxtBoxArizaDetay";
             this.richTxtBoxArizaDetay.Size = new System.Drawing.Size(335, 96);
-            this.richTxtBoxArizaDetay.TabIndex = 8;
+            this.richTxtBoxArizaDetay.TabIndex = 3;
             this.richTxtBoxArizaDetay.Text = "";
             // 
             // labelControl2
@@ -90,7 +91,7 @@
             this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
             this.txtSeriNo.Properties.MaskSettings.Set("mask", "99999");
             this.txtSeriNo.Size = new System.Drawing.Size(100, 20);
-            this.txtSeriNo.TabIndex = 10;
+            this.txtSeriNo.TabIndex = 1;
             // 
             // labelControl3
             // 
@@ -111,7 +112,7 @@
             this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
             this.txtTarih.Properties.MaskSettings.Set("mask", "d");
             this.txtTarih.Size = new System.Drawing.Size(100, 20);
-            this.txtTarih.TabIndex = 12;
+            this.txtTarih.TabIndex = 2;
             // 
             // labelControl4
             // 
@@ -141,6 +142,7 @@
             this.Controls.Add(this.btnGuncelle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmArizaDetaylar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmArizaDetaylar";
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();

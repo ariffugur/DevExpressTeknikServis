@@ -162,6 +162,10 @@ namespace DevExpressTeknikServis
             fr.Show();
         }
 
-      
+        private void btnArizaliUrunAciklama_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmArizaDetaylar fr = new Formlar.FrmArizaDetaylar();
+            fr.Show();
+        }
     }
 }

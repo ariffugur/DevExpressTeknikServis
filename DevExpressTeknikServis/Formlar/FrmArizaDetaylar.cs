@@ -16,5 +16,17 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            DbTeknikServisEntities db = new DbTeknikServisEntities();
+            TBLURUNTAKIP t=new TBLURUNTAKIP();
+            t.ACIKLAMA = richTxtBoxArizaDetay.Text;  
+            t.SERINO = txtSeriNo.Text;  
+            t.TARIH = DateTime.Parse(txtTarih.Text);  
+            db.TBLURUNTAKIP.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Ürün arıza detayları güncellendi");
+        }
     }
 }
