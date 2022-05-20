@@ -73,6 +73,7 @@
             this.btnNotListesi = new DevExpress.XtraBars.BarButtonItem();
             this.btnUrunSatis = new DevExpress.XtraBars.BarButtonItem();
             this.btnSatisListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnArizaliUrunDetaylari = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -152,9 +153,10 @@
             this.barButtonItem38,
             this.btnNotListesi,
             this.btnUrunSatis,
-            this.btnSatisListesi});
+            this.btnSatisListesi,
+            this.btnArizaliUrunDetaylari});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 43;
+            this.ribbonControl1.MaxItemId = 44;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -252,8 +254,8 @@
             // 
             this.btnArizaliUrunAciklama.Caption = "Arızalı Ürün Açıklama";
             this.btnArizaliUrunAciklama.Id = 10;
-            this.btnArizaliUrunAciklama.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
-            this.btnArizaliUrunAciklama.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
+            this.btnArizaliUrunAciklama.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnArizaliUrunAciklama.ImageOptions.Image")));
+            this.btnArizaliUrunAciklama.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnArizaliUrunAciklama.ImageOptions.LargeImage")));
             this.btnArizaliUrunAciklama.Name = "btnArizaliUrunAciklama";
             this.btnArizaliUrunAciklama.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnArizaliUrunAciklama_ItemClick);
             // 
@@ -527,6 +529,15 @@
             this.btnSatisListesi.Name = "btnSatisListesi";
             this.btnSatisListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSatisListesi_ItemClick);
             // 
+            // btnArizaliUrunDetaylari
+            // 
+            this.btnArizaliUrunDetaylari.Caption = "Arızalı Ürün Detayları";
+            this.btnArizaliUrunDetaylari.Id = 43;
+            this.btnArizaliUrunDetaylari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnArizaliUrunDetaylari.ImageOptions.Image")));
+            this.btnArizaliUrunDetaylari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnArizaliUrunDetaylari.ImageOptions.LargeImage")));
+            this.btnArizaliUrunDetaylari.Name = "btnArizaliUrunDetaylari";
+            this.btnArizaliUrunDetaylari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnArizaliUrunDetaylari_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -577,6 +588,7 @@
             this.ribbonPageGroup12.ItemLinks.Add(this.btnArizaliUrunListesi);
             this.ribbonPageGroup12.ItemLinks.Add(this.btnYeniArizaliUrunKaydi);
             this.ribbonPageGroup12.ItemLinks.Add(this.btnArizaliUrunAciklama);
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnArizaliUrunDetaylari);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.Text = "ribbonPageGroup12";
             // 
@@ -825,6 +837,7 @@
         private DevExpress.XtraBars.BarButtonItem btnUrunSatis;
         private DevExpress.XtraBars.BarButtonItem btnSatisListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
+        private DevExpress.XtraBars.BarButtonItem btnArizaliUrunDetaylari;
     }
 }
 
