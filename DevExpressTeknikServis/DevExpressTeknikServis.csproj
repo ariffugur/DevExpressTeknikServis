@@ -86,6 +86,12 @@
     <Compile Include="Formlar\FrmArizaListesi.Designer.cs">
       <DependentUpon>FrmArizaListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmArizaliUrunKaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmArizaliUrunKaydi.Designer.cs">
+      <DependentUpon>FrmArizaliUrunKaydi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmCariEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmArizaListesi.resx">
       <DependentUpon>FrmArizaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmArizaliUrunKaydi.resx">
+      <DependentUpon>FrmArizaliUrunKaydi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmCariEkle.resx">
       <DependentUpon>FrmCariEkle.cs</DependentUpon>

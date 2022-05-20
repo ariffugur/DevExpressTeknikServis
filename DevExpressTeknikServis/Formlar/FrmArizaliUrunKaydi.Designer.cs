@@ -35,38 +35,23 @@
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.btnSatisYap = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtAdet = new DevExpress.XtraEditors.TextEdit();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
-            this.txtFiyat = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtMusteri = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtPersonel = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.txtTarih = new DevExpress.XtraEditors.DateEdit();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMusteri.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPersonel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +60,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Location = new System.Drawing.Point(64, 368);
+            this.panel7.Location = new System.Drawing.Point(64, 263);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(220, 3);
             this.panel7.TabIndex = 62;
@@ -83,7 +68,7 @@
             // txtSeriNo
             // 
             this.txtSeriNo.EditValue = "Seri No";
-            this.txtSeriNo.Location = new System.Drawing.Point(64, 345);
+            this.txtSeriNo.Location = new System.Drawing.Point(64, 240);
             this.txtSeriNo.Name = "txtSeriNo";
             this.txtSeriNo.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtSeriNo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -92,13 +77,16 @@
             this.txtSeriNo.Properties.Appearance.Options.UseFont = true;
             this.txtSeriNo.Properties.Appearance.Options.UseForeColor = true;
             this.txtSeriNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.txtSeriNo.Properties.MaskSettings.Set("mask", "99999");
             this.txtSeriNo.Size = new System.Drawing.Size(100, 26);
-            this.txtSeriNo.TabIndex = 60;
+            this.txtSeriNo.TabIndex = 4;
             // 
             // btnVazgec
             // 
             this.btnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVazgec.ImageOptions.Image")));
-            this.btnVazgec.Location = new System.Drawing.Point(176, 390);
+            this.btnVazgec.Location = new System.Drawing.Point(176, 282);
             this.btnVazgec.Name = "btnVazgec";
             this.btnVazgec.Size = new System.Drawing.Size(108, 38);
             this.btnVazgec.TabIndex = 64;
@@ -107,7 +95,7 @@
             // pictureEdit7
             // 
             this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(26, 339);
+            this.pictureEdit7.Location = new System.Drawing.Point(26, 234);
             this.pictureEdit7.Name = "pictureEdit7";
             this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
@@ -119,16 +107,16 @@
             // btnSatisYap
             // 
             this.btnSatisYap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSatisYap.ImageOptions.Image")));
-            this.btnSatisYap.Location = new System.Drawing.Point(26, 390);
+            this.btnSatisYap.Location = new System.Drawing.Point(26, 282);
             this.btnSatisYap.Name = "btnSatisYap";
             this.btnSatisYap.Size = new System.Drawing.Size(108, 38);
-            this.btnSatisYap.TabIndex = 63;
+            this.btnSatisYap.TabIndex = 5;
             this.btnSatisYap.Text = "Satış Yap";
             // 
             // textEdit7
             // 
             this.textEdit7.EditValue = "Arızalı Ürün Kaydı";
-            this.textEdit7.Location = new System.Drawing.Point(82, 12);
+            this.textEdit7.Location = new System.Drawing.Point(81, 33);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -139,99 +127,6 @@
             this.textEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.textEdit7.Size = new System.Drawing.Size(146, 26);
             this.textEdit7.TabIndex = 61;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(64, 293);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(220, 3);
-            this.panel6.TabIndex = 58;
-            // 
-            // txtAdet
-            // 
-            this.txtAdet.EditValue = "Adet";
-            this.txtAdet.Location = new System.Drawing.Point(64, 270);
-            this.txtAdet.Name = "txtAdet";
-            this.txtAdet.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtAdet.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdet.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtAdet.Properties.Appearance.Options.UseBackColor = true;
-            this.txtAdet.Properties.Appearance.Options.UseFont = true;
-            this.txtAdet.Properties.Appearance.Options.UseForeColor = true;
-            this.txtAdet.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtAdet.Size = new System.Drawing.Size(100, 26);
-            this.txtAdet.TabIndex = 56;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(64, 331);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(220, 3);
-            this.panel5.TabIndex = 57;
-            // 
-            // pictureEdit6
-            // 
-            this.pictureEdit6.EditValue = ((object)(resources.GetObject("pictureEdit6.EditValue")));
-            this.pictureEdit6.Location = new System.Drawing.Point(26, 264);
-            this.pictureEdit6.Name = "pictureEdit6";
-            this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit6.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit6.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit6.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit6.Size = new System.Drawing.Size(32, 32);
-            this.pictureEdit6.TabIndex = 53;
-            // 
-            // txtFiyat
-            // 
-            this.txtFiyat.EditValue = "Satış Fiyatı";
-            this.txtFiyat.Location = new System.Drawing.Point(64, 308);
-            this.txtFiyat.Name = "txtFiyat";
-            this.txtFiyat.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtFiyat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtFiyat.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtFiyat.Properties.Appearance.Options.UseBackColor = true;
-            this.txtFiyat.Properties.Appearance.Options.UseFont = true;
-            this.txtFiyat.Properties.Appearance.Options.UseForeColor = true;
-            this.txtFiyat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtFiyat.Size = new System.Drawing.Size(100, 26);
-            this.txtFiyat.TabIndex = 55;
-            // 
-            // pictureEdit5
-            // 
-            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
-            this.pictureEdit5.Location = new System.Drawing.Point(26, 302);
-            this.pictureEdit5.Name = "pictureEdit5";
-            this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit5.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit5.Size = new System.Drawing.Size(32, 32);
-            this.pictureEdit5.TabIndex = 54;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(64, 255);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(220, 3);
-            this.panel4.TabIndex = 52;
-            // 
-            // pictureEdit4
-            // 
-            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
-            this.pictureEdit4.Location = new System.Drawing.Point(26, 226);
-            this.pictureEdit4.Name = "pictureEdit4";
-            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit4.Size = new System.Drawing.Size(32, 32);
-            this.pictureEdit4.TabIndex = 50;
             // 
             // panel3
             // 
@@ -244,7 +139,7 @@
             // 
             // txtMusteri
             // 
-            this.txtMusteri.EditValue = "Müşteri";
+            this.txtMusteri.EditValue = "Personel";
             this.txtMusteri.Location = new System.Drawing.Point(64, 149);
             this.txtMusteri.Name = "txtMusteri";
             this.txtMusteri.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -255,7 +150,7 @@
             this.txtMusteri.Properties.Appearance.Options.UseForeColor = true;
             this.txtMusteri.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtMusteri.Size = new System.Drawing.Size(100, 26);
-            this.txtMusteri.TabIndex = 48;
+            this.txtMusteri.TabIndex = 2;
             // 
             // pictureEdit3
             // 
@@ -269,42 +164,6 @@
             this.pictureEdit3.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit3.TabIndex = 47;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(64, 217);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 3);
-            this.panel2.TabIndex = 46;
-            // 
-            // txtPersonel
-            // 
-            this.txtPersonel.EditValue = "Personel";
-            this.txtPersonel.Location = new System.Drawing.Point(64, 194);
-            this.txtPersonel.Name = "txtPersonel";
-            this.txtPersonel.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtPersonel.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtPersonel.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtPersonel.Properties.Appearance.Options.UseBackColor = true;
-            this.txtPersonel.Properties.Appearance.Options.UseFont = true;
-            this.txtPersonel.Properties.Appearance.Options.UseForeColor = true;
-            this.txtPersonel.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtPersonel.Size = new System.Drawing.Size(100, 26);
-            this.txtPersonel.TabIndex = 45;
-            // 
-            // pictureEdit2
-            // 
-            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(26, 188);
-            this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit2.Size = new System.Drawing.Size(32, 32);
-            this.pictureEdit2.TabIndex = 44;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -317,7 +176,7 @@
             // txtId
             // 
             this.txtId.EditValue = "Müşteri ID";
-            this.txtId.Location = new System.Drawing.Point(64, 111);
+            this.txtId.Location = new System.Drawing.Point(64, 102);
             this.txtId.Name = "txtId";
             this.txtId.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -327,12 +186,12 @@
             this.txtId.Properties.Appearance.Options.UseForeColor = true;
             this.txtId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtId.Size = new System.Drawing.Size(100, 26);
-            this.txtId.TabIndex = 42;
+            this.txtId.TabIndex = 1;
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(26, 105);
+            this.pictureEdit1.Location = new System.Drawing.Point(26, 96);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -341,10 +200,22 @@
             this.pictureEdit1.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit1.TabIndex = 41;
             // 
+            // pictureEdit4
+            // 
+            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
+            this.pictureEdit4.Location = new System.Drawing.Point(26, 188);
+            this.pictureEdit4.Name = "pictureEdit4";
+            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit4.Size = new System.Drawing.Size(32, 32);
+            this.pictureEdit4.TabIndex = 65;
+            // 
             // txtTarih
             // 
             this.txtTarih.EditValue = "Tarih";
-            this.txtTarih.Location = new System.Drawing.Point(64, 232);
+            this.txtTarih.Location = new System.Drawing.Point(64, 194);
             this.txtTarih.Name = "txtTarih";
             this.txtTarih.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.txtTarih.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -361,57 +232,52 @@
             this.txtTarih.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtTarih.Properties.EditFormat.FormatString = "";
             this.txtTarih.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtTarih.Properties.MaskSettings.Set("mask", "");
+            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
             this.txtTarih.Size = new System.Drawing.Size(100, 26);
-            this.txtTarih.TabIndex = 51;
+            this.txtTarih.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(64, 217);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(220, 3);
+            this.panel4.TabIndex = 67;
             // 
             // FrmArizaliUrunKaydi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(306, 447);
+            this.ClientSize = new System.Drawing.Size(306, 345);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pictureEdit4);
+            this.Controls.Add(this.txtTarih);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.txtSeriNo);
             this.Controls.Add(this.btnVazgec);
             this.Controls.Add(this.pictureEdit7);
             this.Controls.Add(this.btnSatisYap);
             this.Controls.Add(this.textEdit7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.txtAdet);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.pictureEdit6);
-            this.Controls.Add(this.txtFiyat);
-            this.Controls.Add(this.pictureEdit5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureEdit4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtMusteri);
             this.Controls.Add(this.pictureEdit3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtPersonel);
-            this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.pictureEdit1);
-            this.Controls.Add(this.txtTarih);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmArizaliUrunKaydi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmArizaliUrunKaydi";
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMusteri.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPersonel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -426,23 +292,14 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.SimpleButton btnSatisYap;
         private DevExpress.XtraEditors.TextEdit textEdit7;
-        private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.TextEdit txtAdet;
-        private System.Windows.Forms.Panel panel5;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit6;
-        private DevExpress.XtraEditors.TextEdit txtFiyat;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit5;
-        private System.Windows.Forms.Panel panel4;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.TextEdit txtMusteri;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
-        private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.TextEdit txtPersonel;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.TextEdit txtId;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.DateEdit txtTarih;
+        private System.Windows.Forms.Panel panel4;
     }
 }
