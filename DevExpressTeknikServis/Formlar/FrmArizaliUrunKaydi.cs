@@ -16,5 +16,17 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        private void btnKayitYap_Click(object sender, EventArgs e)
+        {
+            TBLURUNKABUL t=new TBLURUNKABUL();
+            t.CARI=int.Parse(txtId.Text);
+            t.GELISTARIH=DateTime.Parse(txtTarih.Text);
+            t.PERSONEL=short.Parse(txtPersonel.Text);
+            t.URUNSERINO=txtSeriNo.Text;
+            db.TBLURUNKABUL.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Ürün Arıza Girişi Yapıldı.");
+        }
     }
 }

@@ -33,10 +33,10 @@
             this.txtSeriNo = new DevExpress.XtraEditors.TextEdit();
             this.btnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
-            this.btnSatisYap = new DevExpress.XtraEditors.SimpleButton();
+            this.btnKayitYap = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtMusteri = new DevExpress.XtraEditors.TextEdit();
+            this.txtPersonel = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
@@ -47,7 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMusteri.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPersonel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -104,14 +104,15 @@
             this.pictureEdit7.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit7.TabIndex = 59;
             // 
-            // btnSatisYap
+            // btnKayitYap
             // 
-            this.btnSatisYap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSatisYap.ImageOptions.Image")));
-            this.btnSatisYap.Location = new System.Drawing.Point(26, 282);
-            this.btnSatisYap.Name = "btnSatisYap";
-            this.btnSatisYap.Size = new System.Drawing.Size(108, 38);
-            this.btnSatisYap.TabIndex = 5;
-            this.btnSatisYap.Text = "Satış Yap";
+            this.btnKayitYap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSatisYap.ImageOptions.Image")));
+            this.btnKayitYap.Location = new System.Drawing.Point(26, 282);
+            this.btnKayitYap.Name = "btnKayitYap";
+            this.btnKayitYap.Size = new System.Drawing.Size(108, 38);
+            this.btnKayitYap.TabIndex = 5;
+            this.btnKayitYap.Text = "Kayit Yap";
+            this.btnKayitYap.Click += new System.EventHandler(this.btnKayitYap_Click);
             // 
             // textEdit7
             // 
@@ -137,20 +138,20 @@
             this.panel3.Size = new System.Drawing.Size(220, 3);
             this.panel3.TabIndex = 49;
             // 
-            // txtMusteri
+            // txtPersonel
             // 
-            this.txtMusteri.EditValue = "Personel";
-            this.txtMusteri.Location = new System.Drawing.Point(64, 149);
-            this.txtMusteri.Name = "txtMusteri";
-            this.txtMusteri.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtMusteri.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtMusteri.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtMusteri.Properties.Appearance.Options.UseBackColor = true;
-            this.txtMusteri.Properties.Appearance.Options.UseFont = true;
-            this.txtMusteri.Properties.Appearance.Options.UseForeColor = true;
-            this.txtMusteri.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtMusteri.Size = new System.Drawing.Size(100, 26);
-            this.txtMusteri.TabIndex = 2;
+            this.txtPersonel.EditValue = "Personel";
+            this.txtPersonel.Location = new System.Drawing.Point(64, 149);
+            this.txtPersonel.Name = "txtPersonel";
+            this.txtPersonel.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtPersonel.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtPersonel.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.txtPersonel.Properties.Appearance.Options.UseBackColor = true;
+            this.txtPersonel.Properties.Appearance.Options.UseFont = true;
+            this.txtPersonel.Properties.Appearance.Options.UseForeColor = true;
+            this.txtPersonel.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtPersonel.Size = new System.Drawing.Size(100, 26);
+            this.txtPersonel.TabIndex = 2;
             // 
             // pictureEdit3
             // 
@@ -258,10 +259,10 @@
             this.Controls.Add(this.txtSeriNo);
             this.Controls.Add(this.btnVazgec);
             this.Controls.Add(this.pictureEdit7);
-            this.Controls.Add(this.btnSatisYap);
+            this.Controls.Add(this.btnKayitYap);
             this.Controls.Add(this.textEdit7);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.txtMusteri);
+            this.Controls.Add(this.txtPersonel);
             this.Controls.Add(this.pictureEdit3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtId);
@@ -273,7 +274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMusteri.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPersonel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
@@ -290,10 +291,10 @@
         private DevExpress.XtraEditors.TextEdit txtSeriNo;
         private DevExpress.XtraEditors.SimpleButton btnVazgec;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
-        private DevExpress.XtraEditors.SimpleButton btnSatisYap;
+        private DevExpress.XtraEditors.SimpleButton btnKayitYap;
         private DevExpress.XtraEditors.TextEdit textEdit7;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.TextEdit txtMusteri;
+        private DevExpress.XtraEditors.TextEdit txtPersonel;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.TextEdit txtId;
