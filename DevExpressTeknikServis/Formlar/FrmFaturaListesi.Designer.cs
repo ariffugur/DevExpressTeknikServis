@@ -101,7 +101,7 @@
             this.txtAd.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
             this.txtAd.Properties.MaskSettings.Set("mask", "99999");
             this.txtAd.Size = new System.Drawing.Size(168, 20);
-            this.txtAd.TabIndex = 12;
+            this.txtAd.TabIndex = 1;
             // 
             // btnKaydet
             // 
@@ -109,7 +109,7 @@
             this.btnKaydet.Location = new System.Drawing.Point(131, 327);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(168, 33);
-            this.btnKaydet.TabIndex = 23;
+            this.btnKaydet.TabIndex = 9;
             this.btnKaydet.Text = "Kaydet";
             // 
             // btnSil
@@ -118,7 +118,7 @@
             this.btnSil.Location = new System.Drawing.Point(131, 366);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(168, 33);
-            this.btnSil.TabIndex = 25;
+            this.btnSil.TabIndex = 10;
             this.btnSil.Text = "Sil";
             // 
             // btnGuncelle
@@ -127,7 +127,7 @@
             this.btnGuncelle.Location = new System.Drawing.Point(130, 405);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(168, 33);
-            this.btnGuncelle.TabIndex = 24;
+            this.btnGuncelle.TabIndex = 11;
             this.btnGuncelle.Text = "Güncelle";
             // 
             // txtID
@@ -136,7 +136,7 @@
             this.txtID.Location = new System.Drawing.Point(130, 81);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(168, 20);
-            this.txtID.TabIndex = 28;
+            this.txtID.TabIndex = 10;
             // 
             // labelControl7
             // 
@@ -153,7 +153,7 @@
             this.btnListele.Location = new System.Drawing.Point(130, 288);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(168, 33);
-            this.btnListele.TabIndex = 26;
+            this.btnListele.TabIndex = 8;
             this.btnListele.Text = "Listele";
             // 
             // groupControl1
@@ -182,7 +182,7 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(407, 1039);
             this.groupControl1.TabIndex = 13;
-            this.groupControl1.Text = "Departman İşlemleri";
+            this.groupControl1.Text = "Fatura İşlemleri";
             // 
             // textEdit1
             // 
@@ -192,7 +192,7 @@
             this.textEdit1.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
             this.textEdit1.Properties.MaskSettings.Set("mask", "99999");
             this.textEdit1.Size = new System.Drawing.Size(168, 20);
-            this.textEdit1.TabIndex = 31;
+            this.textEdit1.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -209,7 +209,7 @@
             this.textEdit2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
             this.textEdit2.Properties.MaskSettings.Set("mask", "d");
             this.textEdit2.Size = new System.Drawing.Size(168, 20);
-            this.textEdit2.TabIndex = 33;
+            this.textEdit2.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -226,7 +226,7 @@
             this.textEdit3.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
             this.textEdit3.Properties.MaskSettings.Set("mask", "t");
             this.textEdit3.Size = new System.Drawing.Size(168, 20);
-            this.textEdit3.TabIndex = 35;
+            this.textEdit3.TabIndex = 4;
             // 
             // labelControl4
             // 
@@ -238,11 +238,10 @@
             // 
             // textEdit4
             // 
-            this.textEdit4.Enabled = false;
             this.textEdit4.Location = new System.Drawing.Point(131, 210);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Size = new System.Drawing.Size(168, 20);
-            this.textEdit4.TabIndex = 37;
+            this.textEdit4.TabIndex = 5;
             // 
             // labelControl6
             // 
@@ -262,7 +261,7 @@
             this.lookUpEdit1.Properties.DisplayMember = "AD";
             this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(168, 20);
-            this.lookUpEdit1.TabIndex = 39;
+            this.lookUpEdit1.TabIndex = 6;
             // 
             // labelControl8
             // 
@@ -281,7 +280,7 @@
             this.lookUpEdit2.Properties.DisplayMember = "AD";
             this.lookUpEdit2.Properties.ValueMember = "ID";
             this.lookUpEdit2.Size = new System.Drawing.Size(168, 20);
-            this.lookUpEdit2.TabIndex = 41;
+            this.lookUpEdit2.TabIndex = 7;
             // 
             // labelControl9
             // 
@@ -300,6 +299,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmFaturaListesi";
             this.Text = "FrmFaturaListesi";
+            this.Load += new System.EventHandler(this.FrmFaturaListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
