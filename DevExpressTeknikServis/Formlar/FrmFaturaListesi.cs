@@ -47,5 +47,37 @@ namespace DevExpressTeknikServis.Formlar
                                                      AD = x.AD + " " + x.SOYAD
                                                  }).ToList();
         }
+
+    
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            var degerler = from u in db.TBLFATURABILGI
+                           select new
+                           {
+                               u.ID,
+                               u.SERI,
+                               u.SIRANI,
+                               u.TARIH,
+                               u.SAAT,
+                               u.VERGIDAIRE,
+                               Cari = u.TBLCARI.AD + u.TBLCARI.SOYAD,
+                               Personel = u.TBLPERSONEL.AD + u.TBLPERSONEL.SOYAD
+                           };
+
+            gridControl1.DataSource = degerler.ToList();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            TBLFATURABILGI t=new TBLFATURABILGI();
+            t.SERI = txtSeri.Text;
+            t.SIRANI = txtSira.Text;
+            t.TARIH = Convert.ToDateTime(txtTarih.Text);
+            t.SAAT = txtSaat.Text;
+            t.VERGIDAIRE = txtVergiDairesi.Text;
+            t.CARI = int.Parse(lookUpEdit1.EditValue.ToString());
+
+           
+        }
     }
 }
