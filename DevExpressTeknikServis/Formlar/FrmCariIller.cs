@@ -17,7 +17,7 @@ namespace DevExpressTeknikServis.Formlar
             InitializeComponent();
         }
         DbTeknikServisEntities db = new DbTeknikServisEntities();
-        SqlConnection baglanti=new SqlConnection(@"Data Source=DESKTOP-4QQ4ANU;Initial Catalog=data;Integrated Security=True");
+        SqlConnection baglanti=new SqlConnection(@"Data Source=DESKTOP-SO1A66F;Initial Catalog=db;Integrated Security=True");
         private void FrmCariIller_Load(object sender, EventArgs e)
         {
             chartControl1.Series[0].LegendTextPattern = "{A}: {V:F1}";
