@@ -40,12 +40,12 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnListele = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.txtVergiDairesi = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtSaat = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtTarih = new DevExpress.XtraEditors.TextEdit();
@@ -98,8 +98,8 @@
             this.txtSeri.Location = new System.Drawing.Point(130, 107);
             this.txtSeri.Name = "txtSeri";
             this.txtSeri.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.txtSeri.Properties.MaskSettings.Set("mask", "A");
             this.txtSeri.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSeri.Properties.MaskSettings.Set("mask", "99999");
             this.txtSeri.Size = new System.Drawing.Size(168, 20);
             this.txtSeri.TabIndex = 1;
             // 
@@ -160,12 +160,12 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.lookUpEdit2);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.txtVergiDairesi);
-            this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.txtSaat);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.txtTarih);
@@ -185,6 +185,14 @@
             this.groupControl1.Size = new System.Drawing.Size(407, 1039);
             this.groupControl1.TabIndex = 13;
             this.groupControl1.Text = "Fatura İşlemleri";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(63, 213);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(63, 13);
+            this.labelControl5.TabIndex = 41;
+            this.labelControl5.Text = "Vergi Dairesi:";
             // 
             // lookUpEdit2
             // 
@@ -231,21 +239,13 @@
             this.txtVergiDairesi.Size = new System.Drawing.Size(168, 20);
             this.txtVergiDairesi.TabIndex = 5;
             // 
-            // labelControl6
-            // 
-            this.labelControl6.Enabled = false;
-            this.labelControl6.Location = new System.Drawing.Point(63, 213);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(63, 13);
-            this.labelControl6.TabIndex = 36;
-            this.labelControl6.Text = "Vergi Dairesi:";
-            // 
             // txtSaat
             // 
             this.txtSaat.Location = new System.Drawing.Point(130, 184);
             this.txtSaat.Name = "txtSaat";
-            this.txtSaat.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtSaat.Properties.MaskSettings.Set("mask", "t");
+            this.txtSaat.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.txtSaat.Properties.MaskSettings.Set("mask", "90:00");
+            this.txtSaat.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
             this.txtSaat.Size = new System.Drawing.Size(168, 20);
             this.txtSaat.TabIndex = 4;
             // 
@@ -339,10 +339,10 @@
         private DevExpress.XtraEditors.TextEdit txtSira;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtVergiDairesi;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }

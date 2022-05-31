@@ -76,8 +76,14 @@ namespace DevExpressTeknikServis.Formlar
             t.SAAT = txtSaat.Text;
             t.VERGIDAIRE = txtVergiDairesi.Text;
             t.CARI = int.Parse(lookUpEdit1.EditValue.ToString());
+            t.PERSONEL = short.Parse(lookUpEdit2.EditValue.ToString());
+            db.TBLFATURABILGI.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Fatura Sisteme Başarıyla Kaydedilmiştir. Kalem Girişi Yapabilirsiniz.");
 
            
         }
+
+    
     }
 }
