@@ -45,5 +45,21 @@ namespace DevExpressTeknikServis.Formlar
 
             gridControl1.DataSource = degerler.ToList();
         }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            var degerler = from u in db.TBLFATURADETAY
+                           select new
+                           {
+                               u.FATURADETAYID,
+                               u.URUN,
+                               u.ADET,
+                               u.FIYAT,
+                               u.TUTAR,
+                               u.FATURAID
+                           };
+
+            gridControl1.DataSource = degerler.ToList();
+        }
     }
 }

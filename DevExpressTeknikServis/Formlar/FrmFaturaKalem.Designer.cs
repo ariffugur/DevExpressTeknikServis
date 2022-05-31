@@ -43,21 +43,21 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.txtAdet = new DevExpress.XtraEditors.TextEdit();
-            this.txtFiyat = new DevExpress.XtraEditors.TextEdit();
-            this.txtFaturaId = new DevExpress.XtraEditors.TextEdit();
             this.txtTutar = new DevExpress.XtraEditors.TextEdit();
+            this.txtFaturaId = new DevExpress.XtraEditors.TextEdit();
+            this.txtFiyat = new DevExpress.XtraEditors.TextEdit();
+            this.txtAdet = new DevExpress.XtraEditors.TextEdit();
+            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrun.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTutar.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl5
@@ -117,6 +117,7 @@
             this.btnListele.Size = new System.Drawing.Size(168, 33);
             this.btnListele.TabIndex = 6;
             this.btnListele.Text = "Listele";
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnSil
             // 
@@ -194,6 +195,34 @@
             this.groupControl1.TabIndex = 15;
             this.groupControl1.Text = "Fatura Kalem İşlemleri";
             // 
+            // txtTutar
+            // 
+            this.txtTutar.Location = new System.Drawing.Point(131, 185);
+            this.txtTutar.Name = "txtTutar";
+            this.txtTutar.Size = new System.Drawing.Size(168, 20);
+            this.txtTutar.TabIndex = 4;
+            // 
+            // txtFaturaId
+            // 
+            this.txtFaturaId.Location = new System.Drawing.Point(130, 211);
+            this.txtFaturaId.Name = "txtFaturaId";
+            this.txtFaturaId.Size = new System.Drawing.Size(168, 20);
+            this.txtFaturaId.TabIndex = 5;
+            // 
+            // txtFiyat
+            // 
+            this.txtFiyat.Location = new System.Drawing.Point(130, 159);
+            this.txtFiyat.Name = "txtFiyat";
+            this.txtFiyat.Size = new System.Drawing.Size(168, 20);
+            this.txtFiyat.TabIndex = 3;
+            // 
+            // txtAdet
+            // 
+            this.txtAdet.Location = new System.Drawing.Point(130, 133);
+            this.txtAdet.Name = "txtAdet";
+            this.txtAdet.Size = new System.Drawing.Size(168, 20);
+            this.txtAdet.TabIndex = 2;
+            // 
             // btnKaydet
             // 
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
@@ -203,34 +232,6 @@
             this.btnKaydet.TabIndex = 7;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
-            // 
-            // txtAdet
-            // 
-            this.txtAdet.Location = new System.Drawing.Point(130, 133);
-            this.txtAdet.Name = "txtAdet";
-            this.txtAdet.Size = new System.Drawing.Size(168, 20);
-            this.txtAdet.TabIndex = 2;
-            // 
-            // txtFiyat
-            // 
-            this.txtFiyat.Location = new System.Drawing.Point(130, 159);
-            this.txtFiyat.Name = "txtFiyat";
-            this.txtFiyat.Size = new System.Drawing.Size(168, 20);
-            this.txtFiyat.TabIndex = 3;
-            // 
-            // txtFaturaId
-            // 
-            this.txtFaturaId.Location = new System.Drawing.Point(130, 211);
-            this.txtFaturaId.Name = "txtFaturaId";
-            this.txtFaturaId.Size = new System.Drawing.Size(168, 20);
-            this.txtFaturaId.TabIndex = 5;
-            // 
-            // txtTutar
-            // 
-            this.txtTutar.Location = new System.Drawing.Point(131, 185);
-            this.txtTutar.Name = "txtTutar";
-            this.txtTutar.Size = new System.Drawing.Size(168, 20);
-            this.txtTutar.TabIndex = 4;
             // 
             // FrmFaturaKalem
             // 
@@ -249,10 +250,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTutar.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
