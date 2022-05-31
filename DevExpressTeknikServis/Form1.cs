@@ -194,5 +194,12 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnFaturaKalemListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmFaturaKalemleri fr = new Formlar.FrmFaturaKalemleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

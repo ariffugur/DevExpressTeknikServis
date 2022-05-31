@@ -80,9 +80,9 @@
             this.txtSeriNo.Name = "txtSeriNo";
             this.txtSeriNo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSeriNo.Properties.Appearance.Options.UseFont = true;
-            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
             this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSeriNo.Properties.MaskSettings.Set("mask", "\\d?\\d?\\d?\\d?\\d?");
+            this.txtSeriNo.Properties.MaskSettings.Set("mask", "A");
             this.txtSeriNo.Size = new System.Drawing.Size(100, 24);
             this.txtSeriNo.TabIndex = 2;
             // 
@@ -90,12 +90,13 @@
             // 
             this.btnAra.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAra.Appearance.Options.UseFont = true;
-            this.btnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAra.ImageOptions.Image")));
             this.btnAra.Location = new System.Drawing.Point(548, 5);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(146, 32);
             this.btnAra.TabIndex = 4;
             this.btnAra.Text = "Ara";
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // txtSiraNo
             // 
@@ -103,9 +104,9 @@
             this.txtSiraNo.Name = "txtSiraNo";
             this.txtSiraNo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSiraNo.Properties.Appearance.Options.UseFont = true;
-            this.txtSiraNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegularMaskManager));
+            this.txtSiraNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
             this.txtSiraNo.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSiraNo.Properties.MaskSettings.Set("mask", "\\d?\\d?\\d?\\d?\\d?");
+            this.txtSiraNo.Properties.MaskSettings.Set("mask", "000000");
             this.txtSiraNo.Size = new System.Drawing.Size(100, 24);
             this.txtSiraNo.TabIndex = 3;
             // 

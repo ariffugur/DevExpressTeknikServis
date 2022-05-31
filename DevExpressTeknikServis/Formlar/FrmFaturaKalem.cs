@@ -24,7 +24,7 @@ namespace DevExpressTeknikServis.Formlar
             t.ADET = short.Parse(txtAdet.Text);
             t.FIYAT = decimal.Parse(txtFiyat.Text);
             t.TUTAR = decimal.Parse(txtTutar.Text);
-            t.FATURADETAYID = int.Parse(txtFaturaId.Text);
+            t.FATURAID = int.Parse(txtFaturaId.Text);
             db.TBLFATURADETAY.Add(t);
             db.SaveChanges();
             MessageBox.Show("Faturaya ait kalem girişi başarıyla gerçekleşti");
