@@ -30,34 +30,34 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFaturaKalem));
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtVergiDairesi = new DevExpress.XtraEditors.TextEdit();
-            this.txtSaat = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtSira = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnListele = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.txtSeri = new DevExpress.XtraEditors.TextEdit();
+            this.txtUrun = new DevExpress.XtraEditors.TextEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSaat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSira.Properties)).BeginInit();
+            this.txtAdet = new DevExpress.XtraEditors.TextEdit();
+            this.txtFiyat = new DevExpress.XtraEditors.TextEdit();
+            this.txtFaturaId = new DevExpress.XtraEditors.TextEdit();
+            this.txtTutar = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSeri.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUrun.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTutar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl5
@@ -68,23 +68,6 @@
             this.labelControl5.TabIndex = 41;
             this.labelControl5.Text = "Fatura ID:";
             // 
-            // txtVergiDairesi
-            // 
-            this.txtVergiDairesi.Location = new System.Drawing.Point(131, 210);
-            this.txtVergiDairesi.Name = "txtVergiDairesi";
-            this.txtVergiDairesi.Size = new System.Drawing.Size(168, 20);
-            this.txtVergiDairesi.TabIndex = 5;
-            // 
-            // txtSaat
-            // 
-            this.txtSaat.Location = new System.Drawing.Point(130, 184);
-            this.txtSaat.Name = "txtSaat";
-            this.txtSaat.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.txtSaat.Properties.MaskSettings.Set("mask", "90:00");
-            this.txtSaat.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSaat.Size = new System.Drawing.Size(168, 20);
-            this.txtSaat.TabIndex = 4;
-            // 
             // labelControl4
             // 
             this.labelControl4.Location = new System.Drawing.Point(94, 187);
@@ -93,15 +76,6 @@
             this.labelControl4.TabIndex = 34;
             this.labelControl4.Text = "Tutar:";
             // 
-            // txtTarih
-            // 
-            this.txtTarih.Location = new System.Drawing.Point(130, 158);
-            this.txtTarih.Name = "txtTarih";
-            this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
-            this.txtTarih.Size = new System.Drawing.Size(168, 20);
-            this.txtTarih.TabIndex = 3;
-            // 
             // labelControl3
             // 
             this.labelControl3.Location = new System.Drawing.Point(96, 161);
@@ -109,16 +83,6 @@
             this.labelControl3.Size = new System.Drawing.Size(28, 13);
             this.labelControl3.TabIndex = 32;
             this.labelControl3.Text = "Fiyat:";
-            // 
-            // txtSira
-            // 
-            this.txtSira.Location = new System.Drawing.Point(130, 133);
-            this.txtSira.Name = "txtSira";
-            this.txtSira.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.txtSira.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSira.Properties.MaskSettings.Set("mask", "99999");
-            this.txtSira.Size = new System.Drawing.Size(168, 20);
-            this.txtSira.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -134,7 +98,7 @@
             this.txtID.Location = new System.Drawing.Point(130, 81);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(168, 20);
-            this.txtID.TabIndex = 10;
+            this.txtID.TabIndex = 0;
             // 
             // labelControl7
             // 
@@ -151,7 +115,7 @@
             this.btnListele.Location = new System.Drawing.Point(130, 288);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(168, 33);
-            this.btnListele.TabIndex = 8;
+            this.btnListele.TabIndex = 6;
             this.btnListele.Text = "Listele";
             // 
             // btnSil
@@ -160,7 +124,7 @@
             this.btnSil.Location = new System.Drawing.Point(131, 366);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(168, 33);
-            this.btnSil.TabIndex = 10;
+            this.btnSil.TabIndex = 8;
             this.btnSil.Text = "Sil";
             // 
             // btnGuncelle
@@ -169,18 +133,15 @@
             this.btnGuncelle.Location = new System.Drawing.Point(130, 405);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(168, 33);
-            this.btnGuncelle.TabIndex = 11;
+            this.btnGuncelle.TabIndex = 9;
             this.btnGuncelle.Text = "Güncelle";
             // 
-            // txtSeri
+            // txtUrun
             // 
-            this.txtSeri.Location = new System.Drawing.Point(130, 107);
-            this.txtSeri.Name = "txtSeri";
-            this.txtSeri.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.txtSeri.Properties.MaskSettings.Set("mask", "A");
-            this.txtSeri.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSeri.Size = new System.Drawing.Size(168, 20);
-            this.txtSeri.TabIndex = 1;
+            this.txtUrun.Location = new System.Drawing.Point(130, 107);
+            this.txtUrun.Name = "txtUrun";
+            this.txtUrun.Size = new System.Drawing.Size(168, 20);
+            this.txtUrun.TabIndex = 1;
             // 
             // gridView1
             // 
@@ -211,13 +172,13 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.txtTutar);
+            this.groupControl1.Controls.Add(this.txtFaturaId);
+            this.groupControl1.Controls.Add(this.txtFiyat);
+            this.groupControl1.Controls.Add(this.txtAdet);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.txtVergiDairesi);
-            this.groupControl1.Controls.Add(this.txtSaat);
             this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.txtTarih);
             this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.txtSira);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.txtID);
             this.groupControl1.Controls.Add(this.labelControl7);
@@ -225,7 +186,7 @@
             this.groupControl1.Controls.Add(this.btnSil);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnKaydet);
-            this.groupControl1.Controls.Add(this.txtSeri);
+            this.groupControl1.Controls.Add(this.txtUrun);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(1493, -1);
             this.groupControl1.Name = "groupControl1";
@@ -239,8 +200,37 @@
             this.btnKaydet.Location = new System.Drawing.Point(131, 327);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(168, 33);
-            this.btnKaydet.TabIndex = 9;
+            this.btnKaydet.TabIndex = 7;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            // 
+            // txtAdet
+            // 
+            this.txtAdet.Location = new System.Drawing.Point(130, 133);
+            this.txtAdet.Name = "txtAdet";
+            this.txtAdet.Size = new System.Drawing.Size(168, 20);
+            this.txtAdet.TabIndex = 2;
+            // 
+            // txtFiyat
+            // 
+            this.txtFiyat.Location = new System.Drawing.Point(130, 159);
+            this.txtFiyat.Name = "txtFiyat";
+            this.txtFiyat.Size = new System.Drawing.Size(168, 20);
+            this.txtFiyat.TabIndex = 3;
+            // 
+            // txtFaturaId
+            // 
+            this.txtFaturaId.Location = new System.Drawing.Point(130, 211);
+            this.txtFaturaId.Name = "txtFaturaId";
+            this.txtFaturaId.Size = new System.Drawing.Size(168, 20);
+            this.txtFaturaId.TabIndex = 5;
+            // 
+            // txtTutar
+            // 
+            this.txtTutar.Location = new System.Drawing.Point(131, 185);
+            this.txtTutar.Name = "txtTutar";
+            this.txtTutar.Size = new System.Drawing.Size(168, 20);
+            this.txtTutar.TabIndex = 4;
             // 
             // FrmFaturaKalem
             // 
@@ -251,17 +241,18 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmFaturaKalem";
             this.Text = "FrmFaturaKalem";
-            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSaat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSira.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.FrmFaturaKalem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSeri.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUrun.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdet.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFiyat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTutar.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,23 +260,23 @@
         #endregion
 
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit txtVergiDairesi;
-        private DevExpress.XtraEditors.TextEdit txtSaat;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit txtTarih;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit txtSira;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.SimpleButton btnListele;
         private DevExpress.XtraEditors.SimpleButton btnSil;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
-        private DevExpress.XtraEditors.TextEdit txtSeri;
+        private DevExpress.XtraEditors.TextEdit txtUrun;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
+        private DevExpress.XtraEditors.TextEdit txtTutar;
+        private DevExpress.XtraEditors.TextEdit txtFaturaId;
+        private DevExpress.XtraEditors.TextEdit txtFiyat;
+        private DevExpress.XtraEditors.TextEdit txtAdet;
     }
 }
