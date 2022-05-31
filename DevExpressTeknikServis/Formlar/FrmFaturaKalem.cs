@@ -16,5 +16,7 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+
+    
     }
 }
