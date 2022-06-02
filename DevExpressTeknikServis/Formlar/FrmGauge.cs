@@ -51,6 +51,7 @@ namespace DevExpressTeknikServis.Formlar
         private void timer3_Tick(object sender, EventArgs e)
         {
             arcScaleComponent3.Value += 5;
+            arcScaleComponent5.Value += 5;
             if (arcScaleComponent3.Value == 100)
             {
 
@@ -65,6 +66,7 @@ namespace DevExpressTeknikServis.Formlar
         private void timer4_Tick(object sender, EventArgs e)
         {
             arcScaleComponent3.Value -= 5;
+            arcScaleComponent5.Value -= 5;
             if (arcScaleComponent3.Value == 0)
             {
 

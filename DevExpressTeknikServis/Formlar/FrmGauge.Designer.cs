@@ -53,12 +53,20 @@
             this.arcScaleNeedleComponent2 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.gaugeControl4 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge3 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.arcScaleComponent5 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.arcScaleComponent6 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.arcScaleBackgroundLayerComponent3 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent();
+            this.arcScaleNeedleComponent3 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent();
+            this.arcScaleSpindleCapComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cGauge1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelComponent1)).BeginInit();
@@ -69,13 +77,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleSpindleCapComponent1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
             this.panel1.Controls.Add(this.gaugeControl2);
-            this.panel1.Location = new System.Drawing.Point(-9, -233);
+            this.panel1.Location = new System.Drawing.Point(-533, -330);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(941, 348);
             this.panel1.TabIndex = 11;
@@ -84,7 +98,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.panel2.Controls.Add(this.gaugeControl1);
-            this.panel2.Location = new System.Drawing.Point(836, -233);
+            this.panel2.Location = new System.Drawing.Point(312, -330);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(941, 348);
             this.panel2.TabIndex = 12;
@@ -155,7 +169,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(189)))), ((int)(((byte)(50)))));
-            this.panel3.Location = new System.Drawing.Point(836, 144);
+            this.panel3.Controls.Add(this.gaugeControl4);
+            this.panel3.Location = new System.Drawing.Point(312, 47);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(941, 348);
             this.panel3.TabIndex = 14;
@@ -164,7 +179,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.panel4.Controls.Add(this.gaugeControl3);
-            this.panel4.Location = new System.Drawing.Point(-9, 144);
+            this.panel4.Location = new System.Drawing.Point(-533, 47);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(941, 348);
             this.panel4.TabIndex = 13;
@@ -331,6 +346,92 @@
             // 
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
+            // gaugeControl4
+            // 
+            this.gaugeControl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(189)))), ((int)(((byte)(50)))));
+            this.gaugeControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gaugeControl4.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge3});
+            this.gaugeControl4.Location = new System.Drawing.Point(0, 0);
+            this.gaugeControl4.Name = "gaugeControl4";
+            this.gaugeControl4.Size = new System.Drawing.Size(941, 348);
+            this.gaugeControl4.TabIndex = 0;
+            // 
+            // circularGauge3
+            // 
+            this.circularGauge3.BackgroundLayers.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent[] {
+            this.arcScaleBackgroundLayerComponent3});
+            this.circularGauge3.Bounds = new System.Drawing.Rectangle(6, 6, 929, 336);
+            this.circularGauge3.Name = "circularGauge3";
+            this.circularGauge3.Needles.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent[] {
+            this.arcScaleNeedleComponent3});
+            this.circularGauge3.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent5,
+            this.arcScaleComponent6});
+            this.circularGauge3.SpindleCaps.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent[] {
+            this.arcScaleSpindleCapComponent1});
+            // 
+            // arcScaleComponent5
+            // 
+            this.arcScaleComponent5.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.arcScaleComponent5.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#FF8000");
+            this.arcScaleComponent5.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.arcScaleComponent5.EndAngle = 60F;
+            this.arcScaleComponent5.MajorTickmark.FormatString = "{0:F0}";
+            this.arcScaleComponent5.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style3_4;
+            this.arcScaleComponent5.MajorTickmark.TextOffset = -18F;
+            this.arcScaleComponent5.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.arcScaleComponent5.MaxValue = 100F;
+            this.arcScaleComponent5.MinorTickCount = 4;
+            this.arcScaleComponent5.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style3_3;
+            this.arcScaleComponent5.Name = "scale1";
+            this.arcScaleComponent5.RadiusX = 106F;
+            this.arcScaleComponent5.RadiusY = 106F;
+            this.arcScaleComponent5.StartAngle = -240F;
+            // 
+            // arcScaleComponent6
+            // 
+            this.arcScaleComponent6.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.arcScaleComponent6.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#FF8000");
+            this.arcScaleComponent6.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.arcScaleComponent6.EndAngle = -30F;
+            this.arcScaleComponent6.MajorTickCount = 8;
+            this.arcScaleComponent6.MajorTickmark.FormatString = "{0:F0}";
+            this.arcScaleComponent6.MajorTickmark.ShapeOffset = -4F;
+            this.arcScaleComponent6.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style3_2;
+            this.arcScaleComponent6.MajorTickmark.TextOffset = -15F;
+            this.arcScaleComponent6.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.arcScaleComponent6.MaxValue = 700F;
+            this.arcScaleComponent6.MinorTickCount = 4;
+            this.arcScaleComponent6.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style3_1;
+            this.arcScaleComponent6.Name = "scale2";
+            this.arcScaleComponent6.RadiusX = 60F;
+            this.arcScaleComponent6.RadiusY = 60F;
+            this.arcScaleComponent6.StartAngle = -240F;
+            this.arcScaleComponent6.ZOrder = -1;
+            // 
+            // arcScaleBackgroundLayerComponent3
+            // 
+            this.arcScaleBackgroundLayerComponent3.ArcScale = this.arcScaleComponent5;
+            this.arcScaleBackgroundLayerComponent3.Name = "bg1";
+            this.arcScaleBackgroundLayerComponent3.ShapeType = DevExpress.XtraGauges.Core.Model.BackgroundLayerShapeType.CircularFull_Style3;
+            this.arcScaleBackgroundLayerComponent3.ZOrder = 1000;
+            // 
+            // arcScaleNeedleComponent3
+            // 
+            this.arcScaleNeedleComponent3.ArcScale = this.arcScaleComponent5;
+            this.arcScaleNeedleComponent3.EndOffset = -8F;
+            this.arcScaleNeedleComponent3.Name = "needle1";
+            this.arcScaleNeedleComponent3.ShapeType = DevExpress.XtraGauges.Core.Model.NeedleShapeType.CircularFull_Style3;
+            this.arcScaleNeedleComponent3.ZOrder = -50;
+            // 
+            // arcScaleSpindleCapComponent1
+            // 
+            this.arcScaleSpindleCapComponent1.ArcScale = this.arcScaleComponent5;
+            this.arcScaleSpindleCapComponent1.Name = "cap1";
+            this.arcScaleSpindleCapComponent1.ShapeType = DevExpress.XtraGauges.Core.Model.SpindleCapShapeType.CircularFull_Style3;
+            this.arcScaleSpindleCapComponent1.ZOrder = -100;
+            // 
             // FrmGauge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,6 +451,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labelComponent1)).EndInit();
@@ -360,6 +462,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleBackgroundLayerComponent3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleNeedleComponent3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleSpindleCapComponent1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,5 +497,12 @@
         private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent arcScaleComponent4;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl4;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge3;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent arcScaleBackgroundLayerComponent3;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent arcScaleComponent5;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent arcScaleNeedleComponent3;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent arcScaleComponent6;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent arcScaleSpindleCapComponent1;
     }
 }
