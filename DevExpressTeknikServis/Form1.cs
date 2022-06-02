@@ -204,7 +204,7 @@ namespace DevExpressTeknikServis
 
         private void btnHakkimizda_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmHakkimizda fr = new Formlar.FrmHakkimizda();
+            Formlar.FrmGauge fr = new Formlar.FrmGauge();
             fr.MdiParent = this;
             fr.Show();
         }

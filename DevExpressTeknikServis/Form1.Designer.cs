@@ -75,6 +75,7 @@
             this.btnSatisListesi = new DevExpress.XtraBars.BarButtonItem();
             this.btnArizaliUrunDetaylari = new DevExpress.XtraBars.BarButtonItem();
             this.btnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHakkimizda = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -103,7 +104,6 @@
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.btnHakkimizda = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -554,6 +554,15 @@
             this.btnFaturaListesi.Name = "btnFaturaListesi";
             this.btnFaturaListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFaturaListesi_ItemClick);
             // 
+            // btnHakkimizda
+            // 
+            this.btnHakkimizda.Caption = "Gauge";
+            this.btnHakkimizda.Id = 45;
+            this.btnHakkimizda.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHakkimizda.ImageOptions.Image")));
+            this.btnHakkimizda.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHakkimizda.ImageOptions.LargeImage")));
+            this.btnHakkimizda.Name = "btnHakkimizda";
+            this.btnHakkimizda.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHakkimizda_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -764,15 +773,6 @@
             this.ribbonPageGroup4});
             this.ribbonPage4.Name = "ribbonPage4";
             this.ribbonPage4.Text = "Personeller";
-            // 
-            // btnHakkimizda
-            // 
-            this.btnHakkimizda.Caption = "Hakkımızda";
-            this.btnHakkimizda.Id = 45;
-            this.btnHakkimizda.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnHakkimizda.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.btnHakkimizda.Name = "btnHakkimizda";
-            this.btnHakkimizda.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHakkimizda_ItemClick);
             // 
             // Form1
             // 

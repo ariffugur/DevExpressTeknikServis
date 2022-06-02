@@ -151,11 +151,11 @@
     <Compile Include="Formlar\FrmFaturaListesi.Designer.cs">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formlar\FrmHakkimizda.cs">
+    <Compile Include="Formlar\FrmGauge.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formlar\FrmHakkimizda.Designer.cs">
-      <DependentUpon>FrmHakkimizda.cs</DependentUpon>
+    <Compile Include="Formlar\FrmGauge.Designer.cs">
+      <DependentUpon>FrmGauge.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmIstatistik.cs">
       <SubType>Form</SubType>
@@ -354,8 +354,8 @@
     <EmbeddedResource Include="Formlar\FrmFaturaListesi.resx">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formlar\FrmHakkimizda.resx">
-      <DependentUpon>FrmHakkimizda.cs</DependentUpon>
+    <EmbeddedResource Include="Formlar\FrmGauge.resx">
+      <DependentUpon>FrmGauge.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmIstatistik.resx">
       <DependentUpon>FrmIstatistik.cs</DependentUpon>
