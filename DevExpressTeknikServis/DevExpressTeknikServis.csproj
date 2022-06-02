@@ -37,6 +37,7 @@
     <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -52,6 +53,7 @@
     <Reference Include="DevExpress.XtraGauges.v21.2.Win, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -156,6 +158,12 @@
     </Compile>
     <Compile Include="Formlar\FrmGauge.Designer.cs">
       <DependentUpon>FrmGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmHarita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmHarita.Designer.cs">
+      <DependentUpon>FrmHarita.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\FrmIstatistik.cs">
       <SubType>Form</SubType>
@@ -356,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmGauge.resx">
       <DependentUpon>FrmGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmHarita.resx">
+      <DependentUpon>FrmHarita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmIstatistik.resx">
       <DependentUpon>FrmIstatistik.cs</DependentUpon>

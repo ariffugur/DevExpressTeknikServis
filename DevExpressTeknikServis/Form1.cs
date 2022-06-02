@@ -208,5 +208,12 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnHaritalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmHarita fr = new Formlar.FrmHarita();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
