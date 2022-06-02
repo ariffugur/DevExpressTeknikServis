@@ -16,5 +16,10 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            arcScaleComponent1.Value += 5;
+        }
     }
 }
