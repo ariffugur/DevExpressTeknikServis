@@ -201,5 +201,12 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnHakkimizda_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmHakkimizda fr = new Formlar.FrmHakkimizda();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
