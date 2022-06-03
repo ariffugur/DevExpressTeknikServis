@@ -25,6 +25,12 @@ namespace DevExpressTeknikServis.Formlar
                                            x.AD,
                                            x.STOK
                                        }).Where(x => x.STOK < 30).ToList();
+            gridControl1.DataSource=(from y in db.TBLCARI select new
+            {
+                y.AD,
+                y.SOYAD,
+                y.IL
+            }).ToList();
         }
     }
 }
