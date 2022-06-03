@@ -27,7 +27,6 @@ namespace DevExpressTeknikServis
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TBLADMIN> TBLADMIN { get; set; }
         public virtual DbSet<TBLARACLAR> TBLARACLAR { get; set; }
         public virtual DbSet<TBLARIZADETAY> TBLARIZADETAY { get; set; }
@@ -147,6 +146,11 @@ namespace DevExpressTeknikServis
         public virtual int sp_upgraddiagrams()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
+        }
+    
+        public virtual ObjectResult<urunkategori_Result> urunkategori()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<urunkategori_Result>("urunkategori");
         }
     }
 }

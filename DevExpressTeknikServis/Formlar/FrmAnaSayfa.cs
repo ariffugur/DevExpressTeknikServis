@@ -31,6 +31,7 @@ namespace DevExpressTeknikServis.Formlar
                 y.SOYAD,
                 y.IL
             }).ToList();
+            gridControl3.DataSource=db.urunkategori().ToList();
         }
     }
 }
