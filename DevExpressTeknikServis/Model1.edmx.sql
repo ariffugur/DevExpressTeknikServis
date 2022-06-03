@@ -2,37 +2,563 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 05/05/2022 10:57:12
+-- Date Created: 06/03/2022 08:38:20
 -- Generated from EDMX file: C:\Users\vitru\source\repos\DevExpressTeknikServis\DevExpressTeknikServis\DevExpressTeknikServis\Model1.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [DbTeknikServis];
+USE [data];
 GO
+IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO
 
 -- --------------------------------------------------
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_TBLFATURABILGI_TBLCARI]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLFATURABILGI] DROP CONSTRAINT [FK_TBLFATURABILGI_TBLCARI];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLFATURABILGI_TBLPERSONEL]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLFATURABILGI] DROP CONSTRAINT [FK_TBLFATURABILGI_TBLPERSONEL];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLFATURADETAY_TBLFATURABILGI]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLFATURADETAY] DROP CONSTRAINT [FK_TBLFATURADETAY_TBLFATURABILGI];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLPERSONEL_TBLDEPARTMAN]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLPERSONEL] DROP CONSTRAINT [FK_TBLPERSONEL_TBLDEPARTMAN];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLURUN_TBLKATEGORI]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLURUN] DROP CONSTRAINT [FK_TBLURUN_TBLKATEGORI];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLURUNHAREKET_TBLCARI]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLURUNHAREKET] DROP CONSTRAINT [FK_TBLURUNHAREKET_TBLCARI];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLURUNHAREKET_TBLPERSONEL]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLURUNHAREKET] DROP CONSTRAINT [FK_TBLURUNHAREKET_TBLPERSONEL];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLURUNHAREKET_TBLURUN]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLURUNHAREKET] DROP CONSTRAINT [FK_TBLURUNHAREKET_TBLURUN];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLURUNKABUL_TBLCARI]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLURUNKABUL] DROP CONSTRAINT [FK_TBLURUNKABUL_TBLCARI];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TBLURUNKABUL_TBLPERSONEL]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TBLURUNKABUL] DROP CONSTRAINT [FK_TBLURUNKABUL_TBLPERSONEL];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[TBLADMIN]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLADMIN];
+GO
+IF OBJECT_ID(N'[dbo].[TBLARACLAR]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLARACLAR];
+GO
+IF OBJECT_ID(N'[dbo].[TBLARIZADETAY]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLARIZADETAY];
+GO
+IF OBJECT_ID(N'[dbo].[TBLCARI]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLCARI];
+GO
+IF OBJECT_ID(N'[dbo].[TBLDEPARTMAN]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLDEPARTMAN];
+GO
+IF OBJECT_ID(N'[dbo].[TBLFATURABILGI]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLFATURABILGI];
+GO
+IF OBJECT_ID(N'[dbo].[TBLFATURADETAY]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLFATURADETAY];
+GO
+IF OBJECT_ID(N'[dbo].[TBLGIDER]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLGIDER];
+GO
+IF OBJECT_ID(N'[dbo].[TBLHAKKIMIZDA]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLHAKKIMIZDA];
+GO
+IF OBJECT_ID(N'[dbo].[TBLILETISIM]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLILETISIM];
+GO
+IF OBJECT_ID(N'[dbo].[TBLKATEGORI]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLKATEGORI];
+GO
+IF OBJECT_ID(N'[dbo].[TBLNOTLARIM]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLNOTLARIM];
+GO
+IF OBJECT_ID(N'[dbo].[TBLPERSONEL]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLPERSONEL];
+GO
+IF OBJECT_ID(N'[dbo].[TBLURUN]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLURUN];
+GO
+IF OBJECT_ID(N'[dbo].[TBLURUNHAREKET]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLURUNHAREKET];
+GO
+IF OBJECT_ID(N'[dbo].[TBLURUNKABUL]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLURUNKABUL];
+GO
+IF OBJECT_ID(N'[dbo].[TBLURUNTAKIP]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TBLURUNTAKIP];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables
 -- --------------------------------------------------
 
+-- Creating table 'sysdiagrams'
+CREATE TABLE [dbo].[sysdiagrams] (
+    [name] nvarchar(128)  NOT NULL,
+    [principal_id] int  NOT NULL,
+    [diagram_id] int IDENTITY(1,1) NOT NULL,
+    [version] int  NULL,
+    [definition] varbinary(max)  NULL
+);
+GO
+
+-- Creating table 'TBLADMIN'
+CREATE TABLE [dbo].[TBLADMIN] (
+    [ID] tinyint IDENTITY(1,1) NOT NULL,
+    [KULLANICIAD] varchar(10)  NULL,
+    [SIFRE] varchar(10)  NULL
+);
+GO
+
+-- Creating table 'TBLARACLAR'
+CREATE TABLE [dbo].[TBLARACLAR] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [AD] varchar(50)  NULL
+);
+GO
+
+-- Creating table 'TBLARIZADETAY'
+CREATE TABLE [dbo].[TBLARIZADETAY] (
+    [ARIZAID] int IDENTITY(1,1) NOT NULL,
+    [ISLEM] int  NULL,
+    [SORUN] varchar(250)  NULL,
+    [ACIKLAMA] varchar(250)  NULL,
+    [ONFIYAT] decimal(18,2)  NULL,
+    [NETFIYAT] decimal(18,2)  NULL,
+    [ISLEMLER] varchar(500)  NULL
+);
+GO
+
+-- Creating table 'TBLCARI'
+CREATE TABLE [dbo].[TBLCARI] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [AD] varchar(30)  NULL,
+    [SOYAD] varchar(30)  NULL,
+    [TELEFON] varchar(20)  NULL,
+    [MAIL] varchar(50)  NULL,
+    [IL] varchar(25)  NULL,
+    [BANKA] varchar(50)  NULL,
+    [VERGIDAIRESI] varchar(50)  NULL,
+    [VERGINO] varchar(50)  NULL,
+    [STATU] varchar(50)  NULL,
+    [ADRES] varbinary(250)  NULL,
+    [ILCE] varchar(50)  NULL
+);
+GO
+
+-- Creating table 'TBLDEPARTMAN'
+CREATE TABLE [dbo].[TBLDEPARTMAN] (
+    [ID] tinyint IDENTITY(1,1) NOT NULL,
+    [AD] varchar(50)  NULL,
+    [ACIKLAMA] varchar(50)  NULL
+);
+GO
+
+-- Creating table 'TBLFATURABILGI'
+CREATE TABLE [dbo].[TBLFATURABILGI] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [SERI] char(1)  NULL,
+    [SIRANI] varchar(6)  NULL,
+    [TARIH] datetime  NULL,
+    [SAAT] char(5)  NULL,
+    [VERGIDAIRE] varchar(50)  NULL,
+    [CARI] int  NULL,
+    [PERSONEL] smallint  NULL
+);
+GO
+
+-- Creating table 'TBLFATURADETAY'
+CREATE TABLE [dbo].[TBLFATURADETAY] (
+    [FATURADETAYID] int IDENTITY(1,1) NOT NULL,
+    [URUN] varchar(50)  NULL,
+    [ADET] smallint  NULL,
+    [FIYAT] decimal(18,2)  NULL,
+    [TUTAR] decimal(18,2)  NULL,
+    [FATURAID] int  NULL
+);
+GO
+
+-- Creating table 'TBLGIDER'
+CREATE TABLE [dbo].[TBLGIDER] (
+    [GIDERID] int IDENTITY(1,1) NOT NULL,
+    [GIDERACIKLAMA] varchar(50)  NULL,
+    [TARIH] datetime  NULL,
+    [TUTAR] decimal(18,2)  NULL
+);
+GO
+
+-- Creating table 'TBLKATEGORI'
+CREATE TABLE [dbo].[TBLKATEGORI] (
+    [ID] tinyint IDENTITY(1,1) NOT NULL,
+    [AD] varchar(30)  NULL
+);
+GO
+
+-- Creating table 'TBLNOTLARIM'
+CREATE TABLE [dbo].[TBLNOTLARIM] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [BASLIK] varchar(50)  NULL,
+    [ICERIK] varchar(500)  NULL,
+    [DURUM] bit  NULL
+);
+GO
+
+-- Creating table 'TBLPERSONEL'
+CREATE TABLE [dbo].[TBLPERSONEL] (
+    [ID] smallint IDENTITY(1,1) NOT NULL,
+    [AD] varchar(30)  NULL,
+    [SOYAD] varchar(30)  NOT NULL,
+    [DEPARTMAN] tinyint  NULL,
+    [FOTOGRAF] varchar(100)  NULL,
+    [MAIL] varchar(50)  NULL,
+    [TELEFON] varbinary(20)  NULL
+);
+GO
+
+-- Creating table 'TBLURUN'
+CREATE TABLE [dbo].[TBLURUN] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [AD] varchar(30)  NULL,
+    [MARKA] varchar(30)  NULL,
+    [ALISFIYAT] decimal(18,2)  NULL,
+    [SATISFIYAT] decimal(18,2)  NULL,
+    [STOK] smallint  NULL,
+    [KATEGORI] tinyint  NULL,
+    [DURUM] bit  NULL
+);
+GO
+
+-- Creating table 'TBLURUNHAREKET'
+CREATE TABLE [dbo].[TBLURUNHAREKET] (
+    [HAREKETID] int IDENTITY(1,1) NOT NULL,
+    [URUN] int  NULL,
+    [MUSTERI] int  NULL,
+    [PERSONEL] smallint  NULL,
+    [TARIH] datetime  NULL,
+    [ADET] smallint  NULL,
+    [FIYAT] decimal(18,2)  NULL,
+    [URUNSERINO] char(5)  NULL
+);
+GO
+
+-- Creating table 'TBLURUNKABUL'
+CREATE TABLE [dbo].[TBLURUNKABUL] (
+    [ISLEMID] int IDENTITY(1,1) NOT NULL,
+    [CARI] int  NULL,
+    [PERSONEL] smallint  NULL,
+    [GELISTARIH] datetime  NULL,
+    [CIKISTARIH] datetime  NULL,
+    [URUNSERINO] char(5)  NULL
+);
+GO
+
+-- Creating table 'TBLURUNTAKIP'
+CREATE TABLE [dbo].[TBLURUNTAKIP] (
+    [TAKIPID] int IDENTITY(1,1) NOT NULL,
+    [TARIH] datetime  NULL,
+    [ACIKLAMA] varchar(250)  NULL,
+    [SERINO] char(5)  NULL
+);
+GO
+
+-- Creating table 'TBLHAKKIMIZDA'
+CREATE TABLE [dbo].[TBLHAKKIMIZDA] (
+    [ID] tinyint IDENTITY(1,1) NOT NULL,
+    [METIN] nchar(1000)  NULL
+);
+GO
+
+-- Creating table 'TBLILETISIM'
+CREATE TABLE [dbo].[TBLILETISIM] (
+    [ID] int IDENTITY(1,1) NOT NULL,
+    [ADSOYAD] varchar(50)  NULL,
+    [MAIL] varchar(50)  NULL,
+    [KONU] varchar(50)  NULL,
+    [MESAJ] varchar(500)  NULL
+);
+GO
+
 -- --------------------------------------------------
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
 
+-- Creating primary key on [diagram_id] in table 'sysdiagrams'
+ALTER TABLE [dbo].[sysdiagrams]
+ADD CONSTRAINT [PK_sysdiagrams]
+    PRIMARY KEY CLUSTERED ([diagram_id] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLADMIN'
+ALTER TABLE [dbo].[TBLADMIN]
+ADD CONSTRAINT [PK_TBLADMIN]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLARACLAR'
+ALTER TABLE [dbo].[TBLARACLAR]
+ADD CONSTRAINT [PK_TBLARACLAR]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ARIZAID] in table 'TBLARIZADETAY'
+ALTER TABLE [dbo].[TBLARIZADETAY]
+ADD CONSTRAINT [PK_TBLARIZADETAY]
+    PRIMARY KEY CLUSTERED ([ARIZAID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLCARI'
+ALTER TABLE [dbo].[TBLCARI]
+ADD CONSTRAINT [PK_TBLCARI]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLDEPARTMAN'
+ALTER TABLE [dbo].[TBLDEPARTMAN]
+ADD CONSTRAINT [PK_TBLDEPARTMAN]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLFATURABILGI'
+ALTER TABLE [dbo].[TBLFATURABILGI]
+ADD CONSTRAINT [PK_TBLFATURABILGI]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [FATURADETAYID] in table 'TBLFATURADETAY'
+ALTER TABLE [dbo].[TBLFATURADETAY]
+ADD CONSTRAINT [PK_TBLFATURADETAY]
+    PRIMARY KEY CLUSTERED ([FATURADETAYID] ASC);
+GO
+
+-- Creating primary key on [GIDERID] in table 'TBLGIDER'
+ALTER TABLE [dbo].[TBLGIDER]
+ADD CONSTRAINT [PK_TBLGIDER]
+    PRIMARY KEY CLUSTERED ([GIDERID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLKATEGORI'
+ALTER TABLE [dbo].[TBLKATEGORI]
+ADD CONSTRAINT [PK_TBLKATEGORI]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLNOTLARIM'
+ALTER TABLE [dbo].[TBLNOTLARIM]
+ADD CONSTRAINT [PK_TBLNOTLARIM]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLPERSONEL'
+ALTER TABLE [dbo].[TBLPERSONEL]
+ADD CONSTRAINT [PK_TBLPERSONEL]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLURUN'
+ALTER TABLE [dbo].[TBLURUN]
+ADD CONSTRAINT [PK_TBLURUN]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [HAREKETID] in table 'TBLURUNHAREKET'
+ALTER TABLE [dbo].[TBLURUNHAREKET]
+ADD CONSTRAINT [PK_TBLURUNHAREKET]
+    PRIMARY KEY CLUSTERED ([HAREKETID] ASC);
+GO
+
+-- Creating primary key on [ISLEMID] in table 'TBLURUNKABUL'
+ALTER TABLE [dbo].[TBLURUNKABUL]
+ADD CONSTRAINT [PK_TBLURUNKABUL]
+    PRIMARY KEY CLUSTERED ([ISLEMID] ASC);
+GO
+
+-- Creating primary key on [TAKIPID] in table 'TBLURUNTAKIP'
+ALTER TABLE [dbo].[TBLURUNTAKIP]
+ADD CONSTRAINT [PK_TBLURUNTAKIP]
+    PRIMARY KEY CLUSTERED ([TAKIPID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLHAKKIMIZDA'
+ALTER TABLE [dbo].[TBLHAKKIMIZDA]
+ADD CONSTRAINT [PK_TBLHAKKIMIZDA]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
+-- Creating primary key on [ID] in table 'TBLILETISIM'
+ALTER TABLE [dbo].[TBLILETISIM]
+ADD CONSTRAINT [PK_TBLILETISIM]
+    PRIMARY KEY CLUSTERED ([ID] ASC);
+GO
+
 -- --------------------------------------------------
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------
+
+-- Creating foreign key on [CARI] in table 'TBLFATURABILGI'
+ALTER TABLE [dbo].[TBLFATURABILGI]
+ADD CONSTRAINT [FK_TBLFATURABILGI_TBLCARI]
+    FOREIGN KEY ([CARI])
+    REFERENCES [dbo].[TBLCARI]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLFATURABILGI_TBLCARI'
+CREATE INDEX [IX_FK_TBLFATURABILGI_TBLCARI]
+ON [dbo].[TBLFATURABILGI]
+    ([CARI]);
+GO
+
+-- Creating foreign key on [MUSTERI] in table 'TBLURUNHAREKET'
+ALTER TABLE [dbo].[TBLURUNHAREKET]
+ADD CONSTRAINT [FK_TBLURUNHAREKET_TBLCARI]
+    FOREIGN KEY ([MUSTERI])
+    REFERENCES [dbo].[TBLCARI]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLURUNHAREKET_TBLCARI'
+CREATE INDEX [IX_FK_TBLURUNHAREKET_TBLCARI]
+ON [dbo].[TBLURUNHAREKET]
+    ([MUSTERI]);
+GO
+
+-- Creating foreign key on [CARI] in table 'TBLURUNKABUL'
+ALTER TABLE [dbo].[TBLURUNKABUL]
+ADD CONSTRAINT [FK_TBLURUNKABUL_TBLCARI]
+    FOREIGN KEY ([CARI])
+    REFERENCES [dbo].[TBLCARI]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLURUNKABUL_TBLCARI'
+CREATE INDEX [IX_FK_TBLURUNKABUL_TBLCARI]
+ON [dbo].[TBLURUNKABUL]
+    ([CARI]);
+GO
+
+-- Creating foreign key on [DEPARTMAN] in table 'TBLPERSONEL'
+ALTER TABLE [dbo].[TBLPERSONEL]
+ADD CONSTRAINT [FK_TBLPERSONEL_TBLDEPARTMAN]
+    FOREIGN KEY ([DEPARTMAN])
+    REFERENCES [dbo].[TBLDEPARTMAN]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLPERSONEL_TBLDEPARTMAN'
+CREATE INDEX [IX_FK_TBLPERSONEL_TBLDEPARTMAN]
+ON [dbo].[TBLPERSONEL]
+    ([DEPARTMAN]);
+GO
+
+-- Creating foreign key on [PERSONEL] in table 'TBLFATURABILGI'
+ALTER TABLE [dbo].[TBLFATURABILGI]
+ADD CONSTRAINT [FK_TBLFATURABILGI_TBLPERSONEL]
+    FOREIGN KEY ([PERSONEL])
+    REFERENCES [dbo].[TBLPERSONEL]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLFATURABILGI_TBLPERSONEL'
+CREATE INDEX [IX_FK_TBLFATURABILGI_TBLPERSONEL]
+ON [dbo].[TBLFATURABILGI]
+    ([PERSONEL]);
+GO
+
+-- Creating foreign key on [FATURAID] in table 'TBLFATURADETAY'
+ALTER TABLE [dbo].[TBLFATURADETAY]
+ADD CONSTRAINT [FK_TBLFATURADETAY_TBLFATURABILGI]
+    FOREIGN KEY ([FATURAID])
+    REFERENCES [dbo].[TBLFATURABILGI]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLFATURADETAY_TBLFATURABILGI'
+CREATE INDEX [IX_FK_TBLFATURADETAY_TBLFATURABILGI]
+ON [dbo].[TBLFATURADETAY]
+    ([FATURAID]);
+GO
+
+-- Creating foreign key on [KATEGORI] in table 'TBLURUN'
+ALTER TABLE [dbo].[TBLURUN]
+ADD CONSTRAINT [FK_TBLURUN_TBLKATEGORI]
+    FOREIGN KEY ([KATEGORI])
+    REFERENCES [dbo].[TBLKATEGORI]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLURUN_TBLKATEGORI'
+CREATE INDEX [IX_FK_TBLURUN_TBLKATEGORI]
+ON [dbo].[TBLURUN]
+    ([KATEGORI]);
+GO
+
+-- Creating foreign key on [PERSONEL] in table 'TBLURUNHAREKET'
+ALTER TABLE [dbo].[TBLURUNHAREKET]
+ADD CONSTRAINT [FK_TBLURUNHAREKET_TBLPERSONEL]
+    FOREIGN KEY ([PERSONEL])
+    REFERENCES [dbo].[TBLPERSONEL]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLURUNHAREKET_TBLPERSONEL'
+CREATE INDEX [IX_FK_TBLURUNHAREKET_TBLPERSONEL]
+ON [dbo].[TBLURUNHAREKET]
+    ([PERSONEL]);
+GO
+
+-- Creating foreign key on [PERSONEL] in table 'TBLURUNKABUL'
+ALTER TABLE [dbo].[TBLURUNKABUL]
+ADD CONSTRAINT [FK_TBLURUNKABUL_TBLPERSONEL]
+    FOREIGN KEY ([PERSONEL])
+    REFERENCES [dbo].[TBLPERSONEL]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLURUNKABUL_TBLPERSONEL'
+CREATE INDEX [IX_FK_TBLURUNKABUL_TBLPERSONEL]
+ON [dbo].[TBLURUNKABUL]
+    ([PERSONEL]);
+GO
+
+-- Creating foreign key on [URUN] in table 'TBLURUNHAREKET'
+ALTER TABLE [dbo].[TBLURUNHAREKET]
+ADD CONSTRAINT [FK_TBLURUNHAREKET_TBLURUN]
+    FOREIGN KEY ([URUN])
+    REFERENCES [dbo].[TBLURUN]
+        ([ID])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TBLURUNHAREKET_TBLURUN'
+CREATE INDEX [IX_FK_TBLURUNHAREKET_TBLURUN]
+ON [dbo].[TBLURUNHAREKET]
+    ([URUN]);
+GO
 
 -- --------------------------------------------------
 -- Script has ended
