@@ -76,6 +76,7 @@
             this.btnArizaliUrunDetaylari = new DevExpress.XtraBars.BarButtonItem();
             this.btnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
             this.btnHakkimizda = new DevExpress.XtraBars.BarButtonItem();
+            this.btnHaritalar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -104,7 +105,7 @@
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.btnHaritalar = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRaporlar = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -160,9 +161,10 @@
             this.btnArizaliUrunDetaylari,
             this.btnFaturaListesi,
             this.btnHakkimizda,
-            this.btnHaritalar});
+            this.btnHaritalar,
+            this.btnRaporlar});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 47;
+            this.ribbonControl1.MaxItemId = 48;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -565,6 +567,15 @@
             this.btnHakkimizda.Name = "btnHakkimizda";
             this.btnHakkimizda.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHakkimizda_ItemClick);
             // 
+            // btnHaritalar
+            // 
+            this.btnHaritalar.Caption = "Harita";
+            this.btnHaritalar.Id = 46;
+            this.btnHaritalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHaritalar.ImageOptions.Image")));
+            this.btnHaritalar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHaritalar.ImageOptions.LargeImage")));
+            this.btnHaritalar.Name = "btnHaritalar";
+            this.btnHaritalar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHaritalar_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -729,6 +740,7 @@
             // 
             // ribbonPageGroup8
             // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnRaporlar);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.Text = "ribbonPageGroup8";
             // 
@@ -777,14 +789,14 @@
             this.ribbonPage4.Name = "ribbonPage4";
             this.ribbonPage4.Text = "Personeller";
             // 
-            // btnHaritalar
+            // btnRaporlar
             // 
-            this.btnHaritalar.Caption = "Harita";
-            this.btnHaritalar.Id = 46;
-            this.btnHaritalar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnHaritalar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.btnHaritalar.Name = "btnHaritalar";
-            this.btnHaritalar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHaritalar_ItemClick);
+            this.btnRaporlar.Caption = "Rapor Sihirbazı";
+            this.btnRaporlar.Id = 47;
+            this.btnRaporlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.btnRaporlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnRaporlar.Name = "btnRaporlar";
+            this.btnRaporlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRaporlar_ItemClick);
             // 
             // Form1
             // 
@@ -880,6 +892,7 @@
         private DevExpress.XtraBars.BarButtonItem btnFaturaListesi;
         private DevExpress.XtraBars.BarButtonItem btnHakkimizda;
         private DevExpress.XtraBars.BarButtonItem btnHaritalar;
+        private DevExpress.XtraBars.BarButtonItem btnRaporlar;
     }
 }
 

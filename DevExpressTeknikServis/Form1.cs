@@ -215,5 +215,11 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnRaporlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmRapor fr = new Formlar.FrmRapor();
+            fr.Show();
+        }
     }
 }
