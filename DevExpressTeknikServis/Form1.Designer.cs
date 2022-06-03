@@ -78,6 +78,7 @@
             this.btnHakkimizda = new DevExpress.XtraBars.BarButtonItem();
             this.btnHaritalar = new DevExpress.XtraBars.BarButtonItem();
             this.btnRaporlar = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAnaForm = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -106,7 +107,6 @@
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.btnAnaForm = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -587,6 +587,15 @@
             this.btnRaporlar.Name = "btnRaporlar";
             this.btnRaporlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRaporlar_ItemClick);
             // 
+            // btnAnaForm
+            // 
+            this.btnAnaForm.Caption = "Ana Sayfa";
+            this.btnAnaForm.Id = 48;
+            this.btnAnaForm.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAnaForm.ImageOptions.Image")));
+            this.btnAnaForm.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnAnaForm.ImageOptions.LargeImage")));
+            this.btnAnaForm.Name = "btnAnaForm";
+            this.btnAnaForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAnaForm_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -598,7 +607,6 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnAnaForm);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
             // ribbonPage2
             // 
@@ -800,15 +808,6 @@
             this.ribbonPageGroup4});
             this.ribbonPage4.Name = "ribbonPage4";
             this.ribbonPage4.Text = "Personeller";
-            // 
-            // btnAnaForm
-            // 
-            this.btnAnaForm.Caption = "Ana Sayfa";
-            this.btnAnaForm.Id = 48;
-            this.btnAnaForm.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnAnaForm.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.btnAnaForm.Name = "btnAnaForm";
-            this.btnAnaForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAnaForm_ItemClick);
             // 
             // Form1
             // 
