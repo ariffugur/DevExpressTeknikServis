@@ -16,7 +16,15 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-
-
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        private void FrmAnaSayfa_Load(object sender, EventArgs e)
+        {
+            gridControl4.DataSource = (from x in db.TBLURUN
+                                       select new
+                                       {
+                                           x.AD,
+                                           x.STOK
+                                       }).Where(x => x.STOK < 30).ToList();
+        }
     }
 }

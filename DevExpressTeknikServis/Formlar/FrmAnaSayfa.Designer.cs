@@ -95,7 +95,7 @@
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(525, 367);
             this.groupControl2.TabIndex = 12;
-            this.groupControl2.Text = "groupControl2";
+            this.groupControl2.Text = "Kritik Seviye";
             // 
             // groupControl3
             // 
@@ -104,7 +104,7 @@
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(525, 367);
             this.groupControl3.TabIndex = 13;
-            this.groupControl3.Text = "groupControl3";
+            this.groupControl3.Text = "Fihrist";
             // 
             // gridControl1
             // 
@@ -133,7 +133,7 @@
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Size = new System.Drawing.Size(525, 367);
             this.groupControl4.TabIndex = 14;
-            this.groupControl4.Text = "groupControl4";
+            this.groupControl4.Text = "Bugün Yapılacaklar Listesi";
             // 
             // gridControl2
             // 
@@ -162,7 +162,7 @@
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(525, 367);
             this.groupControl5.TabIndex = 13;
-            this.groupControl5.Text = "groupControl5";
+            this.groupControl5.Text = "Kategori - Ürün";
             // 
             // gridControl3
             // 
@@ -195,7 +195,8 @@
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmAnaSayfa";
-            this.Text = "FrmAnaSayfa";
+            this.Text = ".";
+            this.Load += new System.EventHandler(this.FrmAnaSayfa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
