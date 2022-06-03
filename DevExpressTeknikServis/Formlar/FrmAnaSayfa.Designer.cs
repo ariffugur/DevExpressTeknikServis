@@ -103,6 +103,8 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.panel13);
+            this.groupControl1.Controls.Add(this.panel4);
+            this.groupControl1.Controls.Add(this.panel2);
             this.groupControl1.Controls.Add(this.panel7);
             this.groupControl1.Controls.Add(this.panel8);
             this.groupControl1.Controls.Add(this.panel5);
@@ -111,9 +113,7 @@
             this.groupControl1.Controls.Add(this.panel10);
             this.groupControl1.Controls.Add(this.panel3);
             this.groupControl1.Controls.Add(this.panel11);
-            this.groupControl1.Controls.Add(this.panel4);
             this.groupControl1.Controls.Add(this.panel12);
-            this.groupControl1.Controls.Add(this.panel2);
             this.groupControl1.Controls.Add(this.panel1);
             this.groupControl1.Location = new System.Drawing.Point(1057, 0);
             this.groupControl1.Name = "groupControl1";
@@ -279,7 +279,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
             this.panel3.Controls.Add(this.labelControl3);
-            this.panel3.Location = new System.Drawing.Point(2, 192);
+            this.panel3.Location = new System.Drawing.Point(2, 138);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(306, 50);
             this.panel3.TabIndex = 3;
@@ -298,7 +298,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel4.Controls.Add(this.labelControl4);
-            this.panel4.Location = new System.Drawing.Point(2, 136);
+            this.panel4.Location = new System.Drawing.Point(2, 192);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(306, 50);
             this.panel4.TabIndex = 2;
@@ -316,7 +316,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(143)))), ((int)(((byte)(179)))));
-            this.panel5.Controls.Add(this.labelControl5);
+            this.panel5.Controls.Add(this.labelControl6);
             this.panel5.Location = new System.Drawing.Point(2, 304);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(306, 50);
@@ -326,7 +326,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(22, 16);
+            this.labelControl5.Location = new System.Drawing.Point(22, 17);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(70, 13);
             this.labelControl5.TabIndex = 0;
@@ -335,7 +335,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(181)))), ((int)(((byte)(67)))));
-            this.panel6.Controls.Add(this.labelControl6);
+            this.panel6.Controls.Add(this.labelControl5);
             this.panel6.Location = new System.Drawing.Point(2, 248);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(306, 50);
@@ -345,7 +345,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(22, 16);
+            this.labelControl6.Location = new System.Drawing.Point(22, 20);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(70, 13);
             this.labelControl6.TabIndex = 0;
@@ -354,7 +354,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(236)))), ((int)(((byte)(219)))));
-            this.panel7.Controls.Add(this.labelControl7);
+            this.panel7.Controls.Add(this.labelControl12);
             this.panel7.Location = new System.Drawing.Point(2, 638);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(306, 50);
@@ -364,7 +364,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(22, 16);
+            this.labelControl7.Location = new System.Drawing.Point(22, 22);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(70, 13);
             this.labelControl7.TabIndex = 0;
@@ -373,7 +373,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(152)))));
-            this.panel8.Controls.Add(this.labelControl8);
+            this.panel8.Controls.Add(this.labelControl11);
             this.panel8.Location = new System.Drawing.Point(2, 582);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(306, 50);
@@ -383,7 +383,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(22, 16);
+            this.labelControl8.Location = new System.Drawing.Point(22, 19);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(70, 13);
             this.labelControl8.TabIndex = 0;
@@ -392,7 +392,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(55)))), ((int)(((byte)(113)))));
-            this.panel9.Controls.Add(this.labelControl9);
+            this.panel9.Controls.Add(this.labelControl10);
             this.panel9.Location = new System.Drawing.Point(2, 526);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(306, 50);
@@ -411,7 +411,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
-            this.panel10.Controls.Add(this.labelControl10);
+            this.panel10.Controls.Add(this.labelControl9);
             this.panel10.Location = new System.Drawing.Point(2, 470);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(306, 50);
@@ -421,7 +421,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(22, 16);
+            this.labelControl10.Location = new System.Drawing.Point(22, 19);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(76, 13);
             this.labelControl10.TabIndex = 0;
@@ -430,7 +430,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.panel11.Controls.Add(this.labelControl11);
+            this.panel11.Controls.Add(this.labelControl8);
             this.panel11.Location = new System.Drawing.Point(2, 416);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(306, 50);
@@ -440,7 +440,7 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(22, 16);
+            this.labelControl11.Location = new System.Drawing.Point(22, 17);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(76, 13);
             this.labelControl11.TabIndex = 0;
@@ -449,7 +449,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.panel12.Controls.Add(this.labelControl12);
+            this.panel12.Controls.Add(this.labelControl7);
             this.panel12.Location = new System.Drawing.Point(2, 360);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(306, 50);
@@ -459,7 +459,7 @@
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(22, 16);
+            this.labelControl12.Location = new System.Drawing.Point(16, 19);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(76, 13);
             this.labelControl12.TabIndex = 0;
