@@ -31,10 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmYeniKategori));
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtUrunAdi = new DevExpress.XtraEditors.TextEdit();
+            this.txtKategoriAdi = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAdi.Properties)).BeginInit();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKategoriAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnKaydet
@@ -56,20 +58,20 @@
             this.panel1.Size = new System.Drawing.Size(220, 3);
             this.panel1.TabIndex = 20;
             // 
-            // txtUrunAdi
+            // txtKategoriAdi
             // 
-            this.txtUrunAdi.EditValue = "Kategori Adı";
-            this.txtUrunAdi.Location = new System.Drawing.Point(85, 50);
-            this.txtUrunAdi.Name = "txtUrunAdi";
-            this.txtUrunAdi.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtUrunAdi.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUrunAdi.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.txtUrunAdi.Properties.Appearance.Options.UseBackColor = true;
-            this.txtUrunAdi.Properties.Appearance.Options.UseFont = true;
-            this.txtUrunAdi.Properties.Appearance.Options.UseForeColor = true;
-            this.txtUrunAdi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtUrunAdi.Size = new System.Drawing.Size(100, 26);
-            this.txtUrunAdi.TabIndex = 19;
+            this.txtKategoriAdi.EditValue = "Kategori Adı";
+            this.txtKategoriAdi.Location = new System.Drawing.Point(85, 50);
+            this.txtKategoriAdi.Name = "txtKategoriAdi";
+            this.txtKategoriAdi.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtKategoriAdi.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKategoriAdi.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.txtKategoriAdi.Properties.Appearance.Options.UseBackColor = true;
+            this.txtKategoriAdi.Properties.Appearance.Options.UseFont = true;
+            this.txtKategoriAdi.Properties.Appearance.Options.UseForeColor = true;
+            this.txtKategoriAdi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtKategoriAdi.Size = new System.Drawing.Size(100, 26);
+            this.txtKategoriAdi.TabIndex = 19;
             // 
             // pictureEdit1
             // 
@@ -83,22 +85,38 @@
             this.pictureEdit1.Size = new System.Drawing.Size(32, 32);
             this.pictureEdit1.TabIndex = 18;
             // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
+            this.pictureEdit2.Location = new System.Drawing.Point(321, 2);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit2.Size = new System.Drawing.Size(32, 32);
+            this.pictureEdit2.TabIndex = 24;
+            this.pictureEdit2.Click += new System.EventHandler(this.pictureEdit2_Click);
+            // 
             // FrmYeniKategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(356, 195);
+            this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtUrunAdi);
+            this.Controls.Add(this.txtKategoriAdi);
             this.Controls.Add(this.pictureEdit1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmYeniKategori";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmYeniKategori";
-            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKategoriAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,7 +125,8 @@
 
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.TextEdit txtUrunAdi;
+        private DevExpress.XtraEditors.TextEdit txtKategoriAdi;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
     }
 }
