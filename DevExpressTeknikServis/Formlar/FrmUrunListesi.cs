@@ -95,5 +95,15 @@ namespace DevExpressTeknikServis.Formlar
             db.SaveChanges();
             MessageBox.Show("Ürün Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtID.Text = "";
+            txtAlisFiyat.Text = "";
+            txtMarka.Text = "";
+            txtSatisFiyat.Text = "";
+            txtStok.Text = "";
+            txtUrunAdi  .Text = "";
+        }
     }
 }
