@@ -16,32 +16,41 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
         private void FrmYeniUrun_Load(object sender, EventArgs e)
         {
-
+            lookUpEdit1.Properties.DataSource = (from x in db.TBLKATEGORI
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     x.AD
+                                                 }).ToList();
         }
 
         private void btnVazgec_Click(object sender, EventArgs e)
         {
-            FrmYeniUrun fr=new FrmYeniUrun();
-            //fr.Close();
+           this.Close();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            DbTeknikServisEntities db=new DbTeknikServisEntities();
             TBLURUN t=new TBLURUN();
             t.AD=txtUrunAdi.Text;
             t.MARKA=txtMarka.Text;
-            t.KATEGORI=byte.Parse(txtKategori.Text);
             t.ALISFIYAT=decimal.Parse(txtAlisFiyati.Text);
+            t.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
             t.SATISFIYAT=decimal.Parse(txtSatisFiyati.Text);
             t.STOK=short.Parse(txtStok.Text);
             db.TBLURUN.Add(t);
             db.SaveChanges();
             MessageBox.Show("Ürün Başarıyla Kaydedildi!");
 
+        }
+
+        private void txtUrunAdi_Click(object sender, EventArgs e)
+        {
+            txtUrunAdi.Text = "";
+            txtUrunAdi.Focus();
         }
     }
 }
