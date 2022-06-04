@@ -794,7 +794,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 837);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel12);
@@ -816,7 +816,7 @@
             this.Controls.Add(this.panel20);
             this.Controls.Add(this.panel1);
             this.Name = "FrmIstatistik";
-            this.Text = "FrmIstatistik";
+            this.Text = "İstatistikler";
             this.Load += new System.EventHandler(this.FrmIstatistik_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
