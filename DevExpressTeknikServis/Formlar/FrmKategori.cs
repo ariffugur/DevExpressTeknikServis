@@ -16,7 +16,7 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void FrmKategori_Load(object sender, EventArgs e)
         {
             metod1();
@@ -24,33 +24,41 @@ namespace DevExpressTeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            TBLKATEGORI t=new TBLKATEGORI();
-            t.AD=txtAd.Text;
-            db.TBLKATEGORI.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Kategori Başarıyla Kaydedildi.");
+            if (txtAd.Text != "" && txtAd.Text.Length <= 30)
+            {
+                TBLKATEGORI t = new TBLKATEGORI();
+                t.AD = txtAd.Text;
+                db.TBLKATEGORI.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Kategori Başarıyla Kaydedildi.");
+            }
+            else
+            {
+                MessageBox.Show("Kategori Adı Boş Geçilemez ve 30 Karakterden Fazla Olamaz!");
+            }
+
         }
         void metod1()
         {
-            
-                var degerler = from k in db.TBLKATEGORI
-                               select new
-                               {
-                                   k.ID,
-                                   k.AD
-                               };
-                gridControl1.DataSource = degerler.ToList();
-            }
+
+            var degerler = from k in db.TBLKATEGORI
+                           select new
+                           {
+                               k.ID,
+                               k.AD
+                           };
+            gridControl1.DataSource = degerler.ToList();
+        }
 
         private void btnListele_Click(object sender, EventArgs e)
         {
-                metod1();
+            metod1();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            txtID.Text=gridView1.GetFocusedRowCellValue("ID").ToString();
-            txtAd.Text=gridView1.GetFocusedRowCellValue("AD").ToString();
+            txtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            txtAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
         }
 
         private void btnSil_Click(object sender, EventArgs e)
@@ -68,7 +76,13 @@ namespace DevExpressTeknikServis.Formlar
             var deger = db.TBLKATEGORI.Find(id);
             deger.AD = txtAd.Text;
             db.SaveChanges();
-            MessageBox.Show("Kategori Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning); 
+            MessageBox.Show("Kategori Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtAd.Text = "";
+            txtID.Text = "";
         }
     }
 }
