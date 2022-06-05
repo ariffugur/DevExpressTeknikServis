@@ -46,7 +46,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -77,7 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
@@ -219,7 +219,7 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.textEdit5);
-            this.groupControl1.Controls.Add(this.lookUpEdit3);
+            this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.lookUpEdit2);
             this.groupControl1.Controls.Add(this.textEdit4);
             this.groupControl1.Controls.Add(this.labelControl11);
@@ -257,25 +257,26 @@
             this.textEdit5.Size = new System.Drawing.Size(168, 20);
             this.textEdit5.TabIndex = 39;
             // 
-            // lookUpEdit3
+            // lookUpEdit1
             // 
-            this.lookUpEdit3.Location = new System.Drawing.Point(82, 156);
-            this.lookUpEdit3.Name = "lookUpEdit3";
-            this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEdit1.Location = new System.Drawing.Point(82, 156);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit3.Properties.DisplayMember = "AD";
-            this.lookUpEdit3.Properties.ValueMember = "ID";
-            this.lookUpEdit3.Size = new System.Drawing.Size(168, 20);
-            this.lookUpEdit3.TabIndex = 38;
+            this.lookUpEdit1.Properties.DisplayMember = "sehir";
+            this.lookUpEdit1.Properties.ValueMember = "id";
+            this.lookUpEdit1.Size = new System.Drawing.Size(168, 20);
+            this.lookUpEdit1.TabIndex = 38;
+            this.lookUpEdit1.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
             // 
             // lookUpEdit2
             // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(82, 182);
+            this.lookUpEdit2.Location = new System.Drawing.Point(82, 181);
             this.lookUpEdit2.Name = "lookUpEdit2";
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Properties.DisplayMember = "AD";
-            this.lookUpEdit2.Properties.ValueMember = "ID";
+            this.lookUpEdit2.Properties.DisplayMember = "ilce";
+            this.lookUpEdit2.Properties.ValueMember = "id";
             this.lookUpEdit2.Size = new System.Drawing.Size(168, 20);
             this.lookUpEdit2.TabIndex = 37;
             // 
@@ -506,7 +507,7 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmCariListesi";
-            this.Text = "FrmCariListesi";
+            this.Text = "Cari Listesi";
             this.Load += new System.EventHandler(this.FrmCariListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).EndInit();
@@ -516,7 +517,7 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
@@ -565,7 +566,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit3;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.LabelControl labelControl12;

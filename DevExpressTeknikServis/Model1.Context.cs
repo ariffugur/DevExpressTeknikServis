@@ -44,6 +44,8 @@ namespace DevExpressTeknikServis
         public virtual DbSet<TBLURUNTAKIP> TBLURUNTAKIP { get; set; }
         public virtual DbSet<TBLHAKKIMIZDA> TBLHAKKIMIZDA { get; set; }
         public virtual DbSet<TBLILETISIM> TBLILETISIM { get; set; }
+        public virtual DbSet<TBLILCELER> TBLILCELER { get; set; }
+        public virtual DbSet<TBLILLER> TBLILLER { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {
