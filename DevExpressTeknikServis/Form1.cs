@@ -59,12 +59,17 @@ namespace DevExpressTeknikServis
                 fr4.Show();
             }
         }
-
+        Formlar.FrrmMarkalar fr5;
         private void btnMarkaIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrrmMarkalar fr = new Formlar.FrrmMarkalar();
-            fr.MdiParent = this;
-            fr.Show();
+
+
+            if (fr5 == null || fr5.IsDisposed)
+            {
+                fr5 = new Formlar.FrrmMarkalar();
+                fr5.MdiParent = this;
+                fr5.Show();
+            }
         }
 
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
