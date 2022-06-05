@@ -25,6 +25,11 @@ namespace DevExpressTeknikServis.Formlar
             t.SERINO = txtSeriNo.Text;
             t.TARIH = DateTime.Parse(txtTarih.Text);
             db.TBLURUNTAKIP.Add(t);
+
+            TBLURUNKABUL tb = new TBLURUNKABUL();
+            int urunId = int.Parse(id.ToString());
+            var degerler = db.TBLURUNKABUL.Find(urunId);
+            degerler.URUNDURUMDETAY = comboBox1.Text;
             db.SaveChanges();
             MessageBox.Show("Ürün arıza detayları güncellendi");
         }
@@ -46,6 +51,14 @@ namespace DevExpressTeknikServis.Formlar
             txtSeriNo.Text = "";
         }
 
-   
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        public string id;
+        private void FrmArizaDetaylar_Load(object sender, EventArgs e)
+        {
+            richTxtBoxArizaDetay.Text = id;
+        }
     }
 }
