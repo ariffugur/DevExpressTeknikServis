@@ -39,7 +39,7 @@ namespace DevExpressTeknikServis.Formlar
             //chartControl1.Series["Series 1"].Points.AddPoint("toshiba", 1);
             //chartControl1.Series["Series 1"].Points.AddPoint("Lenovo", 2);
             //chartControl1.Series[0].LegendTextPattern = "{A}: {V:F1}";
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-SO1A66F;Initial Catalog=data;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-4QQ4ANU;Initial Catalog=datas;Integrated Security=True");
             baglanti.Open();
             SqlCommand komut=new SqlCommand("select MARKA, COUNT(*) from TBLURUN group by MARKA", baglanti);
             SqlDataReader dr=komut.ExecuteReader();

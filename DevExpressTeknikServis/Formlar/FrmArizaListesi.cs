@@ -30,6 +30,7 @@ namespace DevExpressTeknikServis.Formlar
                                x.CIKISTARIH
                            };
             gridControl1.DataSource = degerler.ToList();
+            labelControl5.Text=db.TBLURUNKABUL.Count().ToString();
         }
     }
 }
