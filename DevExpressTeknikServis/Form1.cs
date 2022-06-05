@@ -49,12 +49,15 @@ namespace DevExpressTeknikServis
             fr.Show();
 
         }
-
+        Formlar.FrmIstatistik fr4;
         private void btnIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmIstatistik fr = new Formlar.FrmIstatistik();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr4 == null || fr4.IsDisposed)
+            {
+                fr4 = new Formlar.FrmIstatistik();
+                fr4.MdiParent = this;
+                fr4.Show();
+            }
         }
 
         private void btnMarkaIstatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

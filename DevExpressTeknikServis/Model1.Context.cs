@@ -157,5 +157,10 @@ namespace DevExpressTeknikServis
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("maksKategoriUrun");
         }
+    
+        public virtual ObjectResult<string> maksUrunMarka()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("maksUrunMarka");
+        }
     }
 }

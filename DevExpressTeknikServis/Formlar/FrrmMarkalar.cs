@@ -27,6 +27,7 @@ namespace DevExpressTeknikServis.Formlar
             });
             gridControl1.DataSource = degerler.ToList();
             labelControl2.Text = db.TBLURUN.Count().ToString();
+            labelControl5.Text=db.maksUrunMarka().FirstOrDefault();
             labelControl3.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
             labelControl7.Text = (from x in db.TBLURUN orderby x.SATISFIYAT descending select x.MARKA).FirstOrDefault();
             chartControl1.Series["Series 1"].Points.AddPoint("Siemens", 4);
