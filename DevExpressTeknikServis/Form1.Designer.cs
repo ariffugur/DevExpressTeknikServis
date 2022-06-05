@@ -279,7 +279,7 @@
             // 
             // barButtonItem12
             // 
-            this.barButtonItem12.Caption = "Barcod Oluştur";
+            this.barButtonItem12.Caption = "QR Oluştur";
             this.barButtonItem12.Id = 12;
             this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
             this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
