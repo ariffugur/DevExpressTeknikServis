@@ -16,17 +16,41 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void btnKayitYap_Click(object sender, EventArgs e)
         {
-            TBLURUNKABUL t=new TBLURUNKABUL();
-            t.CARI=int.Parse(txtId.Text);
-            t.GELISTARIH=DateTime.Parse(txtTarih.Text);
-            t.PERSONEL=short.Parse(txtPersonel.Text);
-            t.URUNSERINO=txtSeriNo.Text;
+            lookUpEdit1.Properties.DataSource = (from x in db.TBLCARI
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     x.AD
+                                                 }).ToList();
+            TBLURUNKABUL t = new TBLURUNKABUL();
+            t.CARI = int.Parse(lookUpEdit1.EditValue.ToString());
+            t.GELISTARIH = DateTime.Parse(txtTarih.Text);
+            t.PERSONEL = short.Parse(lookUpEdit2.EditValue.ToString());
+            t.URUNSERINO = txtSeriNo.Text;
+            t.URUNDURUMDETAY = "Mesaj Bekliyor";
             db.TBLURUNKABUL.Add(t);
             db.SaveChanges();
             MessageBox.Show("Ürün Arıza Girişi Yapıldı.");
         }
+
+        private void FrmArizaliUrunKaydi_Load(object sender, EventArgs e)
+        {
+            lookUpEdit1.Properties.DataSource = (from x in db.TBLCARI
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     AD = x.AD + " " + x.SOYAD
+                                                 }).ToList();
+            lookUpEdit2.Properties.DataSource = (from x in db.TBLPERSONEL
+                                                 select new
+                                                 {
+                                                     x.ID,
+                                                     AD = x.AD + " " + x.SOYAD
+                                                 }).ToList();
+        }
+
     }
 }
