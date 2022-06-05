@@ -30,7 +30,12 @@ namespace DevExpressTeknikServis.Formlar
                                x.CIKISTARIH
                            };
             gridControl1.DataSource = degerler.ToList();
-            labelControl5.Text=db.TBLURUNKABUL.Count().ToString();
+            labelControl5.Text=db.TBLURUNKABUL.Count(x=>x.URUNDURUM==true).ToString();
+            labelControl3.Text=db.TBLURUNKABUL.Count(x=>x.URUNDURUM==false).ToString();
+            labelControl13.Text=db.TBLURUN.Count().ToString();
+            labelControl7.Text=db.TBLURUNKABUL.Count(x=>x.URUNDURUMDETAY=="Parça Bekliyor").ToString();
+            labelControl17.Text=db.TBLURUNKABUL.Count(x=>x.URUNDURUMDETAY=="Mesaj Bekliyor").ToString();
+            labelControl15.Text=db.TBLURUNKABUL.Count(x=>x.URUNDURUMDETAY=="İptal Bekliyor").ToString();
         }
     }
 }

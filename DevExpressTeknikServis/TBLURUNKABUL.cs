@@ -21,6 +21,7 @@ namespace DevExpressTeknikServis
         public Nullable<System.DateTime> CIKISTARIH { get; set; }
         public string URUNSERINO { get; set; }
         public Nullable<bool> URUNDURUM { get; set; }
+        public string URUNDURUMDETAY { get; set; }
     
         public virtual TBLCARI TBLCARI { get; set; }
         public virtual TBLPERSONEL TBLPERSONEL { get; set; }

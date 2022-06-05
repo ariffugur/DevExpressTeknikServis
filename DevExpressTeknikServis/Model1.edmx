@@ -173,6 +173,7 @@
           <Property Name="CIKISTARIH" Type="smalldatetime" />
           <Property Name="URUNSERINO" Type="char" MaxLength="5" />
           <Property Name="URUNDURUM" Type="bit" />
+          <Property Name="URUNDURUMDETAY" Type="varchar" MaxLength="30" />
         </EntityType>
         <EntityType Name="TBLURUNTAKIP">
           <Key>
@@ -632,6 +633,7 @@
           <NavigationProperty Name="TBLPERSONEL" Relationship="DbTeknikServisModel.FK_TBLURUNKABUL_TBLPERSONEL" FromRole="TBLURUNKABUL" ToRole="TBLPERSONEL" />
           <Property Name="URUNSERINO" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
           <Property Name="URUNDURUM" Type="Boolean" />
+          <Property Name="URUNDURUMDETAY" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="TBLURUNTAKIP">
           <Key>
@@ -956,7 +958,8 @@
     <EntitySetMapping Name="TBLURUNKABUL">
       <EntityTypeMapping TypeName="IsTypeOf(DbTeknikServisModel.TBLURUNKABUL)">
         <MappingFragment StoreEntitySet="TBLURUNKABUL">
-          <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
+          <ScalarProperty Name="URUNDURUMDETAY" ColumnName="URUNDURUMDETAY" />
+                <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
                 <ScalarProperty Name="ISLEMID" ColumnName="ISLEMID" />
           <ScalarProperty Name="CARI" ColumnName="CARI" />
           <ScalarProperty Name="PERSONEL" ColumnName="PERSONEL" />
