@@ -16,10 +16,19 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void FrmCariListesi_Load(object sender, EventArgs e)
         {
-            gridControl1.DataSource = db.TBLCARI.ToList();
+           var degerler = from x in db.TBLCARI
+                                      select new
+                                      {
+                                          x.ID,
+                                          x.AD,
+                                          x.SOYAD,
+                                          x.IL,
+                                          x.ILCE,
+                                      };
+            gridControl1.DataSource = degerler.ToList();
         }
     }
 }
