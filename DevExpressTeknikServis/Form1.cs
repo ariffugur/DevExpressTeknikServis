@@ -148,12 +148,14 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.FrmArizaListesi fr6;
         private void btnArizaliUrunListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmArizaListesi fr = new Formlar.FrmArizaListesi();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr6 == null||fr6.IsDisposed) { 
+            fr6= new Formlar.FrmArizaListesi();
+            fr6.MdiParent = this;
+            fr6.Show();
+            }
         }
 
         private void btnUrunSatis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
