@@ -91,6 +91,7 @@
             this.btnVazgec.Size = new System.Drawing.Size(108, 38);
             this.btnVazgec.TabIndex = 64;
             this.btnVazgec.Text = "Vazgeç";
+            this.btnVazgec.Click += new System.EventHandler(this.btnVazgec_Click);
             // 
             // pictureEdit7
             // 
@@ -99,6 +100,7 @@
             this.pictureEdit7.Name = "pictureEdit7";
             this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit7.Size = new System.Drawing.Size(32, 32);
@@ -145,6 +147,7 @@
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit3.Size = new System.Drawing.Size(32, 32);
@@ -166,6 +169,7 @@
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit1.Size = new System.Drawing.Size(32, 32);
@@ -178,6 +182,7 @@
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit4.Size = new System.Drawing.Size(32, 32);
@@ -206,6 +211,7 @@
             this.txtTarih.Properties.MaskSettings.Set("mask", "d");
             this.txtTarih.Size = new System.Drawing.Size(100, 26);
             this.txtTarih.TabIndex = 3;
+            this.txtTarih.Click += new System.EventHandler(this.txtTarih_Click);
             // 
             // panel4
             // 

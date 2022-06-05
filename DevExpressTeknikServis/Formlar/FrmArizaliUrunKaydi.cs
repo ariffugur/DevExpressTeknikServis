@@ -52,5 +52,14 @@ namespace DevExpressTeknikServis.Formlar
                                                  }).ToList();
         }
 
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtTarih_Click(object sender, EventArgs e)
+        {
+            txtTarih.Text=DateTime.Now.ToShortDateString();
+        }
     }
 }

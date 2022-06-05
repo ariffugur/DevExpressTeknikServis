@@ -31,20 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArizaDetaylar));
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTarih = new DevExpress.XtraEditors.DateEdit();
             this.richTxtBoxArizaDetay = new System.Windows.Forms.RichTextBox();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtSeriNo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).BeginInit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKayitYap.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(12, 319);
+            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
+            this.btnGuncelle.Location = new System.Drawing.Point(12, 304);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(108, 38);
             this.btnGuncelle.TabIndex = 4;
@@ -63,80 +65,115 @@
             this.labelControl1.TabIndex = 7;
             this.labelControl1.Text = "Arızalı Ürün Kaydı Açıklama";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(12, 99);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(220, 3);
+            this.panel4.TabIndex = 70;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(12, 149);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(220, 3);
+            this.panel1.TabIndex = 72;
+            // 
+            // txtTarih
+            // 
+            this.txtTarih.EditValue = "Tarih:";
+            this.txtTarih.Location = new System.Drawing.Point(12, 117);
+            this.txtTarih.Name = "txtTarih";
+            this.txtTarih.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtTarih.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTarih.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.txtTarih.Properties.Appearance.Options.UseBackColor = true;
+            this.txtTarih.Properties.Appearance.Options.UseFont = true;
+            this.txtTarih.Properties.Appearance.Options.UseForeColor = true;
+            this.txtTarih.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtTarih.Properties.DisplayFormat.FormatString = "";
+            this.txtTarih.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtTarih.Properties.EditFormat.FormatString = "";
+            this.txtTarih.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
+            this.txtTarih.Size = new System.Drawing.Size(100, 26);
+            this.txtTarih.TabIndex = 71;
+            this.txtTarih.Click += new System.EventHandler(this.dateEdit2_Click);
+            // 
             // richTxtBoxArizaDetay
             // 
+            this.richTxtBoxArizaDetay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.richTxtBoxArizaDetay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.richTxtBoxArizaDetay.ForeColor = System.Drawing.SystemColors.Window;
             this.richTxtBoxArizaDetay.Location = new System.Drawing.Point(12, 202);
             this.richTxtBoxArizaDetay.Name = "richTxtBoxArizaDetay";
             this.richTxtBoxArizaDetay.Size = new System.Drawing.Size(335, 96);
             this.richTxtBoxArizaDetay.TabIndex = 3;
-            this.richTxtBoxArizaDetay.Text = "";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(12, 66);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(40, 17);
-            this.labelControl2.TabIndex = 9;
-            this.labelControl2.Text = "Seri No";
+            this.richTxtBoxArizaDetay.Text = "Arıza Detayları";
+            this.richTxtBoxArizaDetay.Click += new System.EventHandler(this.richTxtBoxArizaDetay_Click);
             // 
             // txtSeriNo
             // 
-            this.txtSeriNo.Location = new System.Drawing.Point(12, 89);
+            this.txtSeriNo.EditValue = "Seri No:";
+            this.txtSeriNo.Location = new System.Drawing.Point(12, 67);
             this.txtSeriNo.Name = "txtSeriNo";
-            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.txtSeriNo.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.txtSeriNo.Properties.MaskSettings.Set("mask", "99999");
-            this.txtSeriNo.Size = new System.Drawing.Size(100, 20);
-            this.txtSeriNo.TabIndex = 1;
+            this.txtSeriNo.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtSeriNo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSeriNo.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.txtSeriNo.Properties.Appearance.Options.UseBackColor = true;
+            this.txtSeriNo.Properties.Appearance.Options.UseFont = true;
+            this.txtSeriNo.Properties.Appearance.Options.UseForeColor = true;
+            this.txtSeriNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtSeriNo.Size = new System.Drawing.Size(100, 26);
+            this.txtSeriNo.TabIndex = 73;
+            this.txtSeriNo.Click += new System.EventHandler(this.txtSeriNo_Click);
             // 
-            // labelControl3
+            // panel2
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(12, 115);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(27, 17);
-            this.labelControl3.TabIndex = 11;
-            this.labelControl3.Text = "Tarih";
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(12, 193);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(220, 3);
+            this.panel2.TabIndex = 73;
             // 
-            // txtTarih
+            // comboBox1
             // 
-            this.txtTarih.Location = new System.Drawing.Point(12, 138);
-            this.txtTarih.Name = "txtTarih";
-            this.txtTarih.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.DateTimeMaskManager));
-            this.txtTarih.Properties.MaskSettings.Set("mask", "d");
-            this.txtTarih.Size = new System.Drawing.Size(100, 20);
-            this.txtTarih.TabIndex = 2;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(12, 179);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(79, 17);
-            this.labelControl4.TabIndex = 13;
-            this.labelControl4.Text = "Arıza Detayları";
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Ürün Kaydoldu",
+            "Parça Bekliyor",
+            "Mesaj Bekliyor",
+            "İptal Edildi",
+            "Fiyat Verildi"});
+            this.comboBox1.Location = new System.Drawing.Point(12, 159);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(220, 29);
+            this.comboBox1.TabIndex = 74;
             // 
             // FrmArizaDetaylar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(389, 399);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.txtTarih);
-            this.Controls.Add(this.labelControl3);
+            this.ClientSize = new System.Drawing.Size(367, 437);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtSeriNo);
-            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtTarih);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.richTxtBoxArizaDetay);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnGuncelle);
@@ -144,8 +181,9 @@
             this.Name = "FrmArizaDetaylar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmArizaDetaylar";
-            ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,11 +193,12 @@
 
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.DateEdit txtTarih;
         private System.Windows.Forms.RichTextBox richTxtBoxArizaDetay;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtSeriNo;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit txtTarih;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
