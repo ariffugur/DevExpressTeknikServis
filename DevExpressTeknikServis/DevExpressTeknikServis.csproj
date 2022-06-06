@@ -291,6 +291,12 @@
     <Compile Include="Iletisim\FrmGelenMesajlar.Designer.cs">
       <DependentUpon>FrmGelenMesajlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Iletisim\FrmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletisim\FrmMail.Designer.cs">
+      <DependentUpon>FrmMail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Iletisim\FrmRehber.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -481,6 +487,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Iletisim\FrmGelenMesajlar.resx">
       <DependentUpon>FrmGelenMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletisim\FrmMail.resx">
+      <DependentUpon>FrmMail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Iletisim\FrmRehber.resx">
       <DependentUpon>FrmRehber.cs</DependentUpon>

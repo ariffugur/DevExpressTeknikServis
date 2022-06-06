@@ -247,9 +247,9 @@
             this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(12, 12);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(262, 25);
+            this.labelControl2.Size = new System.Drawing.Size(193, 25);
             this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "En Az Çalışanı Olan Departman";
+            this.labelControl2.Text = "Toplam Personel Sayısı";
             // 
             // panel6
             // 
@@ -281,9 +281,9 @@
             this.labelControl4.Appearance.Options.UseForeColor = true;
             this.labelControl4.Location = new System.Drawing.Point(12, 12);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(262, 25);
+            this.labelControl4.Size = new System.Drawing.Size(154, 25);
             this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "En Az Çalışanı Olan Departman";
+            this.labelControl4.Text = "Toplam Cari Sayısı";
             // 
             // panel7
             // 
@@ -315,9 +315,9 @@
             this.labelControl6.Appearance.Options.UseForeColor = true;
             this.labelControl6.Location = new System.Drawing.Point(12, 12);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(262, 25);
+            this.labelControl6.Size = new System.Drawing.Size(162, 25);
             this.labelControl6.TabIndex = 0;
-            this.labelControl6.Text = "En Az Çalışanı Olan Departman";
+            this.labelControl6.Text = "Toplam Ürün Sayısı";
             // 
             // FrmGelenMesajlar
             // 

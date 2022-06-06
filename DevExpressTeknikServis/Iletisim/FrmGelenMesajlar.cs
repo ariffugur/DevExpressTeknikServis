@@ -23,6 +23,18 @@ namespace DevExpressTeknikServis.Iletisim
             labelControl18.Text=db.TBLILETISIM.Where(x=>x.KONU=="Teşekkür").Count().ToString();
             labelControl16.Text=db.TBLILETISIM.Where(x=>x.KONU=="Rica").Count().ToString();
             labelControl14.Text=db.TBLILETISIM.Where(x=>x.KONU=="Şikayet").Count().ToString();
+            labelControl1.Text=db.TBLPERSONEL.Count().ToString();
+            labelControl3.Text=db.TBLCARI.Count().ToString();
+            labelControl5.Text=db.TBLURUN.Count().ToString();
+            gridControl1.DataSource=(from x in db.TBLILETISIM select new
+            {
+                x.ID,
+                x.ADSOYAD,
+                x.KONU,
+                x.MAIL,
+                x.MESAJ,
+            }).ToList();
+
         }
     }
 }
