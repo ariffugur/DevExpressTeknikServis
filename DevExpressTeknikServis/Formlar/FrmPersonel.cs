@@ -17,7 +17,7 @@ namespace DevExpressTeknikServis.Formlar
             InitializeComponent();
         }
         DbTeknikServisEntities db=new DbTeknikServisEntities();
-        private void FrmPersonel_Load(object sender, EventArgs e)
+        void liste()
         {
             var degerler = from u in db.TBLPERSONEL
                            select new
@@ -30,6 +30,10 @@ namespace DevExpressTeknikServis.Formlar
                            };
 
             gridControl1.DataSource = degerler.ToList();
+        }
+        private void FrmPersonel_Load(object sender, EventArgs e)
+        {
+          liste();
             lookUpEdit1.Properties.DataSource = (from x in db.TBLDEPARTMAN
                                                 select new
                                                 {
@@ -62,6 +66,23 @@ namespace DevExpressTeknikServis.Formlar
             labelControl24.Text = db.TBLPERSONEL.First(x => x.ID == 1).TBLDEPARTMAN.AD;
             labelControl14.Text = db.TBLPERSONEL.First(x => x.ID == 1).MAIL;
             labelControl26.Text = ad4 + " " + soyad4;
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            TBLPERSONEL t=new TBLPERSONEL();
+            t.AD = txtAd.Text;
+            t.SOYAD = txtSoyad.Text;
+            t.DEPARTMAN = byte.Parse(lookUpEdit1.EditValue.ToString());
+            db.TBLPERSONEL.Add(t);
+            db.SaveChanges();
+            MessageBox.Show("Personel Başarıyl Kaydedildi!");
+            liste();
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            liste();
         }
     }
 }

@@ -74,10 +74,11 @@ namespace DevExpressTeknikServis
         Formlar.FrmCariListesi fr7;
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (fr7 == null || fr7.IsDisposed) { 
-             fr7= new Formlar.FrmCariListesi();
-            fr7.MdiParent = this;
-            fr7.Show();
+            if (fr7 == null || fr7.IsDisposed)
+            {
+                fr7 = new Formlar.FrmCariListesi();
+                fr7.MdiParent = this;
+                fr7.Show();
             }
         }
         Formlar.FrmCariIller fr8;
@@ -85,10 +86,10 @@ namespace DevExpressTeknikServis
         {
             if (fr8 == null || fr8.IsDisposed)
             {
-                 fr8= new Formlar.FrmCariIller();
-            
-            fr8.MdiParent = this;
-            fr8.Show();
+                fr8 = new Formlar.FrmCariIller();
+
+                fr8.MdiParent = this;
+                fr8.Show();
             }
         }
 
@@ -97,12 +98,15 @@ namespace DevExpressTeknikServis
             Formlar.FrmCariEkle fr = new Formlar.FrmCariEkle();
             fr.Show();
         }
-
+        Formlar.FrmDepartman fr10;
         private void btnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmDepartman fr = new Formlar.FrmDepartman();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr10 == null || fr10.IsDisposed)
+            {
+                fr10 = new Formlar.FrmDepartman();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
 
         private void btnYeniDepartman_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -112,11 +116,15 @@ namespace DevExpressTeknikServis
             fr.Show();
         }
 
+        Formlar.FrmPersonel fr9;
         private void btnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmPersonel fr = new Formlar.FrmPersonel();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr9 == null || fr9.IsDisposed)
+            {
+                fr9 = new Formlar.FrmPersonel();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
 
         private void barButtonItem26_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -157,10 +165,11 @@ namespace DevExpressTeknikServis
         Formlar.FrmArizaListesi fr6;
         private void btnArizaliUrunListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (fr6 == null||fr6.IsDisposed) { 
-            fr6= new Formlar.FrmArizaListesi();
-            fr6.MdiParent = this;
-            fr6.Show();
+            if (fr6 == null || fr6.IsDisposed)
+            {
+                fr6 = new Formlar.FrmArizaListesi();
+                fr6.MdiParent = this;
+                fr6.Show();
             }
         }
 

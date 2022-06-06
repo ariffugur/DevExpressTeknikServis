@@ -52,8 +52,8 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtAd = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.richTxtBoxAciklama = new System.Windows.Forms.RichTextBox();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -312,14 +312,6 @@
             this.groupControl1.TabIndex = 7;
             this.groupControl1.Text = "Departman İşlemleri";
             // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(109, 114);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(17, 13);
-            this.labelControl1.TabIndex = 11;
-            this.labelControl1.Text = "Ad:";
-            // 
             // richTxtBoxAciklama
             // 
             this.richTxtBoxAciklama.Location = new System.Drawing.Point(131, 136);
@@ -328,11 +320,19 @@
             this.richTxtBoxAciklama.TabIndex = 29;
             this.richTxtBoxAciklama.Text = "";
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(109, 114);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(17, 13);
+            this.labelControl1.TabIndex = 11;
+            this.labelControl1.Text = "Ad:";
+            // 
             // FrmDepartman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 837);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -340,7 +340,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmDepartman";
-            this.Text = "FrmDepartman";
+            this.Text = "Departman";
             this.Load += new System.EventHandler(this.FrmDepartman_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
