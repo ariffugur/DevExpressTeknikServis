@@ -16,10 +16,11 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-        public string id;
+        public int id;
         private void FrmFaturaKalemPopUp_Load(object sender, EventArgs e)
         {
-            label1.Text=id.ToString();
+            DbTeknikServisEntities db = new DbTeknikServisEntities();
+            gridControl1.DataSource = db.TBLFATURADETAY.Where(x => x.FATURAID == id).ToList();
         }
     }
 }
