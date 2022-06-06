@@ -43,10 +43,10 @@ namespace DevExpressTeknikServis.Formlar
             
             string ad1, soyad1, ad2, soyad2, ad3, soyad3, ad4, soyad4;
             //1.Personel
-            ad1 = db.TBLPERSONEL.First(x => x.ID == 1).AD;
-            soyad1 = db.TBLPERSONEL.First(x => x.ID == 1).SOYAD;
-            labelControl3.Text = db.TBLPERSONEL.First(x => x.ID == 1).TBLDEPARTMAN.AD;
-            labelControl6.Text = db.TBLPERSONEL.First(x => x.ID == 1).MAIL;
+            ad1 = db.TBLPERSONEL.First(x => x.ID == 2).AD;
+            soyad1 = db.TBLPERSONEL.First(x => x.ID == 2).SOYAD;
+            labelControl3.Text = db.TBLPERSONEL.First(x => x.ID == 2).TBLDEPARTMAN.AD;
+            labelControl6.Text = db.TBLPERSONEL.First(x => x.ID == 2).MAIL;
             labelControl2.Text=ad1+" " + soyad1;
             //2.Personel
             ad2 = db.TBLPERSONEL.First(x => x.ID == 1).AD;

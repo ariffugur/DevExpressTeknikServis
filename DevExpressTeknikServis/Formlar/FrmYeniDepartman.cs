@@ -32,6 +32,12 @@ namespace DevExpressTeknikServis.Formlar
                 MessageBox.Show("Departman Kaydedildilemedi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+        private void pictureEdit2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     }
 

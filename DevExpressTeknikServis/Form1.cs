@@ -104,15 +104,14 @@ namespace DevExpressTeknikServis
             if (fr10 == null || fr10.IsDisposed)
             {
                 fr10 = new Formlar.FrmDepartman();
-                fr.MdiParent = this;
-                fr.Show();
+                fr10.MdiParent = this;
+                fr10.Show();
             }
         }
 
         private void btnYeniDepartman_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.FrmYeniDepartman fr = new Formlar.FrmYeniDepartman();
-            fr.MdiParent = this;
             fr.Show();
         }
 
@@ -122,8 +121,8 @@ namespace DevExpressTeknikServis
             if (fr9 == null || fr9.IsDisposed)
             {
                 fr9 = new Formlar.FrmPersonel();
-                fr.MdiParent = this;
-                fr.Show();
+                fr9.MdiParent = this;
+                fr9.Show();
             }
         }
 
@@ -287,7 +286,15 @@ namespace DevExpressTeknikServis
                 fr.Show();
             }
         }
-
-
+        Iletisim.FrmRehber fr16;
+        private void barButtonItem34_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(fr16 == null || fr16.IsDisposed)
+            {
+                fr16=new Iletisim.FrmRehber();
+                fr16.MdiParent = this;
+                fr16.Show();
+            }
+        }
     }
 }

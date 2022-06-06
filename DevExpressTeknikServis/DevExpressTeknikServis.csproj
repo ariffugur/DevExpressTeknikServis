@@ -285,6 +285,12 @@
     <Compile Include="Formlar\FrrmMarkalar.Designer.cs">
       <DependentUpon>FrrmMarkalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Iletisim\FrmRehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletisim\FrmRehber.Designer.cs">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -466,6 +472,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrrmMarkalar.resx">
       <DependentUpon>FrrmMarkalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletisim\FrmRehber.resx">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

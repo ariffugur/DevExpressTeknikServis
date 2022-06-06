@@ -37,5 +37,7 @@ namespace DevExpressTeknikServis.Formlar
         {
             this.Close();
         }
+
+   
     }
 }
