@@ -296,5 +296,15 @@ namespace DevExpressTeknikServis
                 fr16.Show();
             }
         }
+        Iletisim.FrmGelenMesajlar fr17;
+        private void barButtonItem35_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr17 == null || fr17.IsDisposed)
+            {
+                fr17 = new Iletisim.FrmGelenMesajlar();
+                fr17.MdiParent = this;
+                fr17.Show();
+            }
+        }
     }
 }
