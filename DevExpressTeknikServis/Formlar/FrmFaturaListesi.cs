@@ -83,7 +83,12 @@ namespace DevExpressTeknikServis.Formlar
 
            
         }
-
-    
+       
+        private void gridControl1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaKalemPopUp fr = new FrmFaturaKalemPopUp();
+            fr.id = gridView1.GetFocusedRowCellValue("ID").ToString();
+            fr.Show();
+        }
     }
 }

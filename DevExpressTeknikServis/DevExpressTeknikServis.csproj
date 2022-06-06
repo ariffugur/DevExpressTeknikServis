@@ -171,6 +171,12 @@
     <Compile Include="Formlar\FrmFaturaKalemleri.Designer.cs">
       <DependentUpon>FrmFaturaKalemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmFaturaKalemPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmFaturaKalemPopUp.Designer.cs">
+      <DependentUpon>FrmFaturaKalemPopUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmFaturaListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -403,6 +409,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmFaturaKalemleri.resx">
       <DependentUpon>FrmFaturaKalemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmFaturaKalemPopUp.resx">
+      <DependentUpon>FrmFaturaKalemPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmFaturaListesi.resx">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
