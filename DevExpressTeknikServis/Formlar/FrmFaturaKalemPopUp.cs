@@ -21,6 +21,7 @@ namespace DevExpressTeknikServis.Formlar
         {
             DbTeknikServisEntities db = new DbTeknikServisEntities();
             gridControl1.DataSource = db.TBLFATURADETAY.Where(x => x.FATURAID == id).ToList();
+            gridControl2.DataSource = db.TBLFATURABILGI.Where(x => x.ID == id).ToList();
         }
     }
 }
