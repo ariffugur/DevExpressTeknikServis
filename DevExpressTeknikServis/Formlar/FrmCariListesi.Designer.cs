@@ -36,13 +36,13 @@
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMarka = new DevExpress.XtraEditors.TextEdit();
+            this.txtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtAlisFiyat = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtUrunAdi = new DevExpress.XtraEditors.TextEdit();
+            this.txtAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
@@ -71,9 +71,9 @@
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlisFiyat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
@@ -143,6 +143,7 @@
             this.btnKaydet.Size = new System.Drawing.Size(168, 33);
             this.btnKaydet.TabIndex = 23;
             this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // labelControl6
             // 
@@ -152,12 +153,12 @@
             this.labelControl6.TabIndex = 21;
             this.labelControl6.Text = "İlçe:";
             // 
-            // txtMarka
+            // txtSoyad
             // 
-            this.txtMarka.Location = new System.Drawing.Point(82, 104);
-            this.txtMarka.Name = "txtMarka";
-            this.txtMarka.Size = new System.Drawing.Size(168, 20);
-            this.txtMarka.TabIndex = 20;
+            this.txtSoyad.Location = new System.Drawing.Point(82, 104);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(168, 20);
+            this.txtSoyad.TabIndex = 20;
             // 
             // labelControl5
             // 
@@ -201,12 +202,12 @@
             this.labelControl2.TabIndex = 13;
             this.labelControl2.Text = "İl:";
             // 
-            // txtUrunAdi
+            // txtAd
             // 
-            this.txtUrunAdi.Location = new System.Drawing.Point(82, 78);
-            this.txtUrunAdi.Name = "txtUrunAdi";
-            this.txtUrunAdi.Size = new System.Drawing.Size(168, 20);
-            this.txtUrunAdi.TabIndex = 12;
+            this.txtAd.Location = new System.Drawing.Point(82, 78);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(168, 20);
+            this.txtAd.TabIndex = 12;
             // 
             // labelControl1
             // 
@@ -236,13 +237,13 @@
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnKaydet);
             this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.txtMarka);
+            this.groupControl1.Controls.Add(this.txtSoyad);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.txtAlisFiyat);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.txtUrunAdi);
+            this.groupControl1.Controls.Add(this.txtAd);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(1497, -1);
             this.groupControl1.Name = "groupControl1";
@@ -510,9 +511,9 @@
             this.Text = "Cari Listesi";
             this.Load += new System.EventHandler(this.FrmCariListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMarka.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlisFiyat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUrunAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -546,13 +547,13 @@
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.TextEdit txtMarka;
+        private DevExpress.XtraEditors.TextEdit txtSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.TextEdit txtAlisFiyat;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtUrunAdi;
+        private DevExpress.XtraEditors.TextEdit txtAd;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl labelControl10;
