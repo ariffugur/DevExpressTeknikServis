@@ -79,6 +79,7 @@
             this.btnGonder.Size = new System.Drawing.Size(149, 35);
             this.btnGonder.TabIndex = 2;
             this.btnGonder.Text = "Gönder";
+            this.btnGonder.Click += new System.EventHandler(this.btnGonder_Click);
             // 
             // pictureEdit1
             // 
@@ -178,6 +179,7 @@
             this.btnVazgec.Size = new System.Drawing.Size(149, 35);
             this.btnVazgec.TabIndex = 11;
             this.btnVazgec.Text = "Vazgeç";
+            this.btnVazgec.Click += new System.EventHandler(this.btnVazgec_Click);
             // 
             // FrmMail
             // 
@@ -199,6 +201,7 @@
             this.Controls.Add(this.txtAlici);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMail";
             ((System.ComponentModel.ISupportInitialize)(this.txtAlici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();

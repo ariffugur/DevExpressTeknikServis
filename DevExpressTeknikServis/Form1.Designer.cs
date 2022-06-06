@@ -497,6 +497,7 @@
             this.barButtonItem36.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.Image")));
             this.barButtonItem36.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.LargeImage")));
             this.barButtonItem36.Name = "barButtonItem36";
+            this.barButtonItem36.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem36_ItemClick);
             // 
             // barButtonItem37
             // 

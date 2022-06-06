@@ -306,5 +306,11 @@ namespace DevExpressTeknikServis
                 fr17.Show();
             }
         }
+
+        private void barButtonItem36_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Iletisim.FrmMail fr=new Iletisim.FrmMail();
+            fr.Show();
+        }
     }
 }
