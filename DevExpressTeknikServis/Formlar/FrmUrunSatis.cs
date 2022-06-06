@@ -57,5 +57,10 @@ namespace DevExpressTeknikServis.Formlar
                                                      AD = x.AD + " " + x.SOYAD
                                                  }).ToList();
         }
+
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

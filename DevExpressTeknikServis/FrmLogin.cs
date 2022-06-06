@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace DevExpressTeknikServis
         public FrmLogin()
         {
             InitializeComponent();
+        }
+        DbTeknikServisEntities db=new DbTeknikServisEntities();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var sorgu=from x in db.TBLADMIN where x.KULLANICIAD==textBox1.Text && x.SIFRE==textBox2.Text select x;
+            if (sorgu.Any())
+            {
+                Form1 frm=new Form1();
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+                XtraMessageBox.Show("Hatalı Giriş");
+            }
         }
     }
 }

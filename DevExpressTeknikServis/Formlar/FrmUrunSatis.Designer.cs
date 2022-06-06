@@ -79,6 +79,7 @@
             this.btnVazgec.Size = new System.Drawing.Size(108, 38);
             this.btnVazgec.TabIndex = 40;
             this.btnVazgec.Text = "Vazgeç";
+            this.btnVazgec.Click += new System.EventHandler(this.btnVazgec_Click);
             // 
             // btnSatisYap
             // 

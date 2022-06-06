@@ -143,9 +143,9 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="AD" Type="varchar" MaxLength="30" />
-          <Property Name="SOYAD" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="SOYAD" Type="varchar" MaxLength="30" />
           <Property Name="DEPARTMAN" Type="tinyint" />
           <Property Name="FOTOGRAF" Type="varchar" MaxLength="100" />
           <Property Name="MAIL" Type="varchar" MaxLength="50" />
@@ -618,7 +618,7 @@
           </Key>
           <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="SOYAD" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="SOYAD" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="DEPARTMAN" Type="Byte" />
           <Property Name="FOTOGRAF" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
