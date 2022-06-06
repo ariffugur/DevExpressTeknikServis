@@ -131,12 +131,16 @@ namespace DevExpressTeknikServis
         {
             System.Diagnostics.Process.Start("Calc.exe");
         }
-
+        Formlar.FrmKurlar fr12;
         private void btnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmKurlar fr = new Formlar.FrmKurlar();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr12 == null || fr12.IsDisposed)
+            {
+                Formlar.FrmKurlar fr12 = new Formlar.FrmKurlar();
+                fr12.MdiParent = this;
+                fr12.Show();
+            }
+
         }
 
         private void btnWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -155,12 +159,15 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.FrmNotlar fr11;
         private void btnNotListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmNotlar fr = new Formlar.FrmNotlar();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr11 == null || fr11.IsDisposed)
+            {
+                fr11 = new Formlar.FrmNotlar();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
         Formlar.FrmArizaListesi fr6;
         private void btnArizaliUrunListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -231,19 +238,27 @@ namespace DevExpressTeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
-
+        Formlar.FrmGauge fr13;
         private void btnHakkimizda_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmGauge fr = new Formlar.FrmGauge();
-            fr.MdiParent = this;
-            fr.Show();
-        }
+            if (fr13 == null || fr13.IsDisposed)
+            {
+                fr13 = new Formlar.FrmGauge();
+                fr13.MdiParent = this;
+                fr13.Show();
+            }
 
+        }
+        Formlar.FrmHarita fr14;
         private void btnHaritalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmHarita fr = new Formlar.FrmHarita();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr14 == null || fr14.IsDisposed)
+            {
+                fr14 = new Formlar.FrmHarita();
+                fr14.MdiParent = this;
+                fr14.Show();
+            }
+
         }
 
         private void btnRaporlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -272,5 +287,7 @@ namespace DevExpressTeknikServis
                 fr.Show();
             }
         }
+
+
     }
 }

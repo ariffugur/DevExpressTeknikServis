@@ -30,6 +30,7 @@ namespace DevExpressTeknikServis.Formlar
             t.BASLIK = txtBaslik.Text;
             t.ICERIK = txtIcerik.Text;
             t.DURUM = false;
+            t.TARIH=DateTime.Parse(DateTime.Now.ToShortDateString());
             db.TBLNOTLARIM.Add(t);
             db.SaveChanges();
             MessageBox.Show("Not Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
