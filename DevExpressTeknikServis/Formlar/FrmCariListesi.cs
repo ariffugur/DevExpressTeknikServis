@@ -41,6 +41,8 @@ namespace DevExpressTeknikServis.Formlar
                                                      x.id,
                                                      x.sehir
                                                  }).ToList();
+            labelControl16.Text = db.TBLCARI.Select(x => x.IL).Distinct().Count().ToString();
+            labelControl14.Text = db.TBLCARI.Select(x => x.ILCE).Distinct().Count().ToString();
 
         }
 

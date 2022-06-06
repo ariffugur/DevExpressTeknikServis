@@ -424,9 +424,9 @@
             this.labelControl15.Appearance.Options.UseForeColor = true;
             this.labelControl15.Location = new System.Drawing.Point(12, 12);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(133, 25);
+            this.labelControl15.Size = new System.Drawing.Size(149, 25);
             this.labelControl15.TabIndex = 0;
-            this.labelControl15.Text = "En Fazla Carili İl";
+            this.labelControl15.Text = "Toplam İlçe Sayisi";
             // 
             // panel3
             // 
@@ -480,9 +480,9 @@
             this.labelControl18.Appearance.Options.UseForeColor = true;
             this.labelControl18.Location = new System.Drawing.Point(10, 79);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(60, 47);
+            this.labelControl18.Size = new System.Drawing.Size(133, 47);
             this.labelControl18.TabIndex = 1;
-            this.labelControl18.Text = "584";
+            this.labelControl18.Text = "İstanbul";
             // 
             // labelControl19
             // 
@@ -492,9 +492,9 @@
             this.labelControl19.Appearance.Options.UseForeColor = true;
             this.labelControl19.Location = new System.Drawing.Point(12, 12);
             this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(129, 25);
+            this.labelControl19.Size = new System.Drawing.Size(109, 25);
             this.labelControl19.TabIndex = 0;
-            this.labelControl19.Text = "Aktif Cari Sayısı";
+            this.labelControl19.Text = "Merkez Şube";
             // 
             // FrmCariListesi
             // 

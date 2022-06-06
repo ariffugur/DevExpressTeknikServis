@@ -71,19 +71,25 @@ namespace DevExpressTeknikServis
                 fr5.Show();
             }
         }
-
+        Formlar.FrmCariListesi fr7;
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmCariListesi fr = new Formlar.FrmCariListesi();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr7 == null || fr7.IsDisposed) { 
+             fr7= new Formlar.FrmCariListesi();
+            fr7.MdiParent = this;
+            fr7.Show();
+            }
         }
-
+        Formlar.FrmCariIller fr8;
         private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmCariIller fr = new Formlar.FrmCariIller();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr8 == null || fr8.IsDisposed)
+            {
+                 fr8= new Formlar.FrmCariIller();
+            
+            fr8.MdiParent = this;
+            fr8.Show();
+            }
         }
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
