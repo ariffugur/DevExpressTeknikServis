@@ -113,7 +113,7 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(-531, 388);
+            this.gridControl1.Location = new System.Drawing.Point(3, 377);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(1574, 663);
@@ -129,6 +129,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // txtAd
             // 
@@ -147,7 +148,7 @@
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.pictureEdit1);
             this.panel1.Controls.Add(this.labelControl13);
-            this.panel1.Location = new System.Drawing.Point(-531, 12);
+            this.panel1.Location = new System.Drawing.Point(3, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(389, 370);
             this.panel1.TabIndex = 14;
@@ -263,6 +264,7 @@
             this.btnSil.Size = new System.Drawing.Size(168, 33);
             this.btnSil.TabIndex = 25;
             this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -272,6 +274,7 @@
             this.btnGuncelle.Size = new System.Drawing.Size(168, 33);
             this.btnGuncelle.TabIndex = 24;
             this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // txtID
             // 
@@ -320,7 +323,7 @@
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.txtAd);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(1049, 12);
+            this.groupControl1.Location = new System.Drawing.Point(1583, 1);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(324, 1039);
             this.groupControl1.TabIndex = 13;
@@ -332,8 +335,9 @@
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.DisplayMember = "ID";
-            this.lookUpEdit1.Properties.ValueMember = "AD";
+            this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.NullText = "";
+            this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(168, 20);
             this.lookUpEdit1.TabIndex = 32;
             // 
@@ -358,7 +362,6 @@
             // 
             // textEdit4
             // 
-            this.textEdit4.Enabled = false;
             this.textEdit4.Location = new System.Drawing.Point(93, 211);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Size = new System.Drawing.Size(168, 20);
@@ -398,7 +401,6 @@
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Enabled = false;
             this.txtSoyad.Location = new System.Drawing.Point(93, 133);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(168, 20);
@@ -499,7 +501,7 @@
             this.panel3.Controls.Add(this.labelControl16);
             this.panel3.Controls.Add(this.pictureEdit2);
             this.panel3.Controls.Add(this.labelControl17);
-            this.panel3.Location = new System.Drawing.Point(-136, 12);
+            this.panel3.Location = new System.Drawing.Point(398, 1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(389, 370);
             this.panel3.TabIndex = 15;
@@ -599,7 +601,7 @@
             this.panel4.Controls.Add(this.labelControl22);
             this.panel4.Controls.Add(this.pictureEdit3);
             this.panel4.Controls.Add(this.labelControl23);
-            this.panel4.Location = new System.Drawing.Point(259, 12);
+            this.panel4.Location = new System.Drawing.Point(793, 1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(389, 370);
             this.panel4.TabIndex = 16;
@@ -699,7 +701,7 @@
             this.panel2.Controls.Add(this.labelControl26);
             this.panel2.Controls.Add(this.pictureEdit4);
             this.panel2.Controls.Add(this.labelControl27);
-            this.panel2.Location = new System.Drawing.Point(654, 12);
+            this.panel2.Location = new System.Drawing.Point(1188, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(389, 370);
             this.panel2.TabIndex = 15;
@@ -708,7 +710,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 837);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);

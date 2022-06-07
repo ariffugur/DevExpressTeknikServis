@@ -84,7 +84,6 @@ namespace DevExpressTeknikServis.Formlar
         {
             txtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
             txtAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
-          //  richTxtBoxAciklama.Text = gridView1.GetFocusedRowCellValue("ACIKLAMA").ToString();
         }
     }
 }

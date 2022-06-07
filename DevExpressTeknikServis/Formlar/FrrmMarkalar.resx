@@ -127,7 +127,7 @@ Aşağıda yer alan grafikte her bir markanın kaç adet ürünü olduğunu gör
   <data name="pictureEdit6.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAABL1JREFUaEPtmdtrFVcUxmOlraVtBGkt2qcKEosKLbYoYrUvxlhQXxLJ7eTYFKO0
+        wQAADsEBuJFr7QAABL1JREFUaEPtmdtrFVcUxmOlraVtBGkt2qcKEosKLbYoYrUvxlhQXxLJ7eTYFKO0
         gngBH/MXFBRviLGvrVDb/hlVUSmkD1WrqKhgq6am9YK3/ta45rD3ypqcOSfnGIXzwccka33r23vP7JnZ
         e05TAw00UHv09va+2dPTMwyfKoclpukXH3T486DzCbu6ulZoevJBh2Z1d3cf4TgKezVcArlv0o4H/FrT
         JaArEB9Vr1kari9oaIk0CtOOPeDsLtN0Ajq0P8in3KfpBPz/GXwQ5EeZZos1XT/Qua+CRlPeYBDzOK6V
@@ -153,7 +153,7 @@ Aşağıda yer alan grafikte her bir markanın kaç adet ürünü olduğunu gör
   <data name="pictureEdit5.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAABQ5JREFUaEPtmltoXFUUhhMvVRCUgg+CFVFQq6KIWKWiRvQliFZfQpK5JEJCqFAN
+        wQAADsEBuJFr7QAABQ5JREFUaEPtmltoXFUUhhMvVRCUgg+CFVFQq6KIWKWiRvQliFZfQpK5JEJCqFAN
         KlYrSh5FsOCDKNJU2wd9F59q8dIWWoVWKqJIUSFodeyNQvvQpjb6/af/zsx0ZuK5Thrwh8U586+91tp7
         n30760zP/+iAqampi0ql0nKJ7k1fmBgcHLyuUqmMlMvlaSq8h+tR5J/z5Kh0yCakOjIycq3NFwejo6OX
         U6lxZBcy50oG0W814hfLMXNNZWjITmSsv7//MrstHn19fZcQfJLAf4TKcH8E2YKUhoeHV7arkBpcrVZv
@@ -181,7 +181,7 @@ Aşağıda yer alan grafikte her bir markanın kaç adet ürünü olduğunu gör
   <data name="pictureEdit4.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAABC5JREFUaEPtmclvTWEYxlvThoUmRAyJOaiFjSAxdGGBKCradLptgygqQfgDaiEh
+        wQAADsEBuJFr7QAABC5JREFUaEPtmclvTWEYxlvThoUmRAyJOaiFjSAxdGGBKCradLptgygqQfgDaiEh
         QaQrIZUSQ3UjgrBQbUSsBAsRxBBDDLUz7BB+7/V8J+fqbe/03aORPsmTc87zft/zvuec9zv33nMLBjGI
         QaSP2traTfBBdXX1CkneYJ41NTUPY7HYRkn+UFFRMZTCW+EvI4kOKOQN+B50/vCE5VQoN6j4CyHza2ij
         FPYG8zTvUJ5zXk6Cq30yZLoPqfBPpH80NzcPYW6R0fYlp0Kh5Qjla5WeHUi+JWR2SHJSqOBVjDsB34Tm
@@ -205,7 +205,7 @@ Aşağıda yer alan grafikte her bir markanın kaç adet ürünü olduğunu gör
   <data name="pictureEdit3.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAfVJREFUaEPtmDFLw0AYhot0d3URdFAc/AcipYMOjqVN2rS0i+gmuIiLZNdBLCL+
+        wQAADsEBuJFr7QAAAfVJREFUaEPtmDFLw0AYhot0d3URdFAc/AcipYMOjqVN2rS0i+gmuIiLZNdBLCL+
         C3+Ao6iTgoMWBzfpoNipLhqr74ffoMepOa+5S+AeeGna3r3fe0kuuSTncDgcDofD4XBI8X1/nMRf008Y
         hvlardYOguCxXq+/C3poNBq7aDby2TplIPgSgj9Lgn8T2vSbzeYid0sHCLaKYAMx7C+itsvc3S6e580i
         /JsQMI6iUqk0wzb2QJBbIVhsYeDXbGMHnPdTsmAqwsSeZDvzYA8eykKpCB4HbGceFD+XhVIRjuIp25kH
@@ -219,7 +219,7 @@ Aşağıda yer alan grafikte her bir markanın kaç adet ürünü olduğunu gör
   <data name="pictureEdit2.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAu1JREFUaEPtmLuLE1EUhxPxibqC64KLYmthJRgUFQILu6bw0SSQdyBF2m3Ex1qk
+        wQAADsEBuJFr7QAAAu1JREFUaEPtmLuLE1EUhxPxibqC64KLYmthJRgUFQILu6bw0SSQdyBF2m3Ex1qk
         3C30D9hem91tV8FCG21sFFFEcBsrBVEsVKz0+40nYbJ5TjKTB84Hh3vvOWfuPb+byZ1JIiEhISEhvlEo
         FM5Mglm5zeRyuT+TYFZuMwp2VDhiVFvPAuLx+M5kMnlYfdoZtfl8fr/M7VOOcoPOV78nAVhM/Uwmc4n+
         mvrZbPZ9qVQ6yngJu4XNYu8stk5/Ieh89WljWGcB7MAzTWausYHaZhHzvKsA7BGJ37GKuUeOalFN1Paw
@@ -238,7 +238,7 @@ Aşağıda yer alan grafikte her bir markanın kaç adet ürünü olduğunu gör
   <data name="pictureEdit1.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAA8lJREFUeF7tWj1v1EAUDAIahGgAiTTUIMpriZICpYACipyU3CWKEFLyPyipKSB8
+        vwAADr8BOAVTJAAAA8lJREFUeF7tWj1v1EAUDAIahGgAiTTUIMpriZICpYACipyU3CWKEFLyPyipKSB8
         NETis0mRf0GkVEQUBKUDIgr4AYGZ1djyre5Cds/P65AdaeR9z+v3nue86/XqJjIyMjIyMjKOjH6//6VJ
         9nq9l91u97TSpweK+gPugx+tiZvfxZH51lsjggp6KtMUEGAL/MGcOH5YWVk5q1Pp4AvAolDcQ/gm5aoN
         EmALsR9LhPfT09NndDoNfAHm5uYuw/62sLBwU67aUAiA5qnWiOALYImKAEQpAvgumQjDBIA9i6FwTmZt

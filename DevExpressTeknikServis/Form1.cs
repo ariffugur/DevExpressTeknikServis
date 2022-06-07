@@ -312,5 +312,13 @@ namespace DevExpressTeknikServis
             Iletisim.FrmMail fr=new Iletisim.FrmMail();
             fr.Show();
         }
+
+        private void barButtonItem23_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmYeniPersonel fr = new Formlar.FrmYeniPersonel();
+            fr.Show();
+        }
+
+    
     }
 }

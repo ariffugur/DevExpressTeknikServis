@@ -32,6 +32,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnListele = new DevExpress.XtraEditors.SimpleButton();
@@ -50,7 +51,6 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtUrunAdi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -109,6 +109,16 @@
             this.groupControl1.Size = new System.Drawing.Size(407, 1039);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Ürün İşlemleri";
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(82, 413);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(168, 33);
+            this.btnTemizle.TabIndex = 29;
+            this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // txtID
             // 
@@ -174,6 +184,7 @@
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.NullText = "";
             this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(168, 20);
             this.lookUpEdit1.TabIndex = 22;
@@ -260,16 +271,6 @@
             this.labelControl1.Size = new System.Drawing.Size(45, 13);
             this.labelControl1.TabIndex = 11;
             this.labelControl1.Text = "Ürün Adı:";
-            // 
-            // btnTemizle
-            // 
-            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnTemizle.Location = new System.Drawing.Point(82, 413);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(168, 33);
-            this.btnTemizle.TabIndex = 29;
-            this.btnTemizle.Text = "Temizle";
-            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // FrmUrunListesi
             // 

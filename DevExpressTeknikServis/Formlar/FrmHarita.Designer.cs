@@ -40,7 +40,7 @@
             this.mapControl1.Layers.Add(this.ımageLayer1);
             this.mapControl1.Location = new System.Drawing.Point(0, 0);
             this.mapControl1.Name = "mapControl1";
-            this.mapControl1.Size = new System.Drawing.Size(1370, 749);
+            this.mapControl1.Size = new System.Drawing.Size(1904, 837);
             this.mapControl1.TabIndex = 0;
             this.ımageLayer1.DataProvider = this.bingMapDataProvider1;
             this.bingMapDataProvider1.BingKey = "YOUR BING MAPS KEY";
@@ -49,7 +49,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 837);
             this.Controls.Add(this.mapControl1);
             this.Name = "FrmHarita";
             this.Text = "Haritalar";

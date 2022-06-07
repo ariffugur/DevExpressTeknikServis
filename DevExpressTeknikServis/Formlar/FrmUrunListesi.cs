@@ -64,7 +64,6 @@ namespace DevExpressTeknikServis.Formlar
 
         private void btnListele_Click(object sender, EventArgs e)
         {
-            //var degerler = db.TBLURUN.ToList();
             metod1();
         }
 

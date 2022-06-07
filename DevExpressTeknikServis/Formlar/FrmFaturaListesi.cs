@@ -60,8 +60,8 @@ namespace DevExpressTeknikServis.Formlar
                                u.TARIH,
                                u.SAAT,
                                u.VERGIDAIRE,
-                               Cari = u.TBLCARI.AD + u.TBLCARI.SOYAD,
-                               Personel = u.TBLPERSONEL.AD + u.TBLPERSONEL.SOYAD
+                               Cari = u.TBLCARI.AD +" "+ u.TBLCARI.SOYAD,
+                               Personel = u.TBLPERSONEL.AD +" "+ u.TBLPERSONEL.SOYAD
                            };
 
             gridControl1.DataSource = degerler.ToList();
@@ -79,7 +79,7 @@ namespace DevExpressTeknikServis.Formlar
             t.PERSONEL = short.Parse(lookUpEdit2.EditValue.ToString());
             db.TBLFATURABILGI.Add(t);
             db.SaveChanges();
-            MessageBox.Show("Fatura Sisteme Başarıyla Kaydedilmiştir. Kalem Girişi Yapabilirsiniz.");
+            MessageBox.Show("Fatura Sisteme Başarıyla Kaydedilmiştir.");
 
            
         }
@@ -89,6 +89,35 @@ namespace DevExpressTeknikServis.Formlar
             FrmFaturaKalemPopUp fr = new FrmFaturaKalemPopUp();
             fr.id = int.Parse(gridView1.GetFocusedRowCellValue("ID").ToString());
             fr.Show();
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            txtSeri.Text = gridView1.GetFocusedRowCellValue("SERI").ToString();
+            txtSira.Text = gridView1.GetFocusedRowCellValue("SIRANI").ToString();
+            txtTarih.Text = gridView1.GetFocusedRowCellValue("TARIH").ToString();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLFATURABILGI.Find(id);
+            db.TBLFATURABILGI.Remove(deger);
+            db.SaveChanges();
+            MessageBox.Show("Fatura Başarıyla Silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLFATURABILGI.Find(id);
+            deger.SERI = txtSeri.Text;
+            deger.SIRANI = txtSira.Text;
+            deger.VERGIDAIRE = txtVergiDairesi.Text;
+            deger.TARIH = DateTime.Parse(txtTarih.Text);
+            db.SaveChanges();
+            MessageBox.Show("Fatura Listesi Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

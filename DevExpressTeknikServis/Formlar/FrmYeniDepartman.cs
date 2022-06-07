@@ -16,21 +16,14 @@ namespace DevExpressTeknikServis.Formlar
         {
             InitializeComponent();
         }
-        DbTeknikServisEntities db=new DbTeknikServisEntities(); 
+
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             TBLDEPARTMAN t = new TBLDEPARTMAN();
-            if (txtAd.Text.Length <= 50 && txtAd.Text != "")
-            {
-                t.AD = txtAd.Text;
-                db.TBLDEPARTMAN.Add(t);
-                db.SaveChanges();
-                MessageBox.Show("Departman Kaydedildi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Departman Kaydedildilemedi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            t.AD = txtAd.Text;
+            db.TBLDEPARTMAN.Add(t);
+            db.SaveChanges();
         }
 
 
@@ -38,6 +31,11 @@ namespace DevExpressTeknikServis.Formlar
         {
             this.Close();
         }
+
+        private void btnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
-    }
+}
 

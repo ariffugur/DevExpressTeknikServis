@@ -91,7 +91,6 @@
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -384,6 +383,7 @@
             this.barButtonItem23.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.ImageOptions.Image")));
             this.barButtonItem23.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.ImageOptions.LargeImage")));
             this.barButtonItem23.Name = "barButtonItem23";
+            this.barButtonItem23.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem23_ItemClick);
             // 
             // btnDepartmanListesi
             // 
@@ -629,7 +629,6 @@
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.btnUrunListesiFormu);
             this.ribbonPageGroup10.ItemLinks.Add(this.btnYeniUrun);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPageGroup11
@@ -648,7 +647,6 @@
             // 
             // ribbonPageGroup13
             // 
-            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             // 
@@ -676,16 +674,9 @@
             // ribbonPage5
             // 
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5,
             this.ribbonPageGroup14});
             this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "Faturalar ve Hareketler";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem15);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem16);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPage5.Text = "Faturalar";
             // 
             // ribbonPageGroup14
             // 
@@ -693,8 +684,6 @@
             this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem17);
             this.ribbonPageGroup14.ItemLinks.Add(this.btnFaturaKalem);
             this.ribbonPageGroup14.ItemLinks.Add(this.btnFaturaKalemListesi);
-            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem20);
-            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem21);
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
             // 
             // ribbonPage6
@@ -727,16 +716,12 @@
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.btnHesapMakinesi);
-            this.ribbonPageGroup7.ItemLinks.Add(this.btnNotListesi);
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem27);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnKurlar);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnYoutube);
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem30);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnWord);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnExcel);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnHakkimizda);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnHaritalar);
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem33);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
             // ribbonPage8
@@ -763,7 +748,6 @@
             this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem34);
             this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem35);
             this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem36);
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem37);
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             // 
             // xtraTabbedMdiManager1
@@ -810,7 +794,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;

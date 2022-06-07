@@ -72,5 +72,52 @@ namespace DevExpressTeknikServis.Formlar
 
 
         }
+  
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLCARI.Find(id);
+            db.TBLCARI.Remove(deger);
+            db.SaveChanges();
+            MessageBox.Show("Cari Başarıyla Silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            txtID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+            txtAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
+            txtSoyad.Text = gridView1.GetFocusedRowCellValue("SOYAD").ToString();
+            lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("IL").ToString();
+            lookUpEdit2.Text = gridView1.GetFocusedRowCellValue("ILCE").ToString();
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            var degerler = from u in db.TBLCARI
+                           select new
+                           {
+                               u.ID,
+                               u.AD,
+                               u.SOYAD,
+                               u.IL,
+                               u.ILCE
+                           };
+
+            gridControl1.DataSource = degerler.ToList();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            var deger = db.TBLCARI.Find(id);
+            deger.AD = txtAd.Text;
+            deger.SOYAD = txtSoyad.Text;
+            deger.IL = lookUpEdit1.Text;
+            deger.ILCE = lookUpEdit2.Text;
+            db.SaveChanges();
+            MessageBox.Show("Cari Başarıyla Güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+        }
     }
 }
