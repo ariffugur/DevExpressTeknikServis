@@ -41,7 +41,7 @@ namespace DevExpressTeknikServis.Formlar
                              x.ICERIK
                          });
             gridControl2.DataSource = deger.ToList();
-            string konu1, ad1, konu2, ad2, konu3, ad3, konu4, ad4, konu5, ad5, konu6, ad6;
+            string konu1, ad1, konu2, ad2, konu3, ad3, konu4, ad4, konu5, ad5, konu6, ad6,konu7,ad7,konu8,ad8,konu9,ad9,konu10,ad10;
             konu1 = db.TBLILETISIM.First(x => x.ID == 1).KONU;
             ad1 = db.TBLILETISIM.First(x => x.ID == 1).ADSOYAD;
             labelControl1.Text = konu1 + " - " + ad1;
@@ -60,8 +60,17 @@ namespace DevExpressTeknikServis.Formlar
             konu6 = db.TBLILETISIM.First(x => x.ID ==6).KONU;
             ad6 = db.TBLILETISIM.First(x => x.ID == 6).ADSOYAD;
             labelControl6.Text = konu6 + " - " + ad6;
-            konu1 = db.TBLILETISIM.First(x => x.ID == 1).KONU;
-            ad1 = db.TBLILETISIM.First(x => x.ID == 1).ADSOYAD;
+            konu7 = db.TBLILETISIM.First(x => x.ID == 7).KONU;
+            ad7 = db.TBLILETISIM.First(x => x.ID == 7).ADSOYAD;
+            labelControl1.Text = konu1 + " - " + ad1;
+            konu8 = db.TBLILETISIM.First(x => x.ID == 8).KONU;
+            ad8 = db.TBLILETISIM.First(x => x.ID == 8).ADSOYAD;
+            labelControl1.Text = konu1 + " - " + ad1;
+            konu9 = db.TBLILETISIM.First(x => x.ID == 1).KONU;
+            ad9 = db.TBLILETISIM.First(x => x.ID == 1).ADSOYAD;
+            labelControl1.Text = konu1 + " - " + ad1;
+            konu10= db.TBLILETISIM.First(x => x.ID == 1).KONU;
+            ad10 = db.TBLILETISIM.First(x => x.ID == 1).ADSOYAD;
             labelControl1.Text = konu1 + " - " + ad1;
         }
     }
